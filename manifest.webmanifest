@@ -1,0 +1,15 @@
+{
+  "name": "StB-Trainer",
+  "short_name": "StB-Trainer",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#F2F3EE",
+  "theme_color": "#F2F3EE",
+  "lang": "de",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

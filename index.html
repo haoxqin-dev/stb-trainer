@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StB-Trainer</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#F2F3EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191A17" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="StB-Trainer">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+:root{
+  --paper:#F2F3EE; --ink:#22262B; --soft:#5C6168; --rule:#D2D5CB; --card:#FAFBF7;
+  --marker:#FFE94D; --ok:#2E6B4F; --no:#9B3024; --shadow:0 1px 0 rgba(34,38,43,.06);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#191A17;--ink:#E9E7DF;--soft:#9A9A92;--rule:#33352F;--card:#20211D;
+        --ok:#7FC5A0;--no:#E58A7C;--shadow:none;color-scheme:dark}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:400 17px/1.6 Georgia,"Iowan Old Style","Palatino Linotype",serif;
+  padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+.wrap{max-width:860px;margin:0 auto;padding:24px 18px 90px}
+
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between;
+  border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:16px}
+h1{font-size:23px;font-weight:400;margin:0}
+h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--marker) 62%);padding:0 2px;color:#22262B}
+.hint{color:var(--soft);font-size:13px;margin:3px 0 0}
+.stats{font-size:13px;color:var(--soft);text-align:right;line-height:1.5}
+.stats b{color:var(--ink);font-weight:700}
+
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+.tab{font:inherit;font-size:14.5px;padding:6px 14px;border:1px solid var(--rule);background:none;
+  color:var(--ink);border-radius:999px;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* Verortung */
+.loc{border:1px solid var(--rule);border-radius:6px;background:var(--card);padding:10px 12px;margin:0 0 16px}
+.chips{display:flex;gap:5px;flex-wrap:wrap}
+.chip{font-size:12.5px;padding:3px 9px;border-radius:4px;border:1px solid var(--rule);color:var(--soft);white-space:nowrap}
+.chip.on{background:var(--marker);color:#22262B;border-color:#e2cf3a;font-weight:700}
+.path{font-size:13px;color:var(--soft);margin:8px 0 0}
+
+.card{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:20px;box-shadow:var(--shadow)}
+.meta{font-size:12.5px;color:var(--soft);margin:0 0 10px;display:flex;gap:12px;flex-wrap:wrap}
+.sv{font-size:15.5px;color:var(--soft);border-left:2px solid var(--rule);padding-left:12px;margin:0 0 16px}
+.q{font-size:19px;line-height:1.45;margin:0 0 16px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{font:inherit;font-size:16px;text-align:left;padding:11px 14px;border:1px solid var(--rule);
+  background:var(--paper);color:var(--ink);border-radius:5px;cursor:pointer;line-height:1.45}
+.opt:hover:not(:disabled){border-color:var(--soft)}
+.opt:disabled{cursor:default}
+.opt.right{border-color:var(--ok);box-shadow:inset 3px 0 0 var(--ok)}
+.opt.wrong{border-color:var(--no);box-shadow:inset 3px 0 0 var(--no)}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+.fb{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--rule)}
+.verdict{font-weight:700;margin:0 0 6px}
+.verdict.r{color:var(--ok)} .verdict.w{color:var(--no)}
+.why{margin:0 0 10px}
+.norm{display:inline-block;font-size:13.5px;background:var(--marker);color:#22262B;padding:2px 8px;border-radius:3px}
+.gtext{font-size:15px;line-height:1.55;color:var(--soft);border-left:2px solid var(--rule);padding-left:12px;margin:10px 0 0}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;align-items:center}
+.btn{font:inherit;font-size:15px;padding:8px 16px;border-radius:5px;border:1px solid var(--ink);
+  background:var(--ink);color:var(--paper);cursor:pointer}
+.btn.ghost{background:none;color:var(--ink)}
+select{font:inherit;font-size:14px;padding:5px 8px;border:1px solid var(--rule);border-radius:5px;
+  background:var(--paper);color:var(--ink)}
+
+.lvl{display:inline-flex;gap:3px;align-items:center}
+.pip{width:9px;height:9px;border-radius:50%;border:1px solid var(--soft);display:inline-block}
+.pip.on{background:var(--marker);border-color:#e2cf3a}
+
+table{border-collapse:collapse;width:100%;font-size:15.5px;margin-top:4px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:13px;color:var(--soft);font-weight:700}
+footer{margin-top:34px;padding-top:12px;border-top:1px solid var(--rule);font-size:13px;color:var(--soft);
+  display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+footer button{font:inherit;font-size:13px;background:none;border:0;color:var(--soft);
+  text-decoration:underline;cursor:pointer;padding:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div>
+    <h1>StB-<em>Trainer</em></h1>
+    <p class="hint" id="sub">lädt …</p>
+    <p style="margin:8px 0 0"><select id="fach" aria-label="Fach"></select></p>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="tabs" id="tabs">
+  <button class="tab" data-m="norm"   aria-pressed="false">Paragraphen</button>
+  <button class="tab" data-m="inhalt" aria-pressed="true">Inhalt</button>
+  <button class="tab" data-m="fall"   aria-pressed="false">Fälle</button>
+  <button class="tab" data-m="frist"  aria-pressed="false">Fristen</button>
+</div>
+
+<div class="loc" id="loc"></div>
+<main id="view"></main>
+
+<footer>
+  <span id="lvlbox"></span>
+  <button id="errs">Fehlerprotokoll</button>
+  <button id="exp">Fortschritt sichern</button>
+  <button id="imp">Fortschritt laden</button>
+  <button id="upd">Aktualisieren</button>
+  <button id="reset">Zurücksetzen</button>
+  <span id="net" style="margin-left:auto"></span>
+  <input type="file" id="file" accept="application/json" hidden>
+</footer>
+</div>
+
+<script>
+let KEY='stb-trainer-ao-v1';
+const DAY=86400000, IVL=[0,1,3,7,21];
+let D=null, mode='inhalt', blockFilter=0, cur=null, answered=false;
+let fall=null, fallStep=0, frist=null;
+
+let S = load();
+function load(){ try{ return Object.assign({box:{},streak:{d:'',n:0},today:{d:'',n:0},lvl:2,run:0,bad:[]}, JSON.parse(localStorage.getItem(KEY)||'{}')); }
+  catch(e){ return {box:{},streak:{d:'',n:0},today:{d:'',n:0},lvl:2,run:0,bad:[]}; } }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+const iso = d => d.toISOString().slice(0,10);
+
+/* ---------- laden ---------- */
+function showErr(){
+  document.getElementById('view').innerHTML =
+    '<div class="card"><p class="q">Die Datendatei konnte nicht geladen werden.</p>'+
+    '<p class="why">Die App braucht einen Webserver. Über GitHub Pages läuft sie, ein Doppelklick auf die Datei reicht nicht.</p></div>';
+}
+fetch('data/faecher.json').then(r=>r.json()).then(list=>{
+  const sel=document.getElementById('fach');
+  sel.innerHTML = list.map(f=>`<option value="${f.id}">${f.titel}</option>`).join('');
+  const last = localStorage.getItem('stb-trainer-fach');
+  sel.value = list.some(f=>f.id===last) ? last : list[0].id;
+  sel.onchange = ()=>loadFach(sel.value);
+  loadFach(sel.value);
+}).catch(showErr);
+
+function loadFach(id){
+  localStorage.setItem('stb-trainer-fach', id);
+  KEY = 'stb-trainer-'+id+'-v1';
+  S = load();
+  fetch('data/'+id+'.json').then(r=>r.json()).then(d=>{
+    D=d; blockFilter=0; fall=null;
+    document.getElementById('sub').textContent = d.titel+' · '+d.stand;
+    paintLoc(null); setMode('inhalt');
+  }).catch(showErr);
+}
+
+/* ---------- offline ---------- */
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+function paintNet(){
+  document.getElementById('net').textContent = navigator.onLine ? '' : 'offline, gespeicherter Stand';
+}
+addEventListener('online',paintNet); addEventListener('offline',paintNet); paintNet();
+
+/* ---------- Verortung ---------- */
+function paintLoc(nodeId, pathExtra){
+  if(!D) return;
+  const chips = D.knoten.map(k=>`<span class="chip${k.id===nodeId?' on':''}">${k.kurz}</span>`).join('');
+  const k = D.knoten.find(x=>x.id===nodeId);
+  const path = k ? k.pfad + (pathExtra? ' › '+pathExtra : '') : 'Übersicht';
+  document.getElementById('loc').innerHTML = `<div class="chips">${chips}</div><p class="path">${path}</p>`;
+}
+
+/* ---------- Kopfzahlen ---------- */
+function paintStats(){
+  const today = iso(new Date());
+  if(S.today.d!==today){ S.today={d:today,n:0}; }
+  const total = D? D.fragen.length + D.normen.length : 0;
+  const sicher = Object.values(S.box).filter(b=>b.box>=3).length;
+  document.getElementById('stats').innerHTML =
+    `<b>${S.today.n}</b> von 15 heute · Serie <b>${S.streak.n}</b> Tage<br>${sicher} von ${total} sicher`;
+  const pips = [1,2,3].map(i=>`<span class="pip${i<=S.lvl?' on':''}"></span>`).join('');
+  document.getElementById('lvlbox').innerHTML = `<span class="lvl">Stufe ${S.lvl} ${pips}</span>`;
+}
+
+function countDay(){
+  const today = iso(new Date());
+  if(S.today.d!==today) S.today={d:today,n:0};
+  S.today.n++;
+  if(S.streak.d!==today){
+    const y = iso(new Date(Date.now()-DAY));
+    S.streak = {d:today, n: S.streak.d===y ? S.streak.n+1 : 1};
+  }
+}
+
+/* ---------- Leitner ---------- */
+function due(id){ const b=S.box[id]; return !b || b.due<=Date.now(); }
+function grade(id, ok){
+  const b = S.box[id] || {box:0,due:0};
+  b.box = ok ? Math.min(4,b.box+1) : 0;
+  b.due = Date.now() + IVL[b.box]*DAY;
+  S.box[id]=b;
+  if(ok){ S.run=Math.max(0,S.run)+1; if(S.run>=3){ S.lvl=Math.min(3,S.lvl+1); S.run=0; } }
+  else  { S.run=Math.min(0,S.run)-1; if(S.run<=-2){ S.lvl=Math.max(1,S.lvl-1); S.run=0; } }
+  if(!ok){ S.bad = [id, ...S.bad.filter(x=>x!==id)].slice(0,40); }
+  countDay(); save(); paintStats();
+}
+
+/* ---------- Modus ---------- */
+document.getElementById('tabs').addEventListener('click',e=>{
+  const t=e.target.closest('.tab'); if(!t) return; setMode(t.dataset.m);
+});
+function setMode(m){
+  mode=m; answered=false; fall=null;
+  [...document.querySelectorAll('.tab')].forEach(t=>t.ariaPressed = String(t.dataset.m===m));
+  paintStats();
+  if(m==='frist'){ nextFrist(); }
+  else if(m==='fall'){ listFaelle(); }
+  else next();
+}
+
+/* ---------- Auswahl ---------- */
+const shuffle = a => { for(let i=a.length-1;i>0;i--){const j=0|Math.random()*(i+1);[a[i],a[j]]=[a[j],a[i]];} return a; };
+
+function pool(){
+  if(mode==='norm') return D.normen.map((x,i)=>({...x, id:'n'+i, typ:'norm'}));
+  return D.fragen.map((x,i)=>({...x, id:'q'+i, typ:'inhalt'}))
+         .filter(x=>!blockFilter || x.b===blockFilter);
+}
+function pick(){
+  let p = pool();
+  if(blockFilter && mode==='norm') p = p.filter(x=>x.b===blockFilter);
+  const fw = p.filter(x=>due(x.id) && S.box[x.id]);          // Wiederholung fällig
+  if(fw.length) return shuffle(fw)[0];
+  const lv = p.filter(x=>!S.box[x.id] && (x.s||2)===S.lvl);  // neue der aktuellen Stufe
+  if(lv.length) return shuffle(lv)[0];
+  const nw = p.filter(x=>!S.box[x.id]);
+  if(nw.length) return shuffle(nw)[0];
+  return shuffle(p)[0];
+}
+
+/* ---------- Normfinder ---------- */
+function buildNorm(item){
+  const others = shuffle(D.normen.filter(n=>n.norm!==item.norm && n.b===item.b)).slice(0,3);
+  const alt = others.length<3 ? shuffle(D.normen.filter(n=>n.norm!==item.norm)).slice(0,3) : others;
+  const opts = shuffle([item.norm, ...alt.map(o=>o.norm)]);
+  return { n:item.n, q:'Welche Norm regelt das?<br><span style="color:var(--soft)">'+item.s+'</span>',
+           o:opts, a:opts.indexOf(item.norm), w:'Stichwort: '+item.s, nrm:item.norm, k:'', b:item.b };
+}
+
+/* ---------- Rendern ---------- */
+const view=document.getElementById('view');
+
+function next(){
+  const item = pick(); if(!item){ view.innerHTML='<div class="card"><p class="q">Keine Fragen in dieser Auswahl.</p></div>'; return; }
+  cur = mode==='norm' ? {...buildNorm(item), id:item.id} : item;
+  answered=false;
+  paintLoc(cur.n);
+  const bsel = `<select id="bf"><option value="0">alle Blöcke</option>`+
+    D.bloecke.map(b=>`<option value="${b.id}"${blockFilter===b.id?' selected':''}>Block ${b.id} · ${b.name}</option>`).join('')+`</select>`;
+  view.innerHTML = `<div class="card">
+    <div class="meta"><span>${mode==='norm'?'Paragraphen':'Inhalt'}</span><span>Stufe ${cur.s||'–'}</span><span>${bsel}</span></div>
+    <p class="q">${cur.q}</p>
+    <div class="opts" id="opts">${cur.o.map((t,k)=>`<button class="opt" data-k="${k}">${t}</button>`).join('')}</div>
+    <div id="fb"></div></div>`;
+  document.getElementById('bf').onchange = e=>{ blockFilter=+e.target.value; next(); };
+  document.getElementById('opts').addEventListener('click', onPick);
+}
+
+function onPick(e){
+  if(answered) return;
+  const b=e.target.closest('.opt'); if(!b) return;
+  answered=true; const ch=+b.dataset.k, ok=ch===cur.a;
+  grade(cur.id, ok);
+  [...document.querySelectorAll('.opt')].forEach((el,k)=>{ el.disabled=true;
+    if(k===cur.a) el.classList.add('right'); if(k===ch&&!ok) el.classList.add('wrong'); });
+  document.getElementById('fb').innerHTML = `<div class="fb">
+    <p class="verdict ${ok?'r':'w'}">${ok?'Richtig.':'Nicht richtig.'}</p>
+    <p class="why">${cur.w}</p>
+    <span class="norm">${cur.nrm}</span>
+    ${cur.k?`<p class="gtext"><b>Kern der Norm.</b> ${cur.k}</p>`:''}
+    <div class="row"><button class="btn" id="nx">Weiter</button></div></div>`;
+  const n=document.getElementById('nx'); n.onclick=next; n.focus();
+}
+
+/* ---------- Fälle ---------- */
+function listFaelle(){
+  paintLoc(null);
+  view.innerHTML = `<div class="card"><p class="q">Fälle</p>
+    <p class="why">Jeder Fall führt in vier Schritten durch die Weichenstellungen der Gliederung.</p>
+    <div class="opts">${D.faelle.map((f,i)=>`<button class="opt" data-f="${i}">Fall ${f.nr} · ${f.titel}</button>`).join('')}</div></div>`;
+  view.querySelector('.opts').addEventListener('click',e=>{
+    const b=e.target.closest('.opt'); if(!b) return; fall=D.faelle[+b.dataset.f]; fallStep=0; renderFall(); });
+}
+function renderFall(){
+  if(fallStep>=fall.schritte.length){
+    paintLoc(fall.n);
+    view.innerHTML=`<div class="card"><p class="q">Fall ${fall.nr} durchgearbeitet</p>
+      <p class="why">Schreib die Lösung jetzt selbst, mit vollständigen Normenketten. Die Weichen hast du.</p>
+      <div class="row"><button class="btn" id="back">Zur Fallliste</button></div></div>`;
+    document.getElementById('back').onclick=listFaelle; return;
+  }
+  const st=fall.schritte[fallStep]; answered=false;
+  paintLoc(fall.n, 'Fall '+fall.nr);
+  view.innerHTML=`<div class="card">
+    <div class="meta"><span>Fall ${fall.nr} · ${fall.titel}</span><span>Schritt ${fallStep+1} von ${fall.schritte.length}</span></div>
+    ${fallStep===0?`<p class="sv">${fall.sv}</p>`:''}
+    <p class="q">${st.q}</p>
+    <div class="opts" id="opts">${st.o.map((t,k)=>`<button class="opt" data-k="${k}">${t}</button>`).join('')}</div>
+    <div id="fb"></div></div>`;
+  document.getElementById('opts').addEventListener('click',e=>{
+    if(answered) return; const b=e.target.closest('.opt'); if(!b) return;
+    answered=true; const ch=+b.dataset.k, ok=ch===st.a;
+    grade('f'+fall.nr+'-'+fallStep, ok);
+    [...document.querySelectorAll('.opt')].forEach((el,k)=>{ el.disabled=true;
+      if(k===st.a) el.classList.add('right'); if(k===ch&&!ok) el.classList.add('wrong'); });
+    document.getElementById('fb').innerHTML=`<div class="fb">
+      <p class="verdict ${ok?'r':'w'}">${ok?'Richtig.':'Nicht richtig.'}</p>
+      <p class="why">${st.w}</p><span class="norm">${st.nrm}</span>
+      <div class="row"><button class="btn" id="nx">Nächster Schritt</button></div></div>`;
+    const n=document.getElementById('nx'); n.onclick=()=>{fallStep++;renderFall();}; n.focus();
+  });
+}
+
+/* ---------- Fristenrechner ---------- */
+const WT=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+const fmt = d => d.getDate().toString().padStart(2,'0')+'.'+(d.getMonth()+1).toString().padStart(2,'0')+'.'+d.getFullYear();
+function shift(d){ const x=new Date(d); while(x.getDay()===0||x.getDay()===6) x.setDate(x.getDate()+1); return x; }
+function nextFrist(){
+  paintLoc('FR','Fristberechnung');
+  const base=new Date(2026,0,1); base.setDate(base.getDate()+(0|Math.random()*360));
+  const vier=new Date(base); vier.setDate(vier.getDate()+4);
+  const bek=shift(vier);
+  const art = Math.random()<.5 ? 'mit einfachem Brief' : 'mit Einwurfeinschreiben';
+  const roh=[fmt(bek), fmt(vier), fmt(new Date(vier.getTime()-DAY)), fmt(new Date(bek.getTime()+DAY))];
+  const opts=shuffle([...new Set(roh)]).slice(0,4);
+  if(!opts.includes(fmt(bek))) opts[0]=fmt(bek);
+  frist={bek, opts: shuffle(opts), a:0};
+  frist.a = frist.opts.indexOf(fmt(bek));
+  answered=false;
+  view.innerHTML=`<div class="card">
+    <div class="meta"><span>Fristenrechner</span><span>nur Samstag und Sonntag, keine Feiertage</span></div>
+    <p class="q">Der Bescheid wird ${art} am ${WT[base.getDay()]}, dem ${fmt(base)}, zur Post gegeben.<br>
+    Wann gilt er als bekanntgegeben?</p>
+    <div class="opts" id="opts">${frist.opts.map((t,k)=>`<button class="opt" data-k="${k}">${t}</button>`).join('')}</div>
+    <div id="fb"></div></div>`;
+  document.getElementById('opts').addEventListener('click',e=>{
+    if(answered) return; const b=e.target.closest('.opt'); if(!b) return;
+    answered=true; const ch=+b.dataset.k, ok=ch===frist.a;
+    countDay(); save(); paintStats();
+    [...document.querySelectorAll('.opt')].forEach((el,k)=>{ el.disabled=true;
+      if(k===frist.a) el.classList.add('right'); if(k===ch&&!ok) el.classList.add('wrong'); });
+    const vierD=new Date(base); vierD.setDate(vierD.getDate()+4);
+    const verschoben = fmt(vierD)!==fmt(frist.bek);
+    document.getElementById('fb').innerHTML=`<div class="fb">
+      <p class="verdict ${ok?'r':'w'}">${ok?'Richtig.':'Nicht richtig.'}</p>
+      <p class="why">Der vierte Tag nach Aufgabe zur Post ist ${WT[vierD.getDay()]}, der ${fmt(vierD)}.
+      ${verschoben?'Er fällt auf ein Wochenende, also verschiebt sich die Bekanntgabe auf den nächsten Werktag.':'Er ist ein Werktag, es verschiebt sich nichts.'}</p>
+      <span class="norm">§ 122 Abs. 2 Nr. 1 AO${verschoben?' iVm § 108 Abs. 3 AO':''}</span>
+      <div class="row"><button class="btn" id="nx">Nächste Aufgabe</button></div></div>`;
+    const n=document.getElementById('nx'); n.onclick=nextFrist; n.focus();
+  });
+}
+
+/* ---------- Fußzeile ---------- */
+document.getElementById('errs').onclick=()=>{
+  paintLoc(null);
+  if(!S.bad.length){ view.innerHTML='<div class="card"><p class="q">Noch keine Fehler protokolliert.</p></div>'; return; }
+  const rows=S.bad.map(id=>{
+    if(id[0]==='q'){ const q=D.fragen[+id.slice(1)]; return q?`<tr><td>${q.nrm}</td><td>${q.q}</td></tr>`:''; }
+    if(id[0]==='n'){ const n=D.normen[+id.slice(1)]; return n?`<tr><td>${n.norm}</td><td>${n.s}</td></tr>`:''; }
+    const m=id.match(/^f(\d+)-(\d+)$/); if(m){ const f=D.faelle.find(x=>x.nr===+m[1]);
+      const st=f&&f.schritte[+m[2]]; return st?`<tr><td>${st.nrm}</td><td>Fall ${m[1]}: ${st.q}</td></tr>`:''; }
+    return '';
+  }).join('');
+  view.innerHTML=`<div class="card"><p class="q">Zuletzt falsch beantwortet</p>
+    <table><thead><tr><th>Norm</th><th>Frage</th></tr></thead><tbody>${rows}</tbody></table>
+    <div class="row"><button class="btn" id="back">Weiter üben</button></div></div>`;
+  document.getElementById('back').onclick=()=>setMode(mode);
+};
+document.getElementById('exp').onclick=()=>{
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:'application/json'}));
+  a.download='stb-trainer-fortschritt.json'; a.click();
+};
+document.getElementById('imp').onclick=()=>document.getElementById('file').click();
+document.getElementById('file').onchange=e=>{
+  const f=e.target.files[0]; if(!f) return;
+  f.text().then(t=>{ try{ S=Object.assign(S,JSON.parse(t)); save(); paintStats(); setMode(mode); }catch(err){} });
+};
+document.getElementById('upd').onclick=async()=>{
+  try{
+    if('caches' in window){ for(const k of await caches.keys()) await caches.delete(k); }
+    if('serviceWorker' in navigator){ for(const r of await navigator.serviceWorker.getRegistrations()) await r.update(); }
+  }catch(e){}
+  location.reload();
+};
+document.getElementById('reset').onclick=()=>{
+  if(!confirm('Gesamten Fortschritt löschen?')) return;
+  S={box:{},streak:{d:'',n:0},today:{d:'',n:0},lvl:2,run:0,bad:[]}; save(); paintStats(); setMode(mode);
+};
+</script>
+</body>
+</html>
