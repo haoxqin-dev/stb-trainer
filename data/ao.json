@@ -1,576 +1,3498 @@
 {
-  "fach": "AO",
-  "titel": "Abgabenordnung",
-  "stand": "Folien 2 bis 119",
-  "hinweis": "Normtexte sinngemäß verkürzt, kein Wortlaut.",
-  "knoten": [
-    { "id": "W",  "kurz": "Wirksamkeit",      "lang": "Wirksamkeit", "pfad": "Schritt 1" },
-    { "id": "BG", "kurz": "Bekanntgabe",      "lang": "Bekanntgabe", "pfad": "Wirksamkeit › Bekanntgabe" },
-    { "id": "FR", "kurz": "Fristen",          "lang": "Fristen und Wiedereinsetzung", "pfad": "Einspruch › Zulässigkeit › Frist" },
-    { "id": "ES", "kurz": "Einspruch",        "lang": "Einspruch", "pfad": "Aufhebung oder Änderung › Weg A" },
-    { "id": "VJ", "kurz": "Verjährung",       "lang": "Festsetzungsverjährung", "pfad": "Aufhebung oder Änderung › Weg B › Festsetzungsverjährung" },
-    { "id": "KN", "kurz": "Korrekturnorm",    "lang": "Korrekturvorschrift", "pfad": "Aufhebung oder Änderung › Weg B › Korrekturvorschrift" },
-    { "id": "GB", "kurz": "Grundlagenbescheid","lang": "Grundlagen- und Folgebescheide", "pfad": "Aufhebung oder Änderung › Weg B › Grundlagenbescheid" }
-  ],
-  "bloecke": [
-    { "id": 1, "name": "Grundlagen und Fehlerlehre", "folien": "2–35" },
-    { "id": 2, "name": "Bekanntgabe", "folien": "36–42, 52–61" },
-    { "id": 3, "name": "Fristen und Wiedereinsetzung", "folien": "43–51" },
-    { "id": 4, "name": "Festsetzungsverjährung", "folien": "62–68" },
-    { "id": 5, "name": "Grundlagen- und Folgebescheide", "folien": "69–76" },
-    { "id": 6, "name": "Korrekturvorschriften", "folien": "77–119" }
-  ],
-
-  "normen": [
-    { "b": 1, "n": "W",  "s": "Begriff des Verwaltungsakts, fünf Merkmale", "norm": "§ 118 AO" },
-    { "b": 1, "n": "W",  "s": "Ermessen und seine Fehler", "norm": "§ 5 AO" },
-    { "b": 1, "n": "W",  "s": "Entstehung der Steuer kraft Gesetzes", "norm": "§ 38 AO" },
-    { "b": 1, "n": "W",  "s": "Wirksamkeit mit Bekanntgabe, nichtiger VA unwirksam", "norm": "§ 124 AO" },
-    { "b": 1, "n": "W",  "s": "Nichtigkeit, Positiv- und Negativliste", "norm": "§ 125 AO" },
-    { "b": 1, "n": "W",  "s": "Heilung von Verfahrens- und Formfehlern", "norm": "§ 126 AO" },
-    { "b": 1, "n": "W",  "s": "Unbeachtlichkeit bei gebundenen Entscheidungen", "norm": "§ 127 AO" },
-    { "b": 1, "n": "W",  "s": "Inhaltliche Bestimmtheit des Verwaltungsakts", "norm": "§ 119 Abs. 1 AO" },
-    { "b": 1, "n": "W",  "s": "Steuerfestsetzung durch Steuerbescheid", "norm": "§ 155 Abs. 1 AO" },
-    { "b": 1, "n": "W",  "s": "Besteuerungsgrundlagen sind nicht selbständig anfechtbar", "norm": "§ 157 Abs. 2 AO" },
-    { "b": 1, "n": "W",  "s": "Steueranmeldung gilt als Festsetzung unter Vorbehalt", "norm": "§ 168 AO" },
-    { "b": 1, "n": "W",  "s": "Abrechnungsbescheid im Erhebungsverfahren", "norm": "§ 218 Abs. 2 AO" },
-    { "b": 1, "n": "W",  "s": "Haftungsbescheid, sonstiger Verwaltungsakt", "norm": "§ 191 AO" },
-    { "b": 1, "n": "W",  "s": "Leistungsgebot", "norm": "§ 254 Abs. 1 AO" },
-
-    { "b": 2, "n": "BG", "s": "Bekanntgabe, Viertagefiktion im Inland", "norm": "§ 122 Abs. 2 Nr. 1 AO" },
-    { "b": 2, "n": "BG", "s": "Eheleute, eine Ausfertigung genügt", "norm": "§ 122 Abs. 7 S. 1 AO" },
-    { "b": 2, "n": "BG", "s": "Einzelbekanntgabe bei Antrag oder Streit", "norm": "§ 122 Abs. 7 S. 2 AO" },
-    { "b": 2, "n": "BG", "s": "Bekanntgabe durch Bereitstellung zum Datenabruf", "norm": "§ 122a AO" },
-    { "b": 2, "n": "BG", "s": "Vollmacht, Widerruf erst mit Zugang wirksam", "norm": "§ 80 Abs. 1 S. 3 AO" },
-    { "b": 2, "n": "BG", "s": "Gesamtschuldner", "norm": "§ 44 AO" },
-    { "b": 2, "n": "BG", "s": "Bekanntgabe bei rechtsfähiger Personengesellschaft", "norm": "§ 183 AO" },
-    { "b": 2, "n": "BG", "s": "Bekanntgabe bei nicht rechtsfähiger Vereinigung", "norm": "§ 183a AO" },
-    { "b": 2, "n": "BG", "s": "Zustellung mit Zustellungsurkunde", "norm": "§ 3 VwZG" },
-    { "b": 2, "n": "BG", "s": "Zustellung mittels Einschreiben", "norm": "§ 4 VwZG" },
-    { "b": 2, "n": "BG", "s": "Zustellung gegen Empfangsbekenntnis", "norm": "§ 5 VwZG" },
-    { "b": 2, "n": "BG", "s": "Heilung von Zustellungsmängeln", "norm": "§ 8 VwZG" },
-    { "b": 2, "n": "BG", "s": "Öffentliche Zustellung", "norm": "§ 10 VwZG" },
-
-    { "b": 3, "n": "FR", "s": "Fristberechnung, Verschiebung bei Samstag und Sonntag", "norm": "§ 108 Abs. 3 AO" },
-    { "b": 3, "n": "FR", "s": "Fristbeginn, Ereignistag zählt nicht mit", "norm": "§ 187 Abs. 1 BGB" },
-    { "b": 3, "n": "FR", "s": "Ende der Monatsfrist", "norm": "§ 188 Abs. 2 BGB" },
-    { "b": 3, "n": "FR", "s": "Fristverlängerung, nicht für den Einspruch", "norm": "§ 109 Abs. 1 AO" },
-    { "b": 3, "n": "FR", "s": "Wiedereinsetzung in den vorigen Stand", "norm": "§ 110 AO" },
-    { "b": 3, "n": "FR", "s": "Fiktion fehlenden Verschuldens bei Begründungsmangel", "norm": "§ 126 Abs. 3 AO" },
-    { "b": 3, "n": "ES", "s": "Einspruchsfrist, ein Monat", "norm": "§ 355 Abs. 1 AO" },
-    { "b": 3, "n": "ES", "s": "Jahresfrist bei fehlender Rechtsbehelfsbelehrung", "norm": "§ 356 Abs. 2 AO" },
-    { "b": 3, "n": "ES", "s": "Form und Adressat des Einspruchs", "norm": "§ 357 AO" },
-    { "b": 3, "n": "ES", "s": "Statthaftigkeit des Einspruchs", "norm": "§ 347 AO" },
-    { "b": 3, "n": "ES", "s": "Beschwer", "norm": "§ 350 AO" },
-    { "b": 3, "n": "ES", "s": "Gesamtaufrollung und Verböserung", "norm": "§ 367 Abs. 2 AO" },
-    { "b": 3, "n": "ES", "s": "Aussetzung der Vollziehung", "norm": "§ 361 AO" },
-
-    { "b": 4, "n": "VJ", "s": "Erlöschen der Ansprüche", "norm": "§ 47 AO" },
-    { "b": 4, "n": "VJ", "s": "Festsetzung, Änderung und Aufhebung unzulässig", "norm": "§ 169 Abs. 1 S. 1 AO" },
-    { "b": 4, "n": "VJ", "s": "Wahrung der Frist durch Verlassen des Finanzamts", "norm": "§ 169 Abs. 1 S. 3 Nr. 1 AO" },
-    { "b": 4, "n": "VJ", "s": "Dauer, vier Jahre im Regelfall", "norm": "§ 169 Abs. 2 S. 1 Nr. 2 AO" },
-    { "b": 4, "n": "VJ", "s": "Zehn Jahre bei Hinterziehung, fünf bei Leichtfertigkeit", "norm": "§ 169 Abs. 2 S. 2 AO" },
-    { "b": 4, "n": "VJ", "s": "Entlastung des unbeteiligten Gesamtschuldners", "norm": "§ 169 Abs. 2 S. 3 AO" },
-    { "b": 4, "n": "VJ", "s": "Fristbeginn ohne Erklärungspflicht", "norm": "§ 170 Abs. 1 AO" },
-    { "b": 4, "n": "VJ", "s": "Anlaufhemmung, gedeckelt auf drei Jahre", "norm": "§ 170 Abs. 2 S. 1 Nr. 1 AO" },
-    { "b": 4, "n": "VJ", "s": "Ablaufhemmung bei offenbarer Unrichtigkeit", "norm": "§ 171 Abs. 2 AO" },
-    { "b": 4, "n": "VJ", "s": "Ablaufhemmung durch Antrag", "norm": "§ 171 Abs. 3 AO" },
-    { "b": 4, "n": "VJ", "s": "Ablaufhemmung durch Einspruch oder Klage", "norm": "§ 171 Abs. 3a AO" },
-    { "b": 4, "n": "VJ", "s": "Ablaufhemmung durch Außenprüfung", "norm": "§ 171 Abs. 4 AO" },
-    { "b": 4, "n": "VJ", "s": "Ablaufhemmung bei vorläufiger Festsetzung", "norm": "§ 171 Abs. 8 AO" },
-    { "b": 4, "n": "VJ", "s": "Zwei Jahre nach Bekanntgabe des Grundlagenbescheids", "norm": "§ 171 Abs. 10 AO" },
-    { "b": 4, "n": "VJ", "s": "Festsetzungsfrist für Zinsen, zwei Jahre", "norm": "§ 239 Abs. 1 S. 1 AO" },
-
-    { "b": 5, "n": "GB", "s": "Gesonderte Feststellung nur soweit gesetzlich bestimmt", "norm": "§ 179 Abs. 1 AO" },
-    { "b": 5, "n": "GB", "s": "Mehrere Beteiligte an denselben Einkünften", "norm": "§ 180 Abs. 1 S. 1 Nr. 2a AO" },
-    { "b": 5, "n": "GB", "s": "Betriebs- und Wohnsitzfinanzamt fallen auseinander", "norm": "§ 180 Abs. 1 S. 1 Nr. 2b AO" },
-    { "b": 5, "n": "GB", "s": "Fall von geringer Bedeutung", "norm": "§ 180 Abs. 3 S. 1 Nr. 2 AO" },
-    { "b": 5, "n": "GB", "s": "Gleichstellung mit den Steuerbescheidvorschriften", "norm": "§ 181 Abs. 1 S. 1 AO" },
-    { "b": 5, "n": "GB", "s": "Feststellung trotz abgelaufener Feststellungsfrist", "norm": "§ 181 Abs. 5 AO" },
-    { "b": 5, "n": "GB", "s": "Bindungswirkung auch vor Unanfechtbarkeit", "norm": "§ 182 Abs. 1 S. 1 AO" },
-    { "b": 5, "n": "GB", "s": "Folgeänderung ohne Ermessen", "norm": "§ 175 Abs. 1 S. 1 Nr. 1 AO" },
-    { "b": 5, "n": "GB", "s": "Einwendungen nur gegen den Grundlagenbescheid", "norm": "§ 351 Abs. 2 AO" },
-    { "b": 5, "n": "GB", "s": "Steuermessbescheid, sinngemäße Anwendung", "norm": "§ 184 Abs. 1 S. 3 AO" },
-
-    { "b": 6, "n": "KN", "s": "Offenbare Unrichtigkeit, gilt für jeden Verwaltungsakt", "norm": "§ 129 AO" },
-    { "b": 6, "n": "KN", "s": "Rücknahme eines rechtswidrigen sonstigen VA", "norm": "§ 130 AO" },
-    { "b": 6, "n": "KN", "s": "Widerruf eines rechtmäßigen sonstigen VA", "norm": "§ 131 AO" },
-    { "b": 6, "n": "KN", "s": "Vorbehalt der Nachprüfung", "norm": "§ 164 Abs. 2 AO" },
-    { "b": 6, "n": "KN", "s": "Wegfall des Vorbehalts kraft Gesetzes", "norm": "§ 164 Abs. 4 AO" },
-    { "b": 6, "n": "KN", "s": "Vorläufige Festsetzung, Änderung nur im Umfang", "norm": "§ 165 Abs. 2 AO" },
-    { "b": 6, "n": "KN", "s": "Schlichter Änderungsantrag", "norm": "§ 172 Abs. 1 S. 1 Nr. 2a AO" },
-    { "b": 6, "n": "KN", "s": "Einfallstor für die übrigen Korrekturnormen", "norm": "§ 172 Abs. 1 S. 1 Nr. 2d AO" },
-    { "b": 6, "n": "KN", "s": "Neue Tatsachen zu Lasten", "norm": "§ 173 Abs. 1 Nr. 1 AO" },
-    { "b": 6, "n": "KN", "s": "Neue Tatsachen zugunsten, kein grobes Verschulden", "norm": "§ 173 Abs. 1 Nr. 2 S. 1 AO" },
-    { "b": 6, "n": "KN", "s": "Verschulden unbeachtlich bei sachlichem Zusammenhang", "norm": "§ 173 Abs. 1 Nr. 2 S. 2 AO" },
-    { "b": 6, "n": "KN", "s": "Änderungssperre nach Außenprüfung", "norm": "§ 173 Abs. 2 AO" },
-    { "b": 6, "n": "KN", "s": "Schreib- und Rechenfehler des Steuerpflichtigen", "norm": "§ 173a AO" },
-    { "b": 6, "n": "KN", "s": "Mehrfache Berücksichtigung zuungunsten", "norm": "§ 174 Abs. 1 AO" },
-    { "b": 6, "n": "KN", "s": "Mehrfache Berücksichtigung zugunsten", "norm": "§ 174 Abs. 2 AO" },
-    { "b": 6, "n": "KN", "s": "Nichtberücksichtigung in erkennbarer Annahme", "norm": "§ 174 Abs. 3 AO" },
-    { "b": 6, "n": "KN", "s": "Folgerungen nach erfolgreichem Rechtsbehelf", "norm": "§ 174 Abs. 4 AO" },
-    { "b": 6, "n": "KN", "s": "Wirkung gegenüber Dritten nur bei Beiladung", "norm": "§ 174 Abs. 5 AO" },
-    { "b": 6, "n": "KN", "s": "Rückwirkendes Ereignis", "norm": "§ 175 Abs. 1 S. 1 Nr. 2 AO" },
-    { "b": 6, "n": "KN", "s": "Elektronisch übermittelte Daten", "norm": "§ 175b AO" },
-    { "b": 6, "n": "KN", "s": "Vertrauensschutz bei Rechtsprechungsänderung", "norm": "§ 176 AO" },
-    { "b": 6, "n": "KN", "s": "Saldierung materieller Fehler im Änderungsrahmen", "norm": "§ 177 AO" },
-    { "b": 6, "n": "KN", "s": "Anfechtungsbeschränkung bei Änderungsbescheiden", "norm": "§ 351 Abs. 1 AO" }
-  ],
-
-  "fragen": [
-    { "b":1,"n":"W","s":1,"q":"Der Betriebsprüfer übersendet den Prüfungsbericht nach § 202 AO. Was ist das rechtlich?",
-      "o":["Ein Steuerbescheid","Ein sonstiger Verwaltungsakt","Kein Verwaltungsakt, es fehlt die Regelung","Kein Verwaltungsakt, es fehlt die Außenwirkung"],"a":2,
-      "w":"Der Bericht teilt nur mit, er ordnet keine Rechtsfolge einseitig an. Außenwirkung hat er sehr wohl.","nrm":"§ 202 AO, § 118 S. 1 AO",
-      "k":"Verwaltungsakt ist jede hoheitliche Maßnahme einer Behörde zur Regelung eines Einzelfalls mit unmittelbarer Rechtswirkung nach außen." },
-    { "b":1,"n":"W","s":2,"q":"Welcher Bescheid ist dem Steuerbescheid NICHT gleichgestellt?",
-      "o":["Feststellungsbescheid","Gewerbesteuermessbescheid","Zinsbescheid","Haftungsbescheid"],"a":3,
-      "w":"Für die ersten drei ordnen eigene Normen die sinngemäße Anwendung an. Bei § 191 fehlt eine solche Verweisung.","nrm":"§ 181 I 1, § 184 I 3, § 239 I 1 gegen § 191 AO",
-      "k":"Für die gesonderte Feststellung gelten die Vorschriften über die Durchführung der Besteuerung sinngemäß." },
-    { "b":1,"n":"W","s":2,"q":"Im Bescheid wurden geleistete Vorauszahlungen nicht angerechnet, die Festsetzung ist richtig. Was ist der Weg?",
-      "o":["Einspruch gegen die Steuerfestsetzung","Antrag auf Abrechnungsbescheid","Nichtigkeitsfeststellung","Änderungsantrag nach § 164 Abs. 2"],"a":1,
-      "w":"Die Anrechnung steht in der Anrechnungsverfügung, einem eigenen sonstigen Verwaltungsakt. Streit darüber läuft über das Erhebungsverfahren.","nrm":"§ 218 Abs. 2 AO",
-      "k":"Über Streitigkeiten, die die Verwirklichung der Ansprüche betreffen, entscheidet die Finanzbehörde durch Abrechnungsbescheid." },
-    { "b":1,"n":"W","s":2,"q":"Ein örtlich unzuständiges Finanzamt erlässt einen Einkommensteuerbescheid. Folge?",
-      "o":["Nichtig","Unwirksam","Rechtswidrig, nicht nichtig, bei gebundenen Entscheidungen unbeachtlich","Rechtmäßig"],"a":2,
-      "w":"Die Nichtigkeit ist ausgeschlossen, und da die Festsetzung gebunden ist, greift die Unbeachtlichkeit.","nrm":"§ 125 Abs. 3 Nr. 1, § 127 AO",
-      "k":"Ein Verwaltungsakt ist nicht schon deshalb nichtig, weil Vorschriften über die örtliche Zuständigkeit nicht eingehalten wurden." },
-    { "b":1,"n":"W","s":1,"q":"Das Finanzamt lehnt eine Stundung ab, ohne zu erkennen, dass ihm Ermessen zusteht. Wie heißt der Fehler?",
-      "o":["Ermessensausfall","Ermessensüberschreitung","Ermessensfehlgebrauch","Ermessensreduzierung auf Null"],"a":0,
-      "w":"Ermessensausfall liegt vor, wenn die Behörde ihr Ermessen überhaupt nicht ausübt. Er ist nicht heilbar.","nrm":"§ 5 AO, § 222 AO",
-      "k":"Ist die Finanzbehörde ermächtigt, nach ihrem Ermessen zu handeln, hat sie es entsprechend dem Zweck der Ermächtigung auszuüben." },
-    { "b":1,"n":"W","s":2,"q":"Woran scheitert die Kontrollmitteilung an ein anderes Finanzamt?",
-      "o":["Hoheitliche Maßnahme","Behörde","Regelung","Unmittelbare Außenwirkung"],"a":3,
-      "w":"Sie wirkt nur zwischen Behörden und tritt nicht nach außen.","nrm":"§ 194 Abs. 3 AO, § 118 S. 1 AO",
-      "k":"Erforderlich ist eine Maßnahme, die auf unmittelbare Rechtswirkung nach außen gerichtet ist." },
-    { "b":1,"n":"W","s":3,"q":"Wie ist die Aufrechnungserklärung des Finanzamts einzuordnen?",
-      "o":["Steuerbescheid","Sonstiger Verwaltungsakt","Kein Verwaltungsakt","Grundlagenbescheid"],"a":2,
-      "w":"Sie ist eine empfangsbedürftige öffentlich-rechtliche Willenserklärung. Sie ordnet die Rechtsfolge nicht einseitig an.","nrm":"§ 226 AO iVm §§ 387 ff. BGB",
-      "k":"Für die Aufrechnung gelten sinngemäß die Vorschriften des bürgerlichen Rechts." },
-    { "b":1,"n":"W","s":1,"q":"Was ist eine abgegebene Umsatzsteuer-Voranmeldung rechtlich?",
-      "o":["Bloße Mitteilung","Steuerfestsetzung unter Vorbehalt der Nachprüfung","Sonstiger Verwaltungsakt","Grundlagenbescheid"],"a":1,
-      "w":"Deshalb ist sie ohne Weiteres nach § 164 Abs. 2 änderbar.","nrm":"§ 168 S. 1 AO",
-      "k":"Eine Steueranmeldung steht einer Steuerfestsetzung unter Vorbehalt der Nachprüfung gleich." },
-    { "b":1,"n":"W","s":2,"q":"Das Finanzamt lehnt einen Antrag auf Veranlagung ab. Was ist der Ablehnungsbescheid?",
-      "o":["Steuerbescheid","Sonstiger Verwaltungsakt","Kein Verwaltungsakt","Feststellungsbescheid"],"a":0,
-      "w":"Damit gelten die §§ 164 ff. und 172 ff.","nrm":"§ 155 Abs. 1 S. 3 AO",
-      "k":"Der Steuerfestsetzung stehen die Freistellung von einer Steuer und die Ablehnung eines Antrags gleich." },
-    { "b":1,"n":"W","s":3,"q":"In welchem Fall hilft § 127 AO dem Finanzamt NICHT?",
-      "o":["Gebundene Steuerfestsetzung","Ermessensentscheidung","Verstoß gegen die örtliche Zuständigkeit","Unterbliebene Anhörung"],"a":1,
-      "w":"§ 127 setzt voraus, dass keine andere Entscheidung hätte getroffen werden können. Bei Ermessen ist das nie sicher.","nrm":"§ 127 AO",
-      "k":"Die Aufhebung kann nicht allein wegen eines Verfahrens-, Form- oder Zuständigkeitsfehlers verlangt werden, wenn keine andere Entscheidung möglich war." },
-    { "b":1,"n":"W","s":2,"q":"In welcher Reihenfolge prüft man § 125 AO sinnvoll?",
-      "o":["Abs. 1, 2, 3","Abs. 2, 3, 1","Abs. 3, 1, 2","Nur Abs. 1"],"a":1,
-      "w":"Erst die eindeutigen Listen, dann die wertungsoffene Generalklausel.","nrm":"§ 125 Abs. 1 bis 3 AO",
-      "k":"Abs. 1 Generalklausel, Abs. 2 stets nichtige Fälle, Abs. 3 nie nichtige Fälle." },
-    { "b":1,"n":"W","s":2,"q":"Ein Steuerbescheid ergeht an eine verstorbene Person. Folge?",
-      "o":["Rechtswidrig, aber wirksam","Nichtig","Schwebend unwirksam, Heilung durch Weiterleitung","Nach § 129 berichtigungsfähig"],"a":1,
-      "w":"Der Inhaltsadressat existiert nicht, der Fehler ist schwerwiegend und offenkundig.","nrm":"§ 125 Abs. 1, § 124 Abs. 3 AO",
-      "k":"Ein nichtiger Verwaltungsakt ist unwirksam." },
-    { "b":1,"n":"W","s":3,"q":"Das Finanzamt setzt die Umsatzsteuer eindeutig gegen den falschen Ehegatten fest. Folge?",
-      "o":["Nichtig","Rechtswidrig, aber wirksam","Unwirksam","Nach § 129 berichtigungsfähig"],"a":1,
-      "w":"Es ist erkennbar, wen der Bescheid meint. Damit fehlt die Offenkundigkeit des Fehlers.","nrm":"§ 119 Abs. 1, § 125 Abs. 1 AO",
-      "k":"Ein Verwaltungsakt muss inhaltlich hinreichend bestimmt sein." },
-    { "b":1,"n":"W","s":1,"q":"Was bedeutet formelle Bestandskraft?",
-      "o":["Endgültig, keine Änderung mehr","Kein Einspruch mehr, Korrektur unter Umständen noch","Festsetzungsfrist abgelaufen","Wirksam bekanntgegeben"],"a":1,
-      "w":"Formelle Bestandskraft schließt nur Weg A. Ob Weg B offen ist, entscheiden Korrekturnorm und Frist.","nrm":"§ 355 Abs. 1 AO",
-      "k":"Der Einspruch ist innerhalb eines Monats nach Bekanntgabe einzulegen." },
-    { "b":1,"n":"W","s":2,"q":"Ein Bescheid unter Vorbehalt der Nachprüfung ist zwei Monate alt. Stand?",
-      "o":["Formell und materiell bestandskräftig","Formell bestandskräftig, materiell offen","Weder noch","Materiell bestandskräftig, formell offen"],"a":1,
-      "w":"Die Einspruchsfrist ist abgelaufen, der Vorbehalt hält die materielle Seite offen.","nrm":"§ 164 Abs. 1 und 2, § 355 Abs. 1 AO",
-      "k":"Solange der Steuerfall nicht abschließend geprüft ist, kann unter Vorbehalt festgesetzt und jederzeit geändert werden." },
-
-    { "b":2,"n":"BG","s":2,"q":"Aufgabe zur Post am Dienstag, dem 4. März. Der vierte Tag ist Samstag, der 8. März. Bekanntgabe?",
-      "o":["8. März","9. März","10. März","Tag des tatsächlichen Zugangs"],"a":2,
-      "w":"Die Viertagefiktion endet am Samstag, § 108 Abs. 3 verschiebt auf den nächsten Werktag.","nrm":"§ 122 Abs. 2 Nr. 1 iVm § 108 Abs. 3 AO",
-      "k":"Ein schriftlicher Verwaltungsakt gilt im Inland am vierten Tag nach Aufgabe zur Post als bekanntgegeben." },
-    { "b":2,"n":"BG","s":1,"q":"Der Bescheid geht schon am zweiten Tag nach Aufgabe zur Post zu. Was gilt?",
-      "o":["Zweiter Tag","Vierter Tag","Tag der Aufgabe zur Post","Die Fiktion entfällt"],"a":1,
-      "w":"Ein früherer tatsächlicher Zugang ist unbeachtlich, die Fiktion wirkt zugunsten des Steuerpflichtigen.","nrm":"§ 122 Abs. 2 Nr. 1 AO",
-      "k":"Die Fiktion gilt nicht, wenn der Verwaltungsakt nicht oder zu einem späteren Zeitpunkt zugegangen ist." },
-    { "b":2,"n":"BG","s":1,"q":"Der Bescheid geht erst am siebten Tag zu. Was gilt?",
-      "o":["Vierter Tag","Siebter Tag","Fünfter Tag","Bekanntgabe unwirksam"],"a":1,
-      "w":"Bei späterem Zugang zählt der tatsächliche Tag, im Zweifel trägt die Behörde die Nachweislast.","nrm":"§ 122 Abs. 2 letzter Halbsatz AO",
-      "k":"Im Zweifel hat die Behörde den Zugang und den Zeitpunkt des Zugangs nachzuweisen." },
-    { "b":2,"n":"BG","s":3,"q":"Der Bescheid ist zur Post gegeben, die Viertagefiktion läuft noch. Das Finanzamt will ihn stoppen. Was ist nötig?",
-      "o":["Schriftlicher Widerruf vor Fristablauf","Mündliche Information genügt","Gar nichts","Aufhebungsbescheid nach § 130"],"a":1,
-      "w":"Es geht um den Widerruf des Bekanntgabewillens, möglich bis zum Eintritt der Bekanntgabe und formlos.","nrm":"AEAO zu § 124 Tz. 6",
-      "k":"Der Bekanntgabewille kann widerrufen werden, solange die Bekanntgabe noch nicht eingetreten ist." },
-    { "b":2,"n":"BG","s":3,"q":"Wann kann das Finanzamt den Bekanntgabewillen noch aufgeben statt widerrufen?",
-      "o":["Solange der Bescheid das Finanzamt nicht verlassen hat","Bis zum Ablauf der Viertagefiktion","Bis zum tatsächlichen Zugang","Bis zum Ablauf der Einspruchsfrist"],"a":0,
-      "w":"Dann ist der Steuerpflichtige schriftlich zu unterrichten, der Zeitpunkt der Unterrichtung ist unerheblich.","nrm":"AEAO zu § 124 Tz. 5",
-      "k":"Hat der Verwaltungsakt den Bereich der Behörde noch nicht verlassen, kann der Bekanntgabewille aufgegeben werden." },
-    { "b":2,"n":"BG","s":2,"q":"Woran knüpft die Bekanntgabefiktion beim Datenabruf an?",
-      "o":["An den Abruf","An die Benachrichtigung","An die Bereitstellung","An die Freigabe im Finanzamt"],"a":2,
-      "w":"Wer sein Postfach wochenlang nicht öffnet, verliert Frist.","nrm":"§ 122a AO",
-      "k":"Verwaltungsakte gelten am vierten Tag nach der Bereitstellung zum Datenabruf als bekanntgegeben." },
-    { "b":2,"n":"BG","s":1,"q":"Zusammenveranlagte Eheleute mit gemeinsamer Anschrift. Was genügt?",
-      "o":["Je eine Ausfertigung","Eine Ausfertigung unter der gemeinsamen Anschrift","Zustellung mit Urkunde","Bekanntgabe an den älteren Ehegatten"],"a":1,
-      "w":"Getragen wird das von der gegenseitigen Empfangsvollmacht aus der gemeinsam unterschriebenen Erklärung.","nrm":"§ 122 Abs. 7 S. 1 AO",
-      "k":"Betreffen Verwaltungsakte Ehegatten, genügt die Übermittlung einer Ausfertigung unter der gemeinsamen Anschrift." },
-    { "b":2,"n":"BG","s":2,"q":"Dem Finanzamt ist bekannt, dass die Eheleute zerstritten sind. Folge für die Bekanntgabe?",
-      "o":["Es bleibt bei einer Ausfertigung","Einzelbekanntgabe","Förmliche Zustellung","Der Bescheid wird nichtig"],"a":1,
-      "w":"Sobald Interessengegensätze erkennbar sind, endet die Bündelung.","nrm":"§ 122 Abs. 7 S. 2 AO",
-      "k":"Einzeln bekanntzugeben ist, soweit die Beteiligten dies beantragt haben oder ernstliche Meinungsverschiedenheiten bekannt sind." },
-    { "b":2,"n":"BG","s":2,"q":"Bei welcher Zustellungsart gilt KEINE Viertagefiktion?",
-      "o":["Einwurfeinschreiben","Übergabeeinschreiben","Postzustellungsurkunde","Bei allen dreien gilt sie"],"a":2,
-      "w":"Bei der Urkunde zählt der beurkundete Tag. Das Einwurfeinschreiben ist gar keine förmliche Zustellung.","nrm":"§ 3 VwZG, § 4 Abs. 2 VwZG",
-      "k":"Bei der Zustellung mit Zustellungsurkunde beurkundet der Zusteller Tag und Art der Übergabe." },
-    { "b":2,"n":"BG","s":3,"q":"Welche Zustellungsart erlaubt als einzige die Ersatzzustellung nach der ZPO?",
-      "o":["Einschreiben mit Rückschein","Postzustellungsurkunde","Empfangsbekenntnis","Einwurfeinschreiben"],"a":1,
-      "w":"Nur § 3 VwZG verweist auf die §§ 177 bis 181 ZPO mit dem Stufenverhältnis.","nrm":"§ 3 VwZG iVm §§ 177–181 ZPO",
-      "k":"Ersatzzustellung ist an erwachsene Familienangehörige, Beschäftigte und ständige Mitbewohner möglich." },
-    { "b":2,"n":"BG","s":2,"q":"Der Steuerberater hat die Erklärung erstellt und übermittelt. Folge für die Bekanntgabe?",
-      "o":["Er ist automatisch empfangsbevollmächtigt","Der Auftrag umfasst in der Regel keine Empfangsvollmacht","Zustellung an ihn ist zwingend","Bekanntgabe an den Mandanten wäre nichtig"],"a":1,
-      "w":"Vertretungs- und Empfangsvollmacht sind zu trennen. Nur die zweite macht ihn zum Empfänger.","nrm":"§ 80 AO, § 122 Abs. 1 S. 3 f. AO",
-      "k":"Ein Verwaltungsakt kann auch gegenüber einem Bevollmächtigten bekanntgegeben werden." },
-    { "b":2,"n":"BG","s":3,"q":"Der Mandant widerruft die Vollmacht. Der Bescheid ging am Vortag zur Post. An wen ist bekanntgegeben?",
-      "o":["An den Mandanten","An den bisherigen Bevollmächtigten","An niemanden","Es entscheidet der Bekanntgabetag"],"a":1,
-      "w":"Der Widerruf wirkt erst mit Zugang beim Finanzamt, und maßgebend ist die Aufgabe zur Post.","nrm":"§ 80 Abs. 1 S. 3 AO",
-      "k":"Ein Widerruf der Vollmacht wird der Finanzbehörde gegenüber erst wirksam, wenn er ihr zugeht." },
-    { "b":2,"n":"BG","s":3,"q":"Das Finanzamt gibt an das minderjährige Kind statt an die Eltern bekannt. Folge?",
-      "o":["Heilbar durch Weiterleitung","Nichtig, keine Heilung möglich","Rechtswidrig, aber wirksam","Wirksam mit tatsächlichem Zugang"],"a":1,
-      "w":"Fehler beim Bekanntgabeadressaten sind die schwerste Kategorie. Es muss ein neuer Bescheid ergehen.","nrm":"AEAO zu § 122 Tz. 4.1.3",
-      "k":"Bei Minderjährigen sind die Eltern Bekanntgabeadressaten, § 34 Abs. 1, § 79 Abs. 1 Nr. 2 AO." },
-    { "b":2,"n":"BG","s":2,"q":"Vertauschte Briefumschläge bei zwei Steuerpflichtigen. Folge?",
-      "o":["Nur der falsch zugegangene Bescheid ist unwirksam","Beide Bescheide sind zunächst unwirksam","Beide sind wirksam","Beide sind nichtig"],"a":1,
-      "w":"Keiner der beiden Empfänger hat seinen eigenen Bescheid erhalten. Heilung durch Weiterleitung.","nrm":"AEAO zu § 122 Tz. 4.3",
-      "k":"Heilung tritt ein, wenn der Bescheid dem richtigen Empfänger tatsächlich zugeht, § 8 VwZG analog." },
-
-    { "b":3,"n":"FR","s":1,"q":"Bekanntgabe am 10. März. Wann beginnt die Einspruchsfrist?",
-      "o":["Am 10. März um 0 Uhr","Mit Ablauf des 10. März","Am 11. März, der 10. zählt mit","Mit Aufgabe zur Post"],"a":1,
-      "w":"Ereignisfrist, der Ereignistag zählt nicht mit.","nrm":"§ 108 Abs. 1 AO iVm § 187 Abs. 1 BGB",
-      "k":"Ist für den Anfang einer Frist ein Ereignis maßgebend, wird der Tag des Ereignisses nicht mitgerechnet." },
-    { "b":3,"n":"FR","s":1,"q":"Bekanntgabe am 10. März, Monatsfrist. Reguläres Ende?",
-      "o":["9. April","10. April","11. April","30. April"],"a":1,
-      "w":"Die Frist endet an dem Tag, der durch seine Zahl dem Ereignistag entspricht.","nrm":"§ 108 Abs. 1 AO iVm § 188 Abs. 2 BGB",
-      "k":"Eine nach Monaten bestimmte Frist endet mit Ablauf des Tages, der durch seine Zahl dem Ereignistag entspricht." },
-    { "b":3,"n":"FR","s":2,"q":"Bekanntgabe am 31. Januar, Monatsfrist. Ende?",
-      "o":["28. oder 29. Februar","1. März","3. März","Die Frist läuft nicht"],"a":0,
-      "w":"Fehlt der Zieltag im letzten Monat, endet die Frist mit dessen letztem Tag.","nrm":"§ 188 Abs. 3 BGB",
-      "k":"Fehlt im letzten Monat der entsprechende Tag, endet die Frist mit Ablauf des letzten Tages dieses Monats." },
-    { "b":3,"n":"FR","s":1,"q":"Das Fristende fällt auf einen Samstag. Was gilt?",
-      "o":["Ende am Freitag davor","Ende am Samstag","Ende am nächsten Werktag","Nur Sonntage verschieben"],"a":2,
-      "w":"Sonnabend ist in § 108 Abs. 3 ausdrücklich genannt.","nrm":"§ 108 Abs. 3 AO",
-      "k":"Fällt das Ende einer Frist auf Sonntag, gesetzlichen Feiertag oder Sonnabend, endet sie mit dem nächstfolgenden Werktag." },
-    { "b":3,"n":"FR","s":2,"q":"Kann die Einspruchsfrist verlängert werden?",
-      "o":["Ja, nach § 109","Ja, aber nur rückwirkend","Nein, § 109 erfasst sie nicht","Nur mit Zustimmung des Sachgebietsleiters"],"a":2,
-      "w":"Sie ist eine gesetzliche Ausschlussfrist. Nach Ablauf hilft nur § 110.","nrm":"§ 109 Abs. 1, § 355 Abs. 1 AO",
-      "k":"Verlängerbar sind Erklärungsfristen und von der Finanzbehörde gesetzte Fristen." },
-    { "b":3,"n":"FR","s":2,"q":"Für welche Fristen gilt § 110 AO?",
-      "o":["Für alle Fristen","Nur für gesetzliche Fristen","Nur für behördliche Fristen","Auch für die Festsetzungsfrist"],"a":1,
-      "w":"Behördliche Fristen können stattdessen nach § 109 auch rückwirkend verlängert werden.","nrm":"§ 110 Abs. 1 S. 1 AO",
-      "k":"War jemand ohne Verschulden verhindert, eine gesetzliche Frist einzuhalten, ist Wiedereinsetzung zu gewähren." },
-    { "b":3,"n":"FR","s":2,"q":"Der Steuerberater versäumt die Einspruchsfrist. Wirkung auf den Mandanten?",
-      "o":["Keine","Zurechnung als eigenes Verschulden","Nur bei grober Fahrlässigkeit","Nur mit Empfangsvollmacht"],"a":1,
-      "w":"Anders liegt es beim Büroversehen eines sorgfältig überwachten Angestellten.","nrm":"§ 110 Abs. 1 S. 2 AO",
-      "k":"Das Verschulden eines Vertreters ist dem Vertretenen zuzurechnen." },
-    { "b":3,"n":"FR","s":3,"q":"Was ist bei der Wiedereinsetzung wichtiger als der förmliche Antrag?",
-      "o":["Die Glaubhaftmachung","Die Nachholung der versäumten Handlung","Die Zustimmung des Finanzamts","Die Begründung"],"a":1,
-      "w":"Ist die Handlung fristgerecht nachgeholt, kann Wiedereinsetzung auch ohne Antrag gewährt werden.","nrm":"§ 110 Abs. 2 S. 3 und 4 AO",
-      "k":"Innerhalb der Antragsfrist ist die versäumte Handlung nachzuholen." },
-    { "b":3,"n":"FR","s":3,"q":"Ab wann läuft die Jahresfrist des § 110 Abs. 3 AO?",
-      "o":["Ab Bekanntgabe","Ab Wegfall des Hindernisses","Ab Ende der versäumten Frist","Ab Kenntnis"],"a":2,
-      "w":"Absolute Grenze, Ausnahme nur höhere Gewalt.","nrm":"§ 110 Abs. 3 AO",
-      "k":"Nach einem Jahr seit dem Ende der versäumten Frist ist Wiedereinsetzung ausgeschlossen." },
-    { "b":3,"n":"FR","s":3,"q":"Welches Wort ist in § 126 Abs. 3 S. 1 AO die eigentliche Hürde?",
-      "o":["Erforderliche Begründung","Unterblieben","Dadurch","Rechtzeitige Anfechtung"],"a":2,
-      "w":"Es verlangt Kausalität zwischen Behördenfehler und Fristversäumnis.","nrm":"§ 126 Abs. 3 S. 1 AO",
-      "k":"Ist die rechtzeitige Anfechtung dadurch versäumt worden, gilt die Versäumung als nicht verschuldet." },
-    { "b":3,"n":"ES","s":2,"q":"Gegen einen Nullbescheid zur Körperschaftsteuer wird Einspruch eingelegt. Ergebnis?",
-      "o":["Zulässig","Unzulässig mangels Beschwer","Zulässig, aber unbegründet","Nichtig"],"a":1,
-      "w":"Null ist die niedrigstmögliche Festsetzung. Angreifen muss man die Verlustfeststellung.","nrm":"§ 350 AO",
-      "k":"Befugt ist nur, wer geltend macht, durch einen Verwaltungsakt beschwert zu sein." },
-    { "b":3,"n":"ES","s":2,"q":"Während des Einspruchsverfahrens ergeht ein Änderungsbescheid. Was ist zu tun?",
-      "o":["Neuer Einspruch nötig","Nichts, er wird automatisch Gegenstand des Verfahrens","Das Verfahren endet","Klage erheben"],"a":1,
-      "w":"Ein zusätzlicher Einspruch wäre unzulässig.","nrm":"§ 365 Abs. 3 AO",
-      "k":"Ein während des Einspruchsverfahrens ergehender Änderungsbescheid wird Gegenstand des Verfahrens." },
-    { "b":3,"n":"ES","s":1,"q":"Hemmt der Einspruch die Vollziehung?",
-      "o":["Ja","Nein, dafür braucht es die Aussetzung","Nur bei Steuerbescheiden","Nur auf Antrag des Finanzamts"],"a":1,
-      "w":"Ohne Aussetzung entstehen Säumniszuschläge von einem Prozent je Monat.","nrm":"§ 361 Abs. 1 S. 1 AO",
-      "k":"Durch Einlegung des Einspruchs wird die Vollziehung nicht gehemmt." },
-
-    { "b":4,"n":"VJ","s":1,"q":"Was ist nach Ablauf der Festsetzungsfrist unzulässig?",
-      "o":["Nur die erstmalige Festsetzung","Festsetzung und Änderung","Festsetzung, Änderung und Aufhebung","Nur Änderungen zu Lasten"],"a":2,
-      "w":"Die Frist wirkt in beide Richtungen und schneidet auch eigene Anträge ab.","nrm":"§ 169 Abs. 1 S. 1 AO",
-      "k":"Eine Steuerfestsetzung sowie ihre Aufhebung oder Änderung sind nach Fristablauf nicht mehr zulässig." },
-    { "b":4,"n":"VJ","s":2,"q":"Das Finanzamt setzt nach Fristablauf fest. Folge?",
-      "o":["Nichtig","Rechtswidrig, aber wirksam","Unwirksam","Schwebend unwirksam"],"a":1,
-      "w":"Wer nichts tut, zahlt eine erloschene Steuer.","nrm":"AEAO vor §§ 169–171 Tz. 3",
-      "k":"Ein unter Verstoß gegen die Festsetzungsverjährung ergangener Bescheid ist rechtswidrig, aber wirksam." },
-    { "b":4,"n":"VJ","s":2,"q":"Einkommensteuer 01, Erklärungspflicht, Abgabe erst in 06. Fristbeginn?",
-      "o":["31.12.01","31.12.04","31.12.06","Gar nicht"],"a":1,
-      "w":"Die Anlaufhemmung ist auf drei Jahre gedeckelt, spätere Abgabe verlängert nichts.","nrm":"§ 170 Abs. 2 S. 1 Nr. 1 AO",
-      "k":"Beginn mit Ablauf des Jahres der Abgabe, spätestens mit Ablauf des dritten Jahres nach Steuerentstehung." },
-    { "b":4,"n":"VJ","s":2,"q":"Maximale Laufzeit bei Erklärungspflicht ab Steuerentstehung?",
-      "o":["Vier Jahre","Fünf Jahre","Sieben Jahre","Zehn Jahre"],"a":2,
-      "w":"Drei Jahre Anlaufhemmung plus vier Jahre Dauer.","nrm":"§ 170 Abs. 2, § 169 Abs. 2 AO",
-      "k":"Anlaufhemmung maximal drei Jahre, Regeldauer vier Jahre." },
-    { "b":4,"n":"VJ","s":2,"q":"Wie lang ist die Festsetzungsfrist für Zinsen?",
-      "o":["Ein Jahr","Zwei Jahre","Vier Jahre","Wie die Hauptsteuer"],"a":1,
-      "w":"Seit Juli 2022 zwei Jahre, geregelt in Satz 1, nicht in Satz 2.","nrm":"§ 239 Abs. 1 S. 1 AO",
-      "k":"Auf Zinsen sind die für Steuern geltenden Vorschriften entsprechend anzuwenden, die Festsetzungsfrist beträgt zwei Jahre." },
-    { "b":4,"n":"VJ","s":3,"q":"Ein Bescheid enthält einen hinterzogenen und einen ehrlichen Teil. Folge des Wortes soweit?",
-      "o":["Alles zehn Jahre","Alles vier Jahre","Teilverjährung, zwei Fristen nebeneinander","Die Frist beginnt neu"],"a":2,
-      "w":"Eine Saldierung über § 177 scheitert insoweit am Fristablauf für den ehrlichen Teil.","nrm":"§ 169 Abs. 2 S. 2 AO",
-      "k":"Die Frist beträgt zehn Jahre, soweit hinterzogen, und fünf Jahre, soweit leichtfertig verkürzt wurde." },
-    { "b":4,"n":"VJ","s":3,"q":"Wie wendet ein unbeteiligter Gesamtschuldner die Zehnjahresfrist ab?",
-      "o":["Gar nicht","Nachweis: kein Vermögensvorteil und keine Sorgfaltspflichtverletzung","Glaubhaftmachung der Unkenntnis","Antrag auf Aufteilung"],"a":1,
-      "w":"Beide Voraussetzungen kumulativ und als Nachweis, nicht als Glaubhaftmachung.","nrm":"§ 169 Abs. 2 S. 3 AO",
-      "k":"Dies gilt nicht, soweit der Steuerschuldner nachweist, dass er keinen Vermögensvorteil erlangt hat und keine Sorgfaltspflicht verletzte." },
-    { "b":4,"n":"VJ","s":3,"q":"Wann ist die Frist nach § 169 Abs. 1 S. 3 Nr. 1 AO gewahrt?",
-      "o":["Bei rechtzeitiger Unterschrift","Verlassen des Finanzamts vor Fristablauf und Zugang des identischen Bescheids","Bei rechtzeitiger Bekanntgabe","Bei Zugang innerhalb der Viertagefiktion"],"a":1,
-      "w":"Geht der Bescheid verloren und ergeht später ein neuer, hilft das Verlassen des Amtes nicht.","nrm":"§ 169 Abs. 1 S. 3 Nr. 1 AO",
-      "k":"Die Frist ist gewahrt, wenn der Bescheid vor Fristablauf den Bereich der zuständigen Finanzbehörde verlassen hat." },
-    { "b":4,"n":"VJ","s":2,"q":"Der 31. Dezember, an dem die Festsetzungsfrist endet, ist ein Sonntag. Was gilt?",
-      "o":["Ende trotzdem am 31.12.","Ende am 30.12.","Ende am nächsten Werktag im Januar","§ 108 Abs. 3 gilt hier nicht"],"a":2,
-      "w":"In Verjährungsaufgaben wendet man § 108 Abs. 3 oft zweimal an.","nrm":"§ 108 Abs. 3 AO",
-      "k":"Fällt das Fristende auf Sonntag, Feiertag oder Sonnabend, endet die Frist mit dem nächsten Werktag." },
-    { "b":4,"n":"VJ","s":3,"q":"Wie weit reicht die Ablaufhemmung durch eine Außenprüfung?",
-      "o":["Alle Steuerarten und Jahre","Nur die in der Prüfungsanordnung genannten","Alle offenen Veranlagungszeiträume","Nur Jahre mit Mehrergebnis"],"a":1,
-      "w":"Deshalb ist die Prüfungsanordnung selbständig anfechtbar.","nrm":"§ 171 Abs. 4, § 196 AO",
-      "k":"Die Frist läuft nicht ab für die Steuern, auf die sich die Prüfung erstreckt." },
-    { "b":4,"n":"VJ","s":3,"q":"Welche zwei Voraussetzungen verlangt § 171 Abs. 8 AO?",
-      "o":["Beseitigung der Ungewissheit und Antrag","Beseitigung der Ungewissheit und Kenntnis des Finanzamts","Kenntnis und Aufhebung der Vorläufigkeit","Rechtskraft und Mitteilung"],"a":1,
-      "w":"Zwischen Beseitigung und Kenntnis kann viel Zeit liegen, genau darauf zielen die Fälle.","nrm":"§ 171 Abs. 8 AO",
-      "k":"Die Frist endet nicht vor Ablauf eines Jahres, nachdem die Ungewissheit beseitigt ist und die Behörde davon Kenntnis erlangt hat." },
-    { "b":4,"n":"VJ","s":3,"q":"Worin unterscheiden sich § 171 Abs. 3 und Abs. 3a im Umfang?",
-      "o":["Kein Unterschied","Abs. 3 nur im Umfang des Antrags, Abs. 3a gesamter Steueranspruch","Abs. 3 gesamter Anspruch, Abs. 3a punktuell","Beide nur punktuell"],"a":1,
-      "w":"Der weite Umfang bei Abs. 3a folgt aus der Gesamtaufrollung nach § 367 Abs. 2.","nrm":"§ 171 Abs. 3 und 3a AO",
-      "k":"Bei Einspruch oder Klage ist der Ablauf hinsichtlich des gesamten Steueranspruchs gehemmt." },
-
-    { "b":5,"n":"GB","s":1,"q":"Welche Rechtsfolge ordnet § 157 Abs. 2 AO an?",
-      "o":["Besteuerungsgrundlagen sind selbständig anfechtbar","Sie sind nicht selbständig anfechtbarer Teil des Bescheids","Sie sind gesondert festzustellen","Sie binden den Folgebescheid"],"a":1,
-      "w":"Stimmt die Steuer, fehlt für eine falsche Zwischenzeile die Beschwer.","nrm":"§ 157 Abs. 2 AO, § 350 AO",
-      "k":"Die Feststellung der Besteuerungsgrundlagen bildet einen nicht selbständig anfechtbaren Teil des Steuerbescheids." },
-    { "b":5,"n":"GB","s":2,"q":"Wann werden Besteuerungsgrundlagen gesondert festgestellt?",
-      "o":["Wenn es zweckmäßig ist","Auf Antrag","Nur soweit eine Norm es anordnet","Immer bei mehreren Beteiligten"],"a":2,
-      "w":"Enumerationsprinzip. Ohne anordnende Norm bleibt es bei § 157 Abs. 2.","nrm":"§ 179 Abs. 1 AO",
-      "k":"Besteuerungsgrundlagen werden gesondert festgestellt, soweit dies in diesem Gesetz oder sonst bestimmt ist." },
-    { "b":5,"n":"GB","s":2,"q":"Wo steht die Legaldefinition des Grundlagenbescheids?",
-      "o":["§ 179 Abs. 1","§ 182 Abs. 1","§ 171 Abs. 10","§ 175 Abs. 1 Nr. 1"],"a":2,
-      "w":"Dort werden auch ressortfremde Bescheide erfasst, etwa Bescheinigungen anderer Behörden.","nrm":"§ 171 Abs. 10 AO",
-      "k":"Grundlagenbescheid ist ein Feststellungsbescheid, ein Messbescheid oder ein anderer bindender Verwaltungsakt." },
-    { "b":5,"n":"GB","s":2,"q":"Ab wann bindet der Feststellungsbescheid den Folgebescheid?",
-      "o":["Ab Bestandskraft","Ab wirksamer Bekanntgabe, auch vor Unanfechtbarkeit","Ab Ablauf der Zweijahresfrist","Erst nach Änderung des Folgebescheids"],"a":1,
-      "w":"Die Bindung setzt nur Wirksamkeit voraus, nicht Bestandskraft.","nrm":"§ 182 Abs. 1 S. 1 AO",
-      "k":"Feststellungsbescheide sind für Folgebescheide bindend, auch wenn sie noch nicht unanfechtbar sind." },
-    { "b":5,"n":"GB","s":1,"q":"Der Grundlagenbescheid ändert sich. Was muss das Finanzamt tun?",
-      "o":["Nach Ermessen ändern","Zwingend ändern, ohne weitere Voraussetzungen","Neue Tatsachen feststellen","Nur zu Lasten ändern"],"a":1,
-      "w":"Eine der stärksten Korrekturnormen, sie wirkt in beide Richtungen.","nrm":"§ 175 Abs. 1 S. 1 Nr. 1 AO",
-      "k":"Ein Steuerbescheid ist zu erlassen, aufzuheben oder zu ändern, soweit ein Grundlagenbescheid geändert wird." },
-    { "b":5,"n":"GB","s":2,"q":"Wie lange hat das Finanzamt Zeit für die Folgeänderung?",
-      "o":["Ein Jahr ab Bekanntgabe","Zwei Jahre ab Bekanntgabe an den Steuerpflichtigen","Zwei Jahre ab Eingang beim Folgefinanzamt","Bis zum Ende der regulären Frist"],"a":1,
-      "w":"Gerechnet ab Bekanntgabe an den Steuerpflichtigen, nicht ab Kenntnis der Behörde.","nrm":"§ 171 Abs. 10 AO",
-      "k":"Die Festsetzungsfrist endet nicht vor Ablauf von zwei Jahren nach Bekanntgabe des Grundlagenbescheids." },
-    { "b":5,"n":"GB","s":2,"q":"Einspruch gegen den Einkommensteuerbescheid mit der Begründung, die festgestellten Einkünfte seien zu hoch. Ergebnis?",
-      "o":["Unzulässig","Zulässig, Einwendung aber unbeachtlich","Das Wohnsitzfinanzamt muss prüfen","Gilt als Einspruch gegen den Grundlagenbescheid"],"a":1,
-      "w":"Einwendungen gegen festgestellte Besteuerungsgrundlagen nur beim Grundlagenbescheid.","nrm":"§ 351 Abs. 2 AO",
-      "k":"Entscheidungen in einem Grundlagenbescheid können nur durch Anfechtung dieses Bescheids angegriffen werden." },
-    { "b":5,"n":"GB","s":3,"q":"Im Feststellungsbescheid ist die Einkunftsart falsch, die Höhe richtig. Beschwer?",
-      "o":["Nein","Ja, die Einkunftsart ist eigenständige Feststellung","Nur bei Gewerbesteuer","Nur bei Mitunternehmerschaften"],"a":1,
-      "w":"Im Einkommensteuerbescheid wäre es umgekehrt, dort ist sie nur Begründung.","nrm":"§ 350 AO, § 179 Abs. 1 AO",
-      "k":"Festgestellt werden Art, Höhe und Verteilung der Einkünfte sowie Sonderbetriebsausgaben." },
-    { "b":5,"n":"GB","s":3,"q":"Ehegatten vermieten gemeinsam, werden zusammen veranlagt, Aufteilung unstreitig. Feststellungsbescheid?",
-      "o":["Ja, immer bei mehreren Beteiligten","Nein, Fall von geringer Bedeutung","Nur über 10.000 €","Nur auf Antrag"],"a":1,
-      "w":"Höhe und Aufteilung stehen fest, es gibt nichts zu koordinieren.","nrm":"§ 180 Abs. 3 S. 1 Nr. 2 AO",
-      "k":"Eine gesonderte Feststellung unterbleibt in Fällen von geringer Bedeutung." },
-    { "b":5,"n":"GB","s":2,"q":"Welche Rolle hat der Gewerbesteuermessbescheid?",
-      "o":["Nur Grundlagenbescheid","Nur Folgebescheid","Beides zugleich","Weder noch"],"a":2,
-      "w":"Grundlagenbescheid ist eine Rolle, keine Eigenschaft.","nrm":"§ 184 AO, § 171 Abs. 10 AO",
-      "k":"Die Vorschriften über die Durchführung der Besteuerung sind auf Messbescheide sinngemäß anzuwenden." },
-    { "b":5,"n":"GB","s":3,"q":"Die Feststellungsfrist ist abgelaufen, die Festsetzungsfrist eines Folgebescheids nicht. Was gilt?",
-      "o":["Kein Feststellungsbescheid mehr","Er darf ergehen, mit Hinweis auf die eingeschränkte Wirkung","Er darf uneingeschränkt ergehen","Nur mit Zustimmung des Steuerpflichtigen"],"a":1,
-      "w":"Fehlt der Hinweis, wirkt der Bescheid uneingeschränkt und ist nicht ergänzungsfähig.","nrm":"§ 181 Abs. 5 AO",
-      "k":"Der Feststellungsbescheid darf ergehen, soweit er für eine noch offene Steuerfestsetzung von Bedeutung ist." },
-
-    { "b":6,"n":"KN","s":1,"q":"Für welche Verwaltungsakte gilt § 129 AO?",
-      "o":["Nur Steuerbescheide","Nur sonstige Verwaltungsakte","Für alle Verwaltungsakte","Nur Feststellungsbescheide"],"a":2,
-      "w":"Er ist die einzige Korrekturnorm, die beide Spuren bedient.","nrm":"§ 129 AO",
-      "k":"Die Finanzbehörde kann Schreibfehler, Rechenfehler und ähnliche offenbare Unrichtigkeiten jederzeit berichtigen." },
-    { "b":6,"n":"KN","s":2,"q":"Muss die Unrichtigkeit nach § 129 AO aus dem Bescheid selbst erkennbar sein?",
-      "o":["Ja, zwingend","Nein, es genügt die Erkennbarkeit aus Erklärung oder Akte","Nur bei Steuerbescheiden","Nur bei Rechenfehlern"],"a":1,
-      "w":"Das ist der Unterschied zur Nichtigkeit nach § 125, wo die Offenkundigkeit aus dem Bescheid folgen muss.","nrm":"§ 129 AO",
-      "k":"Offenbar ist der Fehler, wenn er für einen unbefangenen Dritten eindeutig erkennbar ist, auch aus der Akte." },
-    { "b":6,"n":"KN","s":3,"q":"Worin unterscheidet sich § 173a von § 129?",
-      "o":["Kein Unterschied","§ 173a erfasst Fehler des Steuerpflichtigen und nur Schreib- und Rechenfehler","§ 173a gilt für alle Verwaltungsakte","§ 173a erfasst auch Rechtsanwendungsfehler"],"a":1,
-      "w":"Ähnliche offenbare Unrichtigkeiten erfasst § 173a gerade nicht, das ist seine praktische Schwäche.","nrm":"§ 173a AO",
-      "k":"Steuerbescheide sind zu ändern, soweit dem Steuerpflichtigen bei Erstellung der Erklärung Schreib- oder Rechenfehler unterlaufen sind." },
-    { "b":6,"n":"KN","s":1,"q":"Für welche Bescheide gilt der Vorbehalt der Nachprüfung?",
-      "o":["Für alle Verwaltungsakte","Nur für Steuerbescheide und gleichgestellte","Nur für Haftungsbescheide","Nur für Vorauszahlungen"],"a":1,
-      "w":"Eine Stundung oder einen Haftungsbescheid unter Vorbehalt gibt es nicht.","nrm":"§ 164 Abs. 1 AO",
-      "k":"Steuern können, solange der Steuerfall nicht abschließend geprüft ist, unter Vorbehalt festgesetzt werden." },
-    { "b":6,"n":"KN","s":2,"q":"Ein Änderungsbescheid enthält keinen Hinweis auf den behördlich angeordneten Vorbehalt. Folge?",
-      "o":["Der Vorbehalt entfällt","Der Vorbehalt bleibt bestehen","Der Bescheid ist rechtswidrig","Der Bescheid ist nichtig"],"a":1,
-      "w":"Nur die ausdrückliche Aufhebung beseitigt ihn. Beim gesetzlichen Vorbehalt nach § 168 ist es umgekehrt.","nrm":"AEAO zu § 164 Nr. 6",
-      "k":"Fehlt im Änderungsbescheid ein Vermerk, bleibt der behördlich angeordnete Vorbehalt bestehen." },
-    { "b":6,"n":"KN","s":3,"q":"Das Finanzamt hebt den Vorbehalt auf. Wie weit kann der Bescheid angegriffen werden?",
-      "o":["Nur im Umfang der Änderung","Umfassend, § 351 Abs. 1 gilt nicht","Gar nicht","Nur mit Zustimmung"],"a":1,
-      "w":"Der Bescheid war nie materiell bestandskräftig, es gibt also keine Bestandskraft zu schützen.","nrm":"§ 164 Abs. 3, § 351 Abs. 1 AO",
-      "k":"Die Aufhebung des Vorbehalts steht einer Festsetzung ohne Vorbehalt gleich." },
-    { "b":6,"n":"KN","s":3,"q":"Welche Normen sind für den Wegfall des Vorbehalts nach § 164 Abs. 4 ausgeschlossen?",
-      "o":["§ 171 Abs. 4","§ 169 Abs. 2 S. 2 und § 171 Abs. 7, 8, 10","§ 170 Abs. 2","§ 171 Abs. 3a"],"a":1,
-      "w":"Der Vorbehalt kann deshalb früher entfallen, als die Festsetzungsfrist endet.","nrm":"§ 164 Abs. 4 S. 2 AO",
-      "k":"Für den Wegfall des Vorbehalts bleiben die verlängerte Frist bei Hinterziehung und bestimmte Ablaufhemmungen außer Betracht." },
-    { "b":6,"n":"KN","s":2,"q":"Worin unterscheidet sich § 165 von § 164 bei der Reichweite?",
-      "o":["Kein Unterschied","§ 165 öffnet nur den vorläufigen Punkt","§ 165 öffnet den ganzen Bescheid","§ 165 gilt nur für Vorauszahlungen"],"a":1,
-      "w":"Deshalb scheitert das Finanzamt in Fall 7, wenn es die Vorläufigkeit für etwas anderes nutzt.","nrm":"§ 165 Abs. 2 AO",
-      "k":"Soweit die Steuer vorläufig festgesetzt wurde, kann die Festsetzung aufgehoben oder geändert werden." },
-    { "b":6,"n":"KN","s":2,"q":"Wirkt der Vorbehalt der Nachprüfung auf die Festsetzungsfrist?",
-      "o":["Ja, er hemmt den Ablauf","Nein, keine Auswirkung","Nur bei Außenprüfung","Nur zugunsten des Steuerpflichtigen"],"a":1,
-      "w":"Anders als die Vorläufigkeit, für die § 171 Abs. 8 gilt.","nrm":"AEAO zu § 164 Nr. 1",
-      "k":"Im Gegensatz zur vorläufigen Festsetzung hat der Vorbehalt keine Auswirkung auf den Ablauf der Festsetzungsfrist." },
-    { "b":6,"n":"KN","s":2,"q":"Welcher Teil des § 172 öffnet den Weg zu den §§ 173 bis 176?",
-      "o":["Abs. 1 Nr. 1","Abs. 1 Nr. 2a","Abs. 1 Nr. 2c","Abs. 1 Nr. 2d"],"a":3,
-      "w":"Ausdrücklich nicht erfasst sind die §§ 130 und 131.","nrm":"§ 172 Abs. 1 S. 1 Nr. 2d AO",
-      "k":"Ein Steuerbescheid darf geändert werden, soweit dies sonst gesetzlich zugelassen ist." },
-    { "b":6,"n":"KN","s":3,"q":"Bis wann wirkt der schlichte Änderungsantrag zugunsten des Steuerpflichtigen?",
-      "o":["Jederzeit","Nur innerhalb der Einspruchsfrist","Bis zur Festsetzungsverjährung","Bis zur Außenprüfung"],"a":1,
-      "w":"Eine Zustimmung zu einer Änderung zu Lasten ist dagegen auch später möglich.","nrm":"§ 172 Abs. 1 S. 1 Nr. 2a AO",
-      "k":"Zugunsten des Steuerpflichtigen nur, wenn er vor Ablauf der Einspruchsfrist zugestimmt oder den Antrag gestellt hat." },
-    { "b":6,"n":"KN","s":2,"q":"Worin liegt der einzige echte Vorteil des schlichten Änderungsantrags?",
-      "o":["Aussetzung der Vollziehung","Keine Gesamtaufrollung","Längere Frist","Vollprüfung zugunsten"],"a":1,
-      "w":"§ 177 greift aber trotzdem, sobald das Finanzamt ändert.","nrm":"§ 367 Abs. 2 S. 1 AO",
-      "k":"Beim Einspruch ist die Sache in vollem Umfang erneut zu prüfen." },
-    { "b":6,"n":"KN","s":1,"q":"Was ist keine Tatsache im Sinne des § 173 AO?",
-      "o":["Innere Tatsachen wie die Gewinnerzielungsabsicht","Beweismittel","Eine Änderung der Rechtsprechung","Tatsächliche Zustände"],"a":2,
-      "w":"Deshalb braucht es für Rechtsprechungsänderungen den eigenen Schutz des § 176.","nrm":"§ 173 Abs. 1 AO",
-      "k":"Tatsachen sind Zustände, Beziehungen und Eigenschaften, nicht aber Schlussfolgerungen und Rechtsauffassungen." },
-    { "b":6,"n":"KN","s":2,"q":"Wessen Kenntnis ist für das nachträgliche Bekanntwerden maßgeblich?",
-      "o":["Des gesamten Finanzamts","Der Veranlagungsstelle nach Aktenlage","Des Betriebsprüfers","Der Rechtsbehelfsstelle"],"a":1,
-      "w":"Was in der Akte liegt, gilt als bekannt, auch wenn es niemand gelesen hat.","nrm":"AEAO zu § 173 Tz. 2",
-      "k":"Maßgeblich ist die Kenntnis der zuständigen Dienststelle nach Aktenlage." },
-    { "b":6,"n":"KN","s":3,"q":"Wann sind neue Tatsachen nicht rechtserheblich?",
-      "o":["Wenn sie gering sind","Wenn das Finanzamt auch bei Kenntnis nicht anders entschieden hätte","Wenn sie zugunsten wirken","Wenn der Steuerpflichtige sie kannte"],"a":1,
-      "w":"Das verhindert, dass eine Rechtsprechungsänderung über eine unbedeutende Tatsache rückwirkt.","nrm":"AEAO zu § 173 Tz. 3",
-      "k":"Nicht rechtserheblich sind Tatsachen, die bei rechtzeitiger Kenntnis zu keiner anderen Entscheidung geführt hätten." },
-    { "b":6,"n":"KN","s":2,"q":"Bei welcher Nummer des § 173 Abs. 1 spielt das Verschulden eine Rolle?",
-      "o":["Nur bei Nr. 1","Nur bei Nr. 2","Bei beiden","Bei keiner"],"a":1,
-      "w":"Bei Änderungen zu Lasten fragt niemand nach Verschulden.","nrm":"§ 173 Abs. 1 Nr. 2 S. 1 AO",
-      "k":"Zugunsten nur, wenn den Steuerpflichtigen kein grobes Verschulden am nachträglichen Bekanntwerden trifft." },
-    { "b":6,"n":"KN","s":3,"q":"Wann ist das grobe Verschulden nach § 173 Abs. 1 Nr. 2 S. 2 unbeachtlich?",
-      "o":["Immer bei Beraterverschulden","Bei Zusammenhang mit steuererhöhenden Tatsachen","Bei geringem Betrag","Bei erstmaliger Veranlagung"],"a":1,
-      "w":"Die Minderung darf dabei größer sein als die Erhöhung.","nrm":"§ 173 Abs. 1 Nr. 2 S. 2 AO",
-      "k":"Das Verschulden ist unbeachtlich bei unmittelbarem oder mittelbarem Zusammenhang mit Tatsachen im Sinne der Nr. 1." },
-    { "b":6,"n":"KN","s":3,"q":"Der Steuerpflichtige lässt einen erkennbar falschen Bescheid bestandskräftig werden. Folge für § 173 Abs. 1 Nr. 2?",
-      "o":["Keine","Grobes Verschulden kann allein darin liegen","Nur bei Beratern","Nur bei Vorsatz"],"a":1,
-      "w":"Der Verschuldensmaßstab reicht bis zum Eintritt der Bestandskraft. Ein rechtzeitiger Einspruch heilt dagegen auch früheres Verschulden.","nrm":"BFH VIII R 10/11",
-      "k":"Die unterlassene Mitteilung innerhalb der Einspruchsfrist kann grobes Verschulden begründen." },
-    { "b":6,"n":"KN","s":2,"q":"Umsatzsteuer und Vorsteuer sind im Rahmen des § 173 AO …",
-      "o":["eine Tatsache","zwei Tatsachen","keine Tatsachen","je nach Fall unterschiedlich"],"a":1,
-      "w":"Das ist die ausdrückliche Abweichung von der Ertragsteuer.","nrm":"AEAO zu § 173 Tz. 6",
-      "k":"Bei der Umsatzsteuer sind Umsatzsteuer und Vorsteuer stets getrennt zu betrachten." },
-    { "b":6,"n":"KN","s":3,"q":"Was ist § 177 AO?",
-      "o":["Eine Korrekturnorm","Eine Rechenregel ohne eigene Änderungsbefugnis","Eine Schranke für den Einspruch","Eine Ablaufhemmung"],"a":1,
-      "w":"Ohne eine echte Korrekturnorm läuft § 177 leer.","nrm":"§ 177 AO",
-      "k":"Materielle Fehler sind zu berichtigen, soweit die Änderung reicht." },
-    { "b":6,"n":"KN","s":3,"q":"Wie bildet man die Obergrenze des Änderungsrahmens?",
-      "o":["Bisherige Steuer plus alle Änderungen zuungunsten","Saldo aller Änderungen","Bisherige Steuer plus materielle Fehler","Die materiell richtige Steuer"],"a":0,
-      "w":"Gleichgerichtete Änderungen werden addiert, gegenläufige nicht saldiert.","nrm":"AEAO zu § 177 Nr. 3",
-      "k":"Eine Saldierung der Änderungstatbestände zuungunsten und zugunsten ist nicht zulässig." },
-    { "b":6,"n":"KN","s":3,"q":"Die materiell richtige Steuer liegt unter der Untergrenze des Rahmens. Was wird festgesetzt?",
-      "o":["Die materiell richtige Steuer","Die Untergrenze","Die bisherige Steuer","Die Obergrenze"],"a":1,
-      "w":"Der Rest bleibt als materieller Fehler stehen, der Bescheid bleibt insoweit fehlerhaft.","nrm":"AEAO zu § 177 Nr. 5",
-      "k":"Soweit ein Ausgleich materieller Fehler nicht möglich ist, bleibt der Steuerbescheid fehlerhaft." },
-    { "b":6,"n":"KN","s":2,"q":"Was unterscheidet § 177 von § 351 Abs. 1?",
-      "o":["Nichts","§ 177 verpflichtet das Finanzamt, § 351 Abs. 1 begrenzt den Steuerpflichtigen","§ 177 begrenzt, § 351 Abs. 1 verpflichtet","Beide gelten nur für Einsprüche"],"a":1,
-      "w":"Beide arbeiten mit demselben Korridor, aber in verschiedene Richtungen.","nrm":"§ 177, § 351 Abs. 1 AO",
-      "k":"Änderungsbescheide können nur insoweit angegriffen werden, als die Änderung reicht." },
-    { "b":6,"n":"KN","s":3,"q":"§ 174 Abs. 2 setzt voraus, dass …",
-      "o":["ein Dritter beigeladen war","die doppelte Berücksichtigung auf Antrag oder Erklärung des Steuerpflichtigen beruht","eine neue Tatsache vorliegt","ein Rechtsbehelf erfolgreich war"],"a":1,
-      "w":"Ohne diese Voraussetzung bleibt es bei der Bestandskraft.","nrm":"§ 174 Abs. 2 S. 2 AO",
-      "k":"Die Änderung ist nur zulässig, wenn die Berücksichtigung auf einen Antrag oder eine Erklärung zurückzuführen ist." },
-    { "b":6,"n":"KN","s":3,"q":"Welcher Absatz des § 174 verlangt gegenüber Dritten eine Beiladung?",
-      "o":["Abs. 2","Abs. 3","Abs. 4 iVm Abs. 5","Abs. 1"],"a":2,
-      "w":"Deshalb führt der Weg in Fall 13 über Abs. 3, der keine Beiladung verlangt.","nrm":"§ 174 Abs. 5 AO",
-      "k":"Gegenüber Dritten gilt Abs. 4 nur, wenn sie am Verfahren beteiligt waren." },
-    { "b":6,"n":"KN","s":3,"q":"§ 174 Abs. 3 setzt voraus, dass die Nichtberücksichtigung …",
-      "o":["ausdrücklich im Bescheid begründet wurde","erkennbar war","vom Steuerpflichtigen veranlasst wurde","auf einer Außenprüfung beruht"],"a":1,
-      "w":"Nach BFH und Verwaltung genügt die Erkennbarkeit aus den Gesamtumständen.","nrm":"§ 174 Abs. 3 AO, AEAO zu § 174 Nr. 6",
-      "k":"Erforderlich ist, dass der Sachverhalt erkennbar in der Annahme nicht berücksichtigt wurde, er sei anderweitig zu erfassen." },
-    { "b":6,"n":"KN","s":2,"q":"Was unterscheidet § 173 von § 175 Abs. 1 Nr. 2?",
-      "o":["Nichts","§ 173: von Anfang an falsch. § 175: wird nachträglich falsch","§ 173: wird nachträglich falsch","§ 175 gilt nur bei Grundlagenbescheiden"],"a":1,
-      "w":"Entscheidend ist, wann der Sachverhalt entstanden ist, nicht wann das Finanzamt davon erfährt.","nrm":"§ 173, § 175 Abs. 1 S. 1 Nr. 2 AO",
-      "k":"Bei § 173 liegt ein von Anfang an rechtswidriger Bescheid vor, bei § 175 wird ein richtiger Bescheid nachträglich falsch." },
-    { "b":6,"n":"KN","s":3,"q":"Was ist § 176 AO?",
-      "o":["Eine Korrekturnorm","Eine Schranke bei ohnehin zulässiger Änderung","Eine Ablaufhemmung","Eine Zuständigkeitsregel"],"a":1,
-      "w":"Ohne eine Änderungsnorm läuft § 176 leer, und beim Erstbescheid gilt er nie.","nrm":"§ 176 AO",
-      "k":"Bei der Aufhebung oder Änderung darf nicht zuungunsten berücksichtigt werden, dass sich die Rechtsprechung geändert hat." },
-    { "b":6,"n":"KN","s":3,"q":"Welche Zusatzvoraussetzung hat § 176 Abs. 1 Nr. 3?",
-      "o":["Keine","Die alte Rechtsprechung muss bei der bisherigen Festsetzung angewandt worden sein","Der Bescheid muss unter Vorbehalt stehen","Ein Rechtsbehelf muss anhängig sein"],"a":1,
-      "w":"Hat das Finanzamt damals aus anderen Gründen entschieden, greift der Schutz nicht.","nrm":"§ 176 Abs. 1 Nr. 3 AO",
-      "k":"Geschützt ist nur die Rechtsprechung, die von der Finanzbehörde bei der bisherigen Festsetzung angewandt worden ist." }
-  ],
-
-  "faelle": [
+ "fach": "AO",
+ "titel": "Abgabenordnung",
+ "stand": "Folien 2 bis 119, vollständig",
+ "hinweis": "Normtexte sinngemäß verkürzt, kein Wortlaut.",
+ "knoten": [
+  {
+   "id": "W",
+   "kurz": "Wirksamkeit",
+   "lang": "Wirksamkeit",
+   "pfad": "Schritt 1"
+  },
+  {
+   "id": "BG",
+   "kurz": "Bekanntgabe",
+   "lang": "Bekanntgabe",
+   "pfad": "Wirksamkeit › Bekanntgabe"
+  },
+  {
+   "id": "FR",
+   "kurz": "Fristen",
+   "lang": "Fristen und Wiedereinsetzung",
+   "pfad": "Einspruch › Zulässigkeit › Frist"
+  },
+  {
+   "id": "ES",
+   "kurz": "Einspruch",
+   "lang": "Einspruch",
+   "pfad": "Aufhebung oder Änderung › Weg A"
+  },
+  {
+   "id": "VJ",
+   "kurz": "Verjährung",
+   "lang": "Festsetzungsverjährung",
+   "pfad": "Aufhebung oder Änderung › Weg B › Festsetzungsverjährung"
+  },
+  {
+   "id": "KN",
+   "kurz": "Korrekturnorm",
+   "lang": "Korrekturvorschrift",
+   "pfad": "Aufhebung oder Änderung › Weg B › Korrekturvorschrift"
+  },
+  {
+   "id": "GB",
+   "kurz": "Grundlagenbescheid",
+   "lang": "Grundlagen- und Folgebescheide",
+   "pfad": "Aufhebung oder Änderung › Weg B › Grundlagenbescheid"
+  }
+ ],
+ "bloecke": [
+  {
+   "id": 1,
+   "name": "Grundlagen und Fehlerlehre",
+   "folien": "2–35"
+  },
+  {
+   "id": 2,
+   "name": "Bekanntgabe",
+   "folien": "36–42, 52–61"
+  },
+  {
+   "id": 3,
+   "name": "Fristen und Wiedereinsetzung",
+   "folien": "43–51"
+  },
+  {
+   "id": 4,
+   "name": "Festsetzungsverjährung",
+   "folien": "62–68"
+  },
+  {
+   "id": 5,
+   "name": "Grundlagen- und Folgebescheide",
+   "folien": "69–76"
+  },
+  {
+   "id": 6,
+   "name": "Korrekturvorschriften",
+   "folien": "77–119"
+  }
+ ],
+ "normen": [
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Begriff des Verwaltungsakts, fünf Merkmale",
+   "norm": "§ 118 AO",
+   "k": "Hoheitliche Maßnahme einer Behörde zur Regelung eines Einzelfalls mit unmittelbarer Rechtswirkung nach außen."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Ermessen und seine Fehler",
+   "norm": "§ 5 AO",
+   "k": "Ermessen ist entsprechend dem Zweck der Ermächtigung auszuüben, die gesetzlichen Grenzen sind einzuhalten."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Entstehung der Steuer kraft Gesetzes",
+   "norm": "§ 38 AO",
+   "k": "Ansprüche entstehen, sobald der Tatbestand verwirklicht ist, an den das Gesetz die Leistungspflicht knüpft."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Wirksamkeit mit Bekanntgabe, nichtiger VA unwirksam",
+   "norm": "§ 124 AO",
+   "k": "Ein Verwaltungsakt wird mit Bekanntgabe wirksam; ein nichtiger Verwaltungsakt ist unwirksam."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Nichtigkeit, Positiv- und Negativliste",
+   "norm": "§ 125 AO",
+   "k": "Nichtig bei besonders schwerwiegendem und offenkundigem Fehler; Abs. 2 stets nichtig, Abs. 3 nie nichtig."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Heilung von Verfahrens- und Formfehlern",
+   "norm": "§ 126 AO",
+   "k": "Begründung, Anhörung und Mitwirkung können bis zum Abschluss des Einspruchsverfahrens nachgeholt werden."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Unbeachtlichkeit bei gebundenen Entscheidungen",
+   "norm": "§ 127 AO",
+   "k": "Keine Aufhebung allein wegen Verfahrens-, Form- oder Zuständigkeitsfehlern, wenn keine andere Entscheidung möglich war."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Inhaltliche Bestimmtheit des Verwaltungsakts",
+   "norm": "§ 119 Abs. 1 AO",
+   "k": "Ein Verwaltungsakt muss inhaltlich hinreichend bestimmt sein."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Steuerfestsetzung durch Steuerbescheid",
+   "norm": "§ 155 Abs. 1 AO",
+   "k": "Steuern werden durch Steuerbescheid festgesetzt; Freistellung und Ablehnung stehen dem gleich."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Besteuerungsgrundlagen sind nicht selbständig anfechtbar",
+   "norm": "§ 157 Abs. 2 AO",
+   "k": "Die Besteuerungsgrundlagen sind nicht selbständig anfechtbarer Teil des Steuerbescheids."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Steueranmeldung gilt als Festsetzung unter Vorbehalt",
+   "norm": "§ 168 AO",
+   "k": "Eine Steueranmeldung steht einer Festsetzung unter Vorbehalt der Nachprüfung gleich."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Abrechnungsbescheid im Erhebungsverfahren",
+   "norm": "§ 218 Abs. 2 AO",
+   "k": "Über Streitigkeiten im Erhebungsverfahren entscheidet die Finanzbehörde durch Abrechnungsbescheid."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Haftungsbescheid, sonstiger Verwaltungsakt",
+   "norm": "§ 191 AO",
+   "k": "Wer kraft Gesetzes für eine Steuer haftet, kann durch Haftungsbescheid in Anspruch genommen werden."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": "Leistungsgebot",
+   "norm": "§ 254 Abs. 1 AO",
+   "k": "Vor Beginn der Vollstreckung ist zur Leistung aufzufordern und eine Wochenfrist abzuwarten."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Bekanntgabe, Viertagefiktion im Inland",
+   "norm": "§ 122 Abs. 2 Nr. 1 AO",
+   "k": "Bei Übermittlung im Inland gilt der Verwaltungsakt am vierten Tag nach Aufgabe zur Post als bekanntgegeben."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Eheleute, eine Ausfertigung genügt",
+   "norm": "§ 122 Abs. 7 S. 1 AO",
+   "k": "Bei Ehegatten genügt die Übermittlung einer Ausfertigung unter der gemeinsamen Anschrift."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Einzelbekanntgabe bei Antrag oder Streit",
+   "norm": "§ 122 Abs. 7 S. 2 AO",
+   "k": "Einzeln bekanntzugeben ist auf Antrag oder bei bekannten ernstlichen Meinungsverschiedenheiten."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Bekanntgabe durch Bereitstellung zum Datenabruf",
+   "norm": "§ 122a AO",
+   "k": "Verwaltungsakte können durch Bereitstellung zum Datenabruf bekanntgegeben werden; Fiktion vier Tage nach Bereitstellung."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Vollmacht, Widerruf erst mit Zugang wirksam",
+   "norm": "§ 80 Abs. 1 S. 3 AO",
+   "k": "Ein Widerruf der Vollmacht wird der Finanzbehörde gegenüber erst mit Zugang wirksam."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Gesamtschuldner",
+   "norm": "§ 44 AO",
+   "k": "Gesamtschuldner schulden jeder die ganze Leistung; die Erfüllung durch einen wirkt für alle."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Bekanntgabe bei rechtsfähiger Personengesellschaft",
+   "norm": "§ 183 AO",
+   "k": "Bei rechtsfähigen Personenvereinigungen wird dieser selbst bekanntgegeben, mit Wirkung für alle Beteiligten."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Bekanntgabe bei nicht rechtsfähiger Vereinigung",
+   "norm": "§ 183a AO",
+   "k": "Bei nicht rechtsfähigen Vereinigungen wird einem gemeinsamen Empfangsbevollmächtigten bekanntgegeben."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Zustellung mit Zustellungsurkunde",
+   "norm": "§ 3 VwZG",
+   "k": "Bei Zustellung mit Zustellungsurkunde beurkundet der Zusteller Tag und Art; es gilt der beurkundete Tag."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Zustellung mittels Einschreiben",
+   "norm": "§ 4 VwZG",
+   "k": "Zustellung mittels Einschreiben mit Rückschein oder Übergabeeinschreiben; dort Fiktion am vierten Tag."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Zustellung gegen Empfangsbekenntnis",
+   "norm": "§ 5 VwZG",
+   "k": "Zustellung gegen Empfangsbekenntnis an Berufsträger; maßgeblich der dort eingetragene Tag."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Heilung von Zustellungsmängeln",
+   "norm": "§ 8 VwZG",
+   "k": "Ein Zustellungsmangel wird geheilt, sobald das Dokument dem richtigen Empfänger tatsächlich zugeht."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": "Öffentliche Zustellung",
+   "norm": "§ 10 VwZG",
+   "k": "Öffentliche Zustellung als letztes Mittel; Wirksamkeit zwei Wochen nach Benachrichtigung."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": "Fristberechnung, Verschiebung bei Samstag und Sonntag",
+   "norm": "§ 108 Abs. 3 AO",
+   "k": "Fällt das Fristende auf Sonnabend, Sonntag oder Feiertag, endet die Frist mit dem nächsten Werktag."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": "Fristbeginn, Ereignistag zählt nicht mit",
+   "norm": "§ 187 Abs. 1 BGB",
+   "k": "Ist für den Fristbeginn ein Ereignis maßgebend, zählt der Ereignistag nicht mit."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": "Ende der Monatsfrist",
+   "norm": "§ 188 Abs. 2 BGB",
+   "k": "Monatsfristen enden an dem Tag, der durch seine Zahl dem Ereignistag entspricht."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": "Fristverlängerung, nicht für den Einspruch",
+   "norm": "§ 109 Abs. 1 AO",
+   "k": "Verlängerbar sind Erklärungsfristen und behördlich gesetzte Fristen, auch rückwirkend."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": "Wiedereinsetzung in den vorigen Stand",
+   "norm": "§ 110 AO",
+   "k": "Wiedereinsetzung bei unverschuldeter Versäumung gesetzlicher Fristen; Monatsfrist, Nachholung, Jahresgrenze."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": "Fiktion fehlenden Verschuldens bei Begründungsmangel",
+   "norm": "§ 126 Abs. 3 AO",
+   "k": "Fehlt Begründung oder Anhörung und ist dadurch die Anfechtung versäumt, gilt das als nicht verschuldet."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": "Einspruchsfrist, ein Monat",
+   "norm": "§ 355 Abs. 1 AO",
+   "k": "Der Einspruch ist innerhalb eines Monats nach Bekanntgabe einzulegen."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": "Jahresfrist bei fehlender Rechtsbehelfsbelehrung",
+   "norm": "§ 356 Abs. 2 AO",
+   "k": "Ohne oder mit fehlerhafter Rechtsbehelfsbelehrung beträgt die Frist ein Jahr."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": "Form und Adressat des Einspruchs",
+   "norm": "§ 357 AO",
+   "k": "Der Einspruch ist schriftlich oder elektronisch bei der zuständigen Behörde einzulegen."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": "Statthaftigkeit des Einspruchs",
+   "norm": "§ 347 AO",
+   "k": "Gegen Verwaltungsakte in Abgabenangelegenheiten ist der Einspruch statthaft."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": "Beschwer",
+   "norm": "§ 350 AO",
+   "k": "Befugt ist nur, wer geltend macht, durch den Verwaltungsakt beschwert zu sein."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": "Gesamtaufrollung und Verböserung",
+   "norm": "§ 367 Abs. 2 AO",
+   "k": "Die Sache ist in vollem Umfang erneut zu prüfen; Verböserung nur nach Hinweis."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": "Aussetzung der Vollziehung",
+   "norm": "§ 361 AO",
+   "k": "Der Einspruch hemmt die Vollziehung nicht; auf Antrag kann sie ausgesetzt werden."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Erlöschen der Ansprüche",
+   "norm": "§ 47 AO",
+   "k": "Ansprüche aus dem Steuerschuldverhältnis erlöschen unter anderem durch Verjährung."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Festsetzung, Änderung und Aufhebung unzulässig",
+   "norm": "§ 169 Abs. 1 S. 1 AO",
+   "k": "Nach Fristablauf sind Festsetzung, Aufhebung und Änderung unzulässig."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Wahrung der Frist durch Verlassen des Finanzamts",
+   "norm": "§ 169 Abs. 1 S. 3 Nr. 1 AO",
+   "k": "Die Frist ist gewahrt, wenn der Bescheid vor Fristablauf den Bereich der Behörde verlassen hat und zugeht."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Dauer, vier Jahre im Regelfall",
+   "norm": "§ 169 Abs. 2 S. 1 Nr. 2 AO",
+   "k": "Die Festsetzungsfrist beträgt im Regelfall vier Jahre."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Zehn Jahre bei Hinterziehung, fünf bei Leichtfertigkeit",
+   "norm": "§ 169 Abs. 2 S. 2 AO",
+   "k": "Zehn Jahre bei Hinterziehung, fünf Jahre bei leichtfertiger Verkürzung, jeweils nur soweit."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Entlastung des unbeteiligten Gesamtschuldners",
+   "norm": "§ 169 Abs. 2 S. 3 AO",
+   "k": "Keine Verlängerung für den Gesamtschuldner, der keinen Vermögensvorteil hatte und seine Sorgfalt wahrte."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Fristbeginn ohne Erklärungspflicht",
+   "norm": "§ 170 Abs. 1 AO",
+   "k": "Die Frist beginnt mit Ablauf des Jahres, in dem die Steuer entstanden ist."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Anlaufhemmung, gedeckelt auf drei Jahre",
+   "norm": "§ 170 Abs. 2 S. 1 Nr. 1 AO",
+   "k": "Bei Erklärungspflicht Beginn mit Ablauf des Abgabejahres, spätestens nach drei Jahren."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Ablaufhemmung bei offenbarer Unrichtigkeit",
+   "norm": "§ 171 Abs. 2 AO",
+   "k": "Bei offenbarer Unrichtigkeit endet die Frist nicht vor Ablauf eines Jahres nach Bekanntgabe."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Ablaufhemmung durch Antrag",
+   "norm": "§ 171 Abs. 3 AO",
+   "k": "Ein Antrag hemmt den Fristablauf, aber nur im Umfang des Antrags."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Ablaufhemmung durch Einspruch oder Klage",
+   "norm": "§ 171 Abs. 3a AO",
+   "k": "Einspruch und Klage hemmen den Ablauf hinsichtlich des gesamten Steueranspruchs."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Ablaufhemmung durch Außenprüfung",
+   "norm": "§ 171 Abs. 4 AO",
+   "k": "Bei Beginn einer Außenprüfung läuft die Frist nicht ab, bevor die Prüfungsbescheide unanfechtbar sind."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Ablaufhemmung bei vorläufiger Festsetzung",
+   "norm": "§ 171 Abs. 8 AO",
+   "k": "Bei vorläufiger Festsetzung ein Jahr nach Beseitigung der Ungewissheit und Kenntnis der Behörde."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Zwei Jahre nach Bekanntgabe des Grundlagenbescheids",
+   "norm": "§ 171 Abs. 10 AO",
+   "k": "Bei Grundlagenbescheiden zwei Jahre nach deren Bekanntgabe an den Steuerpflichtigen."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": "Festsetzungsfrist für Zinsen, zwei Jahre",
+   "norm": "§ 239 Abs. 1 S. 1 AO",
+   "k": "Für Zinsen gelten die Steuervorschriften entsprechend, die Festsetzungsfrist beträgt zwei Jahre."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Gesonderte Feststellung nur soweit gesetzlich bestimmt",
+   "norm": "§ 179 Abs. 1 AO",
+   "k": "Besteuerungsgrundlagen werden gesondert festgestellt, soweit das Gesetz es bestimmt."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Mehrere Beteiligte an denselben Einkünften",
+   "norm": "§ 180 Abs. 1 S. 1 Nr. 2a AO",
+   "k": "Gesondert und einheitlich, wenn an den Einkünften mehrere Personen beteiligt sind."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Betriebs- und Wohnsitzfinanzamt fallen auseinander",
+   "norm": "§ 180 Abs. 1 S. 1 Nr. 2b AO",
+   "k": "Gesondert, wenn Betriebsfinanzamt und Wohnsitzfinanzamt auseinanderfallen."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Fall von geringer Bedeutung",
+   "norm": "§ 180 Abs. 3 S. 1 Nr. 2 AO",
+   "k": "Keine gesonderte Feststellung in Fällen von geringer Bedeutung."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Gleichstellung mit den Steuerbescheidvorschriften",
+   "norm": "§ 181 Abs. 1 S. 1 AO",
+   "k": "Für die gesonderte Feststellung gelten die Vorschriften über die Besteuerung sinngemäß."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Feststellung trotz abgelaufener Feststellungsfrist",
+   "norm": "§ 181 Abs. 5 AO",
+   "k": "Feststellung noch nach Fristablauf, soweit für einen offenen Folgebescheid bedeutsam; Hinweis erforderlich."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Bindungswirkung auch vor Unanfechtbarkeit",
+   "norm": "§ 182 Abs. 1 S. 1 AO",
+   "k": "Feststellungsbescheide binden Folgebescheide, auch wenn sie noch nicht unanfechtbar sind."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Folgeänderung ohne Ermessen",
+   "norm": "§ 175 Abs. 1 S. 1 Nr. 1 AO",
+   "k": "Der Folgebescheid ist zu ändern, soweit der Grundlagenbescheid geändert wird."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Einwendungen nur gegen den Grundlagenbescheid",
+   "norm": "§ 351 Abs. 2 AO",
+   "k": "Entscheidungen im Grundlagenbescheid sind nur dort angreifbar, nicht im Folgebescheid."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": "Steuermessbescheid, sinngemäße Anwendung",
+   "norm": "§ 184 Abs. 1 S. 3 AO",
+   "k": "Auf Steuermessbescheide sind die Vorschriften über die Besteuerung sinngemäß anzuwenden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Offenbare Unrichtigkeit, gilt für jeden Verwaltungsakt",
+   "norm": "§ 129 AO",
+   "k": "Schreibfehler, Rechenfehler und ähnliche offenbare Unrichtigkeiten können jederzeit berichtigt werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Rücknahme eines rechtswidrigen sonstigen VA",
+   "norm": "§ 130 AO",
+   "k": "Ein rechtswidriger sonstiger Verwaltungsakt kann zurückgenommen werden, begünstigende nur eingeschränkt."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Widerruf eines rechtmäßigen sonstigen VA",
+   "norm": "§ 131 AO",
+   "k": "Ein rechtmäßiger sonstiger Verwaltungsakt kann widerrufen werden, begünstigende nur eingeschränkt."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Vorbehalt der Nachprüfung",
+   "norm": "§ 164 Abs. 2 AO",
+   "k": "Solange der Vorbehalt wirksam ist, kann die Festsetzung jederzeit aufgehoben oder geändert werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Wegfall des Vorbehalts kraft Gesetzes",
+   "norm": "§ 164 Abs. 4 AO",
+   "k": "Der Vorbehalt entfällt mit Ablauf der Festsetzungsfrist, ohne bestimmte Verlängerungen und Hemmungen."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Vorläufige Festsetzung, Änderung nur im Umfang",
+   "norm": "§ 165 Abs. 2 AO",
+   "k": "Soweit vorläufig festgesetzt wurde, kann die Festsetzung insoweit aufgehoben oder geändert werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Schlichter Änderungsantrag",
+   "norm": "§ 172 Abs. 1 S. 1 Nr. 2a AO",
+   "k": "Änderung mit Zustimmung oder auf Antrag; zugunsten nur bei Antrag vor Ablauf der Einspruchsfrist."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Einfallstor für die übrigen Korrekturnormen",
+   "norm": "§ 172 Abs. 1 S. 1 Nr. 2d AO",
+   "k": "Änderung, soweit sie sonst gesetzlich zugelassen ist; Einfallstor für die §§ 173 bis 176."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Neue Tatsachen zu Lasten",
+   "norm": "§ 173 Abs. 1 Nr. 1 AO",
+   "k": "Änderung zu Lasten, soweit Tatsachen oder Beweismittel nachträglich bekannt werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Neue Tatsachen zugunsten, kein grobes Verschulden",
+   "norm": "§ 173 Abs. 1 Nr. 2 S. 1 AO",
+   "k": "Änderung zugunsten nur, wenn kein grobes Verschulden am nachträglichen Bekanntwerden vorliegt."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Verschulden unbeachtlich bei sachlichem Zusammenhang",
+   "norm": "§ 173 Abs. 1 Nr. 2 S. 2 AO",
+   "k": "Das Verschulden ist unbeachtlich bei unmittelbarem oder mittelbarem Zusammenhang mit Tatsachen nach Nr. 1."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Änderungssperre nach Außenprüfung",
+   "norm": "§ 173 Abs. 2 AO",
+   "k": "Nach einer Außenprüfung nur noch Änderung bei Steuerhinterziehung oder leichtfertiger Steuerverkürzung."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Schreib- und Rechenfehler des Steuerpflichtigen",
+   "norm": "§ 173a AO",
+   "k": "Änderung, soweit dem Steuerpflichtigen bei Erstellung der Erklärung Schreib- oder Rechenfehler unterlaufen sind."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Mehrfache Berücksichtigung zuungunsten",
+   "norm": "§ 174 Abs. 1 AO",
+   "k": "Mehrfache Berücksichtigung zuungunsten wird auf Antrag durch Änderung beseitigt."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Mehrfache Berücksichtigung zugunsten",
+   "norm": "§ 174 Abs. 2 AO",
+   "k": "Mehrfache Berücksichtigung zugunsten wird beseitigt, wenn sie auf Antrag oder Erklärung des Steuerpflichtigen beruht."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Nichtberücksichtigung in erkennbarer Annahme",
+   "norm": "§ 174 Abs. 3 AO",
+   "k": "Erkennbare Nichtberücksichtigung in der Annahme anderweitiger Erfassung kann nachgeholt werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Folgerungen nach erfolgreichem Rechtsbehelf",
+   "norm": "§ 174 Abs. 4 AO",
+   "k": "Nach erfolgreichem Rechtsbehelf können die richtigen Folgerungen in einem anderen Bescheid gezogen werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Wirkung gegenüber Dritten nur bei Beiladung",
+   "norm": "§ 174 Abs. 5 AO",
+   "k": "Gegenüber Dritten wirkt Abs. 4 nur bei Hinzuziehung oder Beiladung vor Unanfechtbarkeit."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Rückwirkendes Ereignis",
+   "norm": "§ 175 Abs. 1 S. 1 Nr. 2 AO",
+   "k": "Änderung, soweit ein Ereignis eintritt, das steuerliche Wirkung für die Vergangenheit hat."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Elektronisch übermittelte Daten",
+   "norm": "§ 175b AO",
+   "k": "Änderung, soweit von Dritten elektronisch übermittelte Daten unzutreffend berücksichtigt wurden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Vertrauensschutz bei Rechtsprechungsänderung",
+   "norm": "§ 176 AO",
+   "k": "Bei Änderung darf eine geänderte Rechtsprechung nicht zuungunsten berücksichtigt werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Saldierung materieller Fehler im Änderungsrahmen",
+   "norm": "§ 177 AO",
+   "k": "Materielle Fehler sind zu berichtigen, soweit die Änderung reicht."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Anfechtungsbeschränkung bei Änderungsbescheiden",
+   "norm": "§ 351 Abs. 1 AO",
+   "k": "Änderungsbescheide können nur insoweit angegriffen werden, als die Änderung reicht."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Positiver Widerstreit, Mehrfachberücksichtigung",
+   "norm": "§ 174 Abs. 1 und 2 AO",
+   "k": "Ein Sachverhalt wurde mehrfach berücksichtigt, obwohl er nur einmal zu erfassen war."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Negativer Widerstreit, Nichtberücksichtigung",
+   "norm": "§ 174 Abs. 3 und 4 AO",
+   "k": "Ein Sachverhalt wurde in keinem Bescheid erfasst, obwohl er einmal zu erfassen war."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Jahresfrist für die Rücknahme, Beginn mit Kenntnis",
+   "norm": "§ 130 Abs. 3 AO",
+   "k": "Die Rücknahme ist nur binnen eines Jahres ab Kenntnis der Rechtswidrigkeit zulässig."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": "Verwirkung aus Treu und Glauben",
+   "norm": "Treu und Glauben",
+   "k": "Verwirkung setzt Zeitablauf und ein vertrauensbegründendes Verhalten der Behörde voraus."
+  }
+ ],
+ "fragen": [
+  {
+   "b": 1,
+   "n": "W",
+   "s": 1,
+   "q": "Der Betriebsprüfer übersendet den Prüfungsbericht nach § 202 AO. Was ist das rechtlich?",
+   "o": [
+    "Kein Verwaltungsakt, es fehlt die Regelung",
+    "Ein sonstiger Verwaltungsakt",
+    "Kein Verwaltungsakt, es fehlt die Außenwirkung",
+    "Ein Steuerbescheid"
+   ],
+   "a": 0,
+   "w": "Der Bericht teilt nur mit, er ordnet keine Rechtsfolge einseitig an. Außenwirkung hat er sehr wohl.",
+   "nrm": "§ 202 AO, § 118 S. 1 AO",
+   "k": "Verwaltungsakt ist jede hoheitliche Maßnahme einer Behörde zur Regelung eines Einzelfalls mit unmittelbarer Rechtswirkung nach außen.",
+   "wf": "Steuerbescheid und sonstiger VA setzen eine Regelung voraus; die Außenwirkung fehlt hier gerade nicht."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 2,
+   "q": "Welcher Bescheid ist dem Steuerbescheid NICHT gleichgestellt?",
+   "o": [
+    "Haftungsbescheid",
+    "Feststellungsbescheid",
+    "Zinsbescheid",
+    "Gewerbesteuermessbescheid"
+   ],
+   "a": 0,
+   "w": "Für die ersten drei ordnen eigene Normen die sinngemäße Anwendung an. Bei § 191 fehlt eine solche Verweisung.",
+   "nrm": "§ 181 I 1, § 184 I 3, § 239 I 1 gegen § 191 AO",
+   "k": "Für die gesonderte Feststellung gelten die Vorschriften über die Durchführung der Besteuerung sinngemäß.",
+   "wf": "Feststellungs-, Mess- und Zinsbescheid sind jeweils durch eigene Verweisung gleichgestellt."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 2,
+   "q": "Im Bescheid wurden geleistete Vorauszahlungen nicht angerechnet, die Festsetzung ist richtig. Was ist der Weg?",
+   "o": [
+    "Antrag auf Abrechnungsbescheid",
+    "Einspruch gegen die Steuerfestsetzung",
+    "Änderungsantrag nach § 164 Abs. 2",
+    "Nichtigkeitsfeststellung"
+   ],
+   "a": 0,
+   "w": "Die Anrechnung steht in der Anrechnungsverfügung, einem eigenen sonstigen Verwaltungsakt. Streit darüber läuft über das Erhebungsverfahren.",
+   "nrm": "§ 218 Abs. 2 AO",
+   "k": "Über Streitigkeiten, die die Verwirklichung der Ansprüche betreffen, entscheidet die Finanzbehörde durch Abrechnungsbescheid.",
+   "wf": "Einspruch und § 164 betreffen die Festsetzung, nicht die Anrechnung; nichtig ist der Bescheid nicht."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 2,
+   "q": "Ein örtlich unzuständiges Finanzamt erlässt einen Einkommensteuerbescheid. Folge?",
+   "o": [
+    "Nichtig",
+    "Unwirksam",
+    "Rechtmäßig",
+    "Rechtswidrig, nicht nichtig, bei gebundenen Entscheidungen unbeachtlich"
+   ],
+   "a": 3,
+   "w": "Die Nichtigkeit ist ausgeschlossen, und da die Festsetzung gebunden ist, greift die Unbeachtlichkeit.",
+   "nrm": "§ 125 Abs. 3 Nr. 1, § 127 AO",
+   "k": "Ein Verwaltungsakt ist nicht schon deshalb nichtig, weil Vorschriften über die örtliche Zuständigkeit nicht eingehalten wurden.",
+   "wf": "Nichtigkeit scheidet wegen § 125 Abs. 3 Nr. 1 aus, rechtmäßig ist der Bescheid aber auch nicht."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 1,
+   "q": "Das Finanzamt lehnt eine Stundung ab, ohne zu erkennen, dass ihm Ermessen zusteht. Wie heißt der Fehler?",
+   "o": [
+    "Ermessensfehlgebrauch",
+    "Ermessensausfall",
+    "Ermessensreduzierung auf Null",
+    "Ermessensüberschreitung"
+   ],
+   "a": 1,
+   "w": "Ermessensausfall liegt vor, wenn die Behörde ihr Ermessen überhaupt nicht ausübt. Er ist nicht heilbar.",
+   "nrm": "§ 5 AO, § 222 AO",
+   "k": "Ist die Finanzbehörde ermächtigt, nach ihrem Ermessen zu handeln, hat sie es entsprechend dem Zweck der Ermächtigung auszuüben.",
+   "wf": "Überschreitung und Fehlgebrauch setzen voraus, dass Ermessen überhaupt ausgeübt wurde."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 2,
+   "q": "Woran scheitert die Kontrollmitteilung an ein anderes Finanzamt?",
+   "o": [
+    "Behörde",
+    "Hoheitliche Maßnahme",
+    "Unmittelbare Außenwirkung",
+    "Regelung"
+   ],
+   "a": 2,
+   "w": "Sie wirkt nur zwischen Behörden und tritt nicht nach außen.",
+   "nrm": "§ 194 Abs. 3 AO, § 118 S. 1 AO",
+   "k": "Erforderlich ist eine Maßnahme, die auf unmittelbare Rechtswirkung nach außen gerichtet ist.",
+   "wf": "Hoheitliche Maßnahme, Behörde und Regelung liegen vor; nur nach außen tritt sie nicht."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 3,
+   "q": "Wie ist die Aufrechnungserklärung des Finanzamts einzuordnen?",
+   "o": [
+    "Kein Verwaltungsakt",
+    "Grundlagenbescheid",
+    "Steuerbescheid",
+    "Sonstiger Verwaltungsakt"
+   ],
+   "a": 0,
+   "w": "Sie ist eine empfangsbedürftige öffentlich-rechtliche Willenserklärung. Sie ordnet die Rechtsfolge nicht einseitig an.",
+   "nrm": "§ 226 AO iVm §§ 387 ff. BGB",
+   "k": "Für die Aufrechnung gelten sinngemäß die Vorschriften des bürgerlichen Rechts.",
+   "wf": "Für einen Verwaltungsakt fehlt die einseitige Regelung; die Rechtsfolge tritt kraft Gesetzes ein."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 1,
+   "q": "Was ist eine abgegebene Umsatzsteuer-Voranmeldung rechtlich?",
+   "o": [
+    "Sonstiger Verwaltungsakt",
+    "Grundlagenbescheid",
+    "Bloße Mitteilung",
+    "Steuerfestsetzung unter Vorbehalt der Nachprüfung"
+   ],
+   "a": 3,
+   "w": "Deshalb ist sie ohne Weiteres nach § 164 Abs. 2 änderbar.",
+   "nrm": "§ 168 S. 1 AO",
+   "k": "Eine Steueranmeldung steht einer Steuerfestsetzung unter Vorbehalt der Nachprüfung gleich.",
+   "wf": "Als bloße Mitteilung hätte sie keine Rechtswirkung; ein Grundlagenbescheid ist sie nicht."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 2,
+   "q": "Das Finanzamt lehnt einen Antrag auf Veranlagung ab. Was ist der Ablehnungsbescheid?",
+   "o": [
+    "Sonstiger Verwaltungsakt",
+    "Steuerbescheid",
+    "Feststellungsbescheid",
+    "Kein Verwaltungsakt"
+   ],
+   "a": 1,
+   "w": "Damit gelten die §§ 164 ff. und 172 ff.",
+   "nrm": "§ 155 Abs. 1 S. 3 AO",
+   "k": "Der Steuerfestsetzung stehen die Freistellung von einer Steuer und die Ablehnung eines Antrags gleich.",
+   "wf": "Ein sonstiger VA wäre es nur ohne die Gleichstellung in § 155 Abs. 1 S. 3."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 3,
+   "q": "In welchem Fall hilft § 127 AO dem Finanzamt NICHT?",
+   "o": [
+    "Unterbliebene Anhörung",
+    "Verstoß gegen die örtliche Zuständigkeit",
+    "Ermessensentscheidung",
+    "Gebundene Steuerfestsetzung"
+   ],
+   "a": 2,
+   "w": "§ 127 setzt voraus, dass keine andere Entscheidung hätte getroffen werden können. Bei Ermessen ist das nie sicher.",
+   "nrm": "§ 127 AO",
+   "k": "Die Aufhebung kann nicht allein wegen eines Verfahrens-, Form- oder Zuständigkeitsfehlers verlangt werden, wenn keine andere Entscheidung möglich war.",
+   "wf": "Bei gebundenen Entscheidungen und bei Zuständigkeits- oder Anhörungsfehlern hilft § 127 gerade."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 2,
+   "q": "In welcher Reihenfolge prüft man § 125 AO sinnvoll?",
+   "o": [
+    "Nur Abs. 1",
+    "Abs. 2, 3, 1",
+    "Abs. 1, 2, 3",
+    "Abs. 3, 1, 2"
+   ],
+   "a": 1,
+   "w": "Erst die eindeutigen Listen, dann die wertungsoffene Generalklausel.",
+   "nrm": "§ 125 Abs. 1 bis 3 AO",
+   "k": "Abs. 1 Generalklausel, Abs. 2 stets nichtige Fälle, Abs. 3 nie nichtige Fälle.",
+   "wf": "Mit der Generalklausel zu beginnen führt in die Wertung, obwohl die Listen eindeutig entscheiden."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 2,
+   "q": "Ein Steuerbescheid ergeht an eine verstorbene Person. Folge?",
+   "o": [
+    "Rechtswidrig, aber wirksam",
+    "Nichtig",
+    "Schwebend unwirksam, Heilung durch Weiterleitung",
+    "Nach § 129 berichtigungsfähig"
+   ],
+   "a": 1,
+   "w": "Der Inhaltsadressat existiert nicht, der Fehler ist schwerwiegend und offenkundig.",
+   "nrm": "§ 125 Abs. 1, § 124 Abs. 3 AO",
+   "k": "Ein nichtiger Verwaltungsakt ist unwirksam.",
+   "wf": "Heilung und Berichtigung setzen einen wirksamen Bescheid voraus, den es hier nicht gibt."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 3,
+   "q": "Das Finanzamt setzt die Umsatzsteuer eindeutig gegen den falschen Ehegatten fest. Folge?",
+   "o": [
+    "Rechtswidrig, aber wirksam",
+    "Nach § 129 berichtigungsfähig",
+    "Nichtig",
+    "Unwirksam"
+   ],
+   "a": 0,
+   "w": "Es ist erkennbar, wen der Bescheid meint. Damit fehlt die Offenkundigkeit des Fehlers.",
+   "nrm": "§ 119 Abs. 1, § 125 Abs. 1 AO",
+   "k": "Ein Verwaltungsakt muss inhaltlich hinreichend bestimmt sein.",
+   "wf": "Nichtigkeit scheitert an der fehlenden Offenkundigkeit, § 129 an der fehlenden Unrichtigkeit."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 1,
+   "q": "Was bedeutet formelle Bestandskraft?",
+   "o": [
+    "Festsetzungsfrist abgelaufen",
+    "Kein Einspruch mehr, Korrektur unter Umständen noch",
+    "Wirksam bekanntgegeben",
+    "Endgültig, keine Änderung mehr"
+   ],
+   "a": 1,
+   "w": "Formelle Bestandskraft schließt nur Weg A. Ob Weg B offen ist, entscheiden Korrekturnorm und Frist.",
+   "nrm": "§ 355 Abs. 1 AO",
+   "k": "Der Einspruch ist innerhalb eines Monats nach Bekanntgabe einzulegen.",
+   "wf": "Endgültigkeit und Festsetzungsverjährung betreffen die materielle Seite, nicht die Anfechtbarkeit."
+  },
+  {
+   "b": 1,
+   "n": "W",
+   "s": 2,
+   "q": "Ein Bescheid unter Vorbehalt der Nachprüfung ist zwei Monate alt. Stand?",
+   "o": [
+    "Weder noch",
+    "Formell und materiell bestandskräftig",
+    "Materiell bestandskräftig, formell offen",
+    "Formell bestandskräftig, materiell offen"
+   ],
+   "a": 3,
+   "w": "Die Einspruchsfrist ist abgelaufen, der Vorbehalt hält die materielle Seite offen.",
+   "nrm": "§ 164 Abs. 1 und 2, § 355 Abs. 1 AO",
+   "k": "Solange der Steuerfall nicht abschließend geprüft ist, kann unter Vorbehalt festgesetzt und jederzeit geändert werden.",
+   "wf": "Materielle Bestandskraft tritt wegen des Vorbehalts nicht ein, formelle sehr wohl."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 2,
+   "q": "Aufgabe zur Post am Dienstag, dem 4. März. Der vierte Tag ist Samstag, der 8. März. Bekanntgabe?",
+   "o": [
+    "9. März",
+    "8. März",
+    "10. März",
+    "Tag des tatsächlichen Zugangs"
+   ],
+   "a": 2,
+   "w": "Die Viertagefiktion endet am Samstag, § 108 Abs. 3 verschiebt auf den nächsten Werktag.",
+   "nrm": "§ 122 Abs. 2 Nr. 1 iVm § 108 Abs. 3 AO",
+   "k": "Ein schriftlicher Verwaltungsakt gilt im Inland am vierten Tag nach Aufgabe zur Post als bekanntgegeben.",
+   "wf": "Der vierte Tag selbst zählt nur, wenn er ein Werktag ist; der tatsächliche Zugang war hier früher."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 1,
+   "q": "Der Bescheid geht schon am zweiten Tag nach Aufgabe zur Post zu. Was gilt?",
+   "o": [
+    "Zweiter Tag",
+    "Vierter Tag",
+    "Tag der Aufgabe zur Post",
+    "Die Fiktion entfällt"
+   ],
+   "a": 1,
+   "w": "Ein früherer tatsächlicher Zugang ist unbeachtlich, die Fiktion wirkt zugunsten des Steuerpflichtigen.",
+   "nrm": "§ 122 Abs. 2 Nr. 1 AO",
+   "k": "Die Fiktion gilt nicht, wenn der Verwaltungsakt nicht oder zu einem späteren Zeitpunkt zugegangen ist.",
+   "wf": "Der frühere Zugang bleibt außer Betracht, die Fiktion wirkt zugunsten des Steuerpflichtigen."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 1,
+   "q": "Der Bescheid geht erst am siebten Tag zu. Was gilt?",
+   "o": [
+    "Siebter Tag",
+    "Bekanntgabe unwirksam",
+    "Fünfter Tag",
+    "Vierter Tag"
+   ],
+   "a": 0,
+   "w": "Bei späterem Zugang zählt der tatsächliche Tag, im Zweifel trägt die Behörde die Nachweislast.",
+   "nrm": "§ 122 Abs. 2 letzter Halbsatz AO",
+   "k": "Im Zweifel hat die Behörde den Zugang und den Zeitpunkt des Zugangs nachzuweisen.",
+   "wf": "Die Fiktion wird durch den späteren Zugang verdrängt, unwirksam ist die Bekanntgabe nicht."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 3,
+   "q": "Der Bescheid ist zur Post gegeben, die Viertagefiktion läuft noch. Das Finanzamt will ihn stoppen. Was ist nötig?",
+   "o": [
+    "Mündliche Information genügt",
+    "Schriftlicher Widerruf vor Fristablauf",
+    "Gar nichts",
+    "Aufhebungsbescheid nach § 130"
+   ],
+   "a": 0,
+   "w": "Es geht um den Widerruf des Bekanntgabewillens, möglich bis zum Eintritt der Bekanntgabe und formlos.",
+   "nrm": "AEAO zu § 124 Tz. 6",
+   "k": "Der Bekanntgabewille kann widerrufen werden, solange die Bekanntgabe noch nicht eingetreten ist.",
+   "wf": "Schriftform ist nicht erforderlich; § 130 betrifft bereits wirksame Verwaltungsakte."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 3,
+   "q": "Wann kann das Finanzamt den Bekanntgabewillen noch aufgeben statt widerrufen?",
+   "o": [
+    "Bis zum tatsächlichen Zugang",
+    "Bis zum Ablauf der Viertagefiktion",
+    "Solange der Bescheid das Finanzamt nicht verlassen hat",
+    "Bis zum Ablauf der Einspruchsfrist"
+   ],
+   "a": 2,
+   "w": "Dann ist der Steuerpflichtige schriftlich zu unterrichten, der Zeitpunkt der Unterrichtung ist unerheblich.",
+   "nrm": "AEAO zu § 124 Tz. 5",
+   "k": "Hat der Verwaltungsakt den Bereich der Behörde noch nicht verlassen, kann der Bekanntgabewille aufgegeben werden.",
+   "wf": "Nach dem Verlassen des Hauses ist nur noch der Widerruf möglich, nicht mehr die Aufgabe."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 2,
+   "q": "Woran knüpft die Bekanntgabefiktion beim Datenabruf an?",
+   "o": [
+    "An die Freigabe im Finanzamt",
+    "An die Benachrichtigung",
+    "An den Abruf",
+    "An die Bereitstellung"
+   ],
+   "a": 3,
+   "w": "Wer sein Postfach wochenlang nicht öffnet, verliert Frist.",
+   "nrm": "§ 122a AO",
+   "k": "Verwaltungsakte gelten am vierten Tag nach der Bereitstellung zum Datenabruf als bekanntgegeben.",
+   "wf": "Abruf, Benachrichtigung und interne Freigabe sind für die Bekanntgabe ohne Bedeutung."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 1,
+   "q": "Zusammenveranlagte Eheleute mit gemeinsamer Anschrift. Was genügt?",
+   "o": [
+    "Zustellung mit Urkunde",
+    "Je eine Ausfertigung",
+    "Eine Ausfertigung unter der gemeinsamen Anschrift",
+    "Bekanntgabe an den älteren Ehegatten"
+   ],
+   "a": 2,
+   "w": "Getragen wird das von der gegenseitigen Empfangsvollmacht aus der gemeinsam unterschriebenen Erklärung.",
+   "nrm": "§ 122 Abs. 7 S. 1 AO",
+   "k": "Betreffen Verwaltungsakte Ehegatten, genügt die Übermittlung einer Ausfertigung unter der gemeinsamen Anschrift.",
+   "wf": "Zwei Ausfertigungen und eine Zustellung sind zulässig, aber nicht erforderlich."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 2,
+   "q": "Dem Finanzamt ist bekannt, dass die Eheleute zerstritten sind. Folge für die Bekanntgabe?",
+   "o": [
+    "Der Bescheid wird nichtig",
+    "Förmliche Zustellung",
+    "Es bleibt bei einer Ausfertigung",
+    "Einzelbekanntgabe"
+   ],
+   "a": 3,
+   "w": "Sobald Interessengegensätze erkennbar sind, endet die Bündelung.",
+   "nrm": "§ 122 Abs. 7 S. 2 AO",
+   "k": "Einzeln bekanntzugeben ist, soweit die Beteiligten dies beantragt haben oder ernstliche Meinungsverschiedenheiten bekannt sind.",
+   "wf": "Eine Ausfertigung genügt nur ohne Interessengegensatz; Zustellung und Nichtigkeit stehen nicht zur Debatte."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 2,
+   "q": "Bei welcher Zustellungsart gilt KEINE Viertagefiktion?",
+   "o": [
+    "Postzustellungsurkunde",
+    "Übergabeeinschreiben",
+    "Bei allen dreien gilt sie",
+    "Einwurfeinschreiben"
+   ],
+   "a": 0,
+   "w": "Bei der Urkunde zählt der beurkundete Tag. Das Einwurfeinschreiben ist gar keine förmliche Zustellung.",
+   "nrm": "§ 3 VwZG, § 4 Abs. 2 VwZG",
+   "k": "Bei der Zustellung mit Zustellungsurkunde beurkundet der Zusteller Tag und Art der Übergabe.",
+   "wf": "Beim Einwurfeinschreiben gilt § 122 Abs. 2, beim Übergabeeinschreiben eine eigene Fiktion im VwZG."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 3,
+   "q": "Welche Zustellungsart erlaubt als einzige die Ersatzzustellung nach der ZPO?",
+   "o": [
+    "Einschreiben mit Rückschein",
+    "Einwurfeinschreiben",
+    "Empfangsbekenntnis",
+    "Postzustellungsurkunde"
+   ],
+   "a": 3,
+   "w": "Nur § 3 VwZG verweist auf die §§ 177 bis 181 ZPO mit dem Stufenverhältnis.",
+   "nrm": "§ 3 VwZG iVm §§ 177–181 ZPO",
+   "k": "Ersatzzustellung ist an erwachsene Familienangehörige, Beschäftigte und ständige Mitbewohner möglich.",
+   "wf": "Rückschein, Empfangsbekenntnis und Einwurfeinschreiben kennen keine Ersatzzustellung nach der ZPO."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 2,
+   "q": "Der Steuerberater hat die Erklärung erstellt und übermittelt. Folge für die Bekanntgabe?",
+   "o": [
+    "Der Auftrag umfasst in der Regel keine Empfangsvollmacht",
+    "Bekanntgabe an den Mandanten wäre nichtig",
+    "Er ist automatisch empfangsbevollmächtigt",
+    "Zustellung an ihn ist zwingend"
+   ],
+   "a": 0,
+   "w": "Vertretungs- und Empfangsvollmacht sind zu trennen. Nur die zweite macht ihn zum Empfänger.",
+   "nrm": "§ 80 AO, § 122 Abs. 1 S. 3 f. AO",
+   "k": "Ein Verwaltungsakt kann auch gegenüber einem Bevollmächtigten bekanntgegeben werden.",
+   "wf": "Vertretung und Empfangsvollmacht sind zu trennen; ohne Vollmacht ist die Bekanntgabe an den Mandanten richtig."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 3,
+   "q": "Der Mandant widerruft die Vollmacht. Der Bescheid ging am Vortag zur Post. An wen ist bekanntgegeben?",
+   "o": [
+    "An den bisherigen Bevollmächtigten",
+    "An niemanden",
+    "Es entscheidet der Bekanntgabetag",
+    "An den Mandanten"
+   ],
+   "a": 0,
+   "w": "Der Widerruf wirkt erst mit Zugang beim Finanzamt, und maßgebend ist die Aufgabe zur Post.",
+   "nrm": "§ 80 Abs. 1 S. 3 AO",
+   "k": "Ein Widerruf der Vollmacht wird der Finanzbehörde gegenüber erst wirksam, wenn er ihr zugeht.",
+   "wf": "Der Widerruf wirkt erst mit Zugang beim Finanzamt, und maßgeblich ist die Aufgabe zur Post."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 3,
+   "q": "Das Finanzamt gibt an das minderjährige Kind statt an die Eltern bekannt. Folge?",
+   "o": [
+    "Rechtswidrig, aber wirksam",
+    "Heilbar durch Weiterleitung",
+    "Wirksam mit tatsächlichem Zugang",
+    "Nichtig, keine Heilung möglich"
+   ],
+   "a": 3,
+   "w": "Fehler beim Bekanntgabeadressaten sind die schwerste Kategorie. Es muss ein neuer Bescheid ergehen.",
+   "nrm": "AEAO zu § 122 Tz. 4.1.3",
+   "k": "Bei Minderjährigen sind die Eltern Bekanntgabeadressaten, § 34 Abs. 1, § 79 Abs. 1 Nr. 2 AO.",
+   "wf": "Fehler beim Bekanntgabeadressaten sind nicht heilbar, anders als Fehler beim Empfänger."
+  },
+  {
+   "b": 2,
+   "n": "BG",
+   "s": 2,
+   "q": "Vertauschte Briefumschläge bei zwei Steuerpflichtigen. Folge?",
+   "o": [
+    "Beide sind wirksam",
+    "Beide sind nichtig",
+    "Nur der falsch zugegangene Bescheid ist unwirksam",
+    "Beide Bescheide sind zunächst unwirksam"
+   ],
+   "a": 3,
+   "w": "Keiner der beiden Empfänger hat seinen eigenen Bescheid erhalten. Heilung durch Weiterleitung.",
+   "nrm": "AEAO zu § 122 Tz. 4.3",
+   "k": "Heilung tritt ein, wenn der Bescheid dem richtigen Empfänger tatsächlich zugeht, § 8 VwZG analog.",
+   "wf": "Beide Empfänger haben einen fremden Bescheid erhalten, keiner den eigenen."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 1,
+   "q": "Bekanntgabe am 10. März. Wann beginnt die Einspruchsfrist?",
+   "o": [
+    "Am 11. März, der 10. zählt mit",
+    "Am 10. März um 0 Uhr",
+    "Mit Aufgabe zur Post",
+    "Mit Ablauf des 10. März"
+   ],
+   "a": 3,
+   "w": "Ereignisfrist, der Ereignistag zählt nicht mit.",
+   "nrm": "§ 108 Abs. 1 AO iVm § 187 Abs. 1 BGB",
+   "k": "Ist für den Anfang einer Frist ein Ereignis maßgebend, wird der Tag des Ereignisses nicht mitgerechnet.",
+   "wf": "Der Ereignistag zählt nicht mit, deshalb beginnt die Frist erst mit seinem Ablauf."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 1,
+   "q": "Bekanntgabe am 10. März, Monatsfrist. Reguläres Ende?",
+   "o": [
+    "9. April",
+    "30. April",
+    "10. April",
+    "11. April"
+   ],
+   "a": 2,
+   "w": "Die Frist endet an dem Tag, der durch seine Zahl dem Ereignistag entspricht.",
+   "nrm": "§ 108 Abs. 1 AO iVm § 188 Abs. 2 BGB",
+   "k": "Eine nach Monaten bestimmte Frist endet mit Ablauf des Tages, der durch seine Zahl dem Ereignistag entspricht.",
+   "wf": "Ein Tag früher oder später entsteht nur, wenn man den Ereignistag mitzählt."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 2,
+   "q": "Bekanntgabe am 31. Januar, Monatsfrist. Ende?",
+   "o": [
+    "3. März",
+    "Die Frist läuft nicht",
+    "28. oder 29. Februar",
+    "1. März"
+   ],
+   "a": 2,
+   "w": "Fehlt der Zieltag im letzten Monat, endet die Frist mit dessen letztem Tag.",
+   "nrm": "§ 188 Abs. 3 BGB",
+   "k": "Fehlt im letzten Monat der entsprechende Tag, endet die Frist mit Ablauf des letzten Tages dieses Monats.",
+   "wf": "Der 31. Februar existiert nicht, deshalb greift die Sonderregel für fehlende Tage."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 1,
+   "q": "Das Fristende fällt auf einen Samstag. Was gilt?",
+   "o": [
+    "Ende am Freitag davor",
+    "Ende am Samstag",
+    "Ende am nächsten Werktag",
+    "Nur Sonntage verschieben"
+   ],
+   "a": 2,
+   "w": "Sonnabend ist in § 108 Abs. 3 ausdrücklich genannt.",
+   "nrm": "§ 108 Abs. 3 AO",
+   "k": "Fällt das Ende einer Frist auf Sonntag, gesetzlichen Feiertag oder Sonnabend, endet sie mit dem nächstfolgenden Werktag.",
+   "wf": "Der Sonnabend ist in § 108 Abs. 3 ausdrücklich genannt, die Frist endet daher nicht früher."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 2,
+   "q": "Kann die Einspruchsfrist verlängert werden?",
+   "o": [
+    "Nur mit Zustimmung des Sachgebietsleiters",
+    "Ja, nach § 109",
+    "Nein, § 109 erfasst sie nicht",
+    "Ja, aber nur rückwirkend"
+   ],
+   "a": 2,
+   "w": "Sie ist eine gesetzliche Ausschlussfrist. Nach Ablauf hilft nur § 110.",
+   "nrm": "§ 109 Abs. 1, § 355 Abs. 1 AO",
+   "k": "Verlängerbar sind Erklärungsfristen und von der Finanzbehörde gesetzte Fristen.",
+   "wf": "§ 109 erfasst nur Erklärungsfristen und behördliche Fristen, nicht gesetzliche Rechtsbehelfsfristen."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 2,
+   "q": "Für welche Fristen gilt § 110 AO?",
+   "o": [
+    "Nur für behördliche Fristen",
+    "Auch für die Festsetzungsfrist",
+    "Nur für gesetzliche Fristen",
+    "Für alle Fristen"
+   ],
+   "a": 2,
+   "w": "Behördliche Fristen können stattdessen nach § 109 auch rückwirkend verlängert werden.",
+   "nrm": "§ 110 Abs. 1 S. 1 AO",
+   "k": "War jemand ohne Verschulden verhindert, eine gesetzliche Frist einzuhalten, ist Wiedereinsetzung zu gewähren.",
+   "wf": "Behördliche Fristen laufen über § 109, die Festsetzungsfrist ist einer Wiedereinsetzung nicht zugänglich."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 2,
+   "q": "Der Steuerberater versäumt die Einspruchsfrist. Wirkung auf den Mandanten?",
+   "o": [
+    "Zurechnung als eigenes Verschulden",
+    "Nur bei grober Fahrlässigkeit",
+    "Nur mit Empfangsvollmacht",
+    "Keine"
+   ],
+   "a": 0,
+   "w": "Anders liegt es beim Büroversehen eines sorgfältig überwachten Angestellten.",
+   "nrm": "§ 110 Abs. 1 S. 2 AO",
+   "k": "Das Verschulden eines Vertreters ist dem Vertretenen zuzurechnen.",
+   "wf": "Entlastend wirkt nur das Büroversehen einer überwachten Hilfskraft, nicht der Fehler des Beraters."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 3,
+   "q": "Was ist bei der Wiedereinsetzung wichtiger als der förmliche Antrag?",
+   "o": [
+    "Die Zustimmung des Finanzamts",
+    "Die Glaubhaftmachung",
+    "Die Begründung",
+    "Die Nachholung der versäumten Handlung"
+   ],
+   "a": 3,
+   "w": "Ist die Handlung fristgerecht nachgeholt, kann Wiedereinsetzung auch ohne Antrag gewährt werden.",
+   "nrm": "§ 110 Abs. 2 S. 3 und 4 AO",
+   "k": "Innerhalb der Antragsfrist ist die versäumte Handlung nachzuholen.",
+   "wf": "Antrag und Begründung sind wichtig, aber die Nachholung kann den Antrag ersetzen."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 3,
+   "q": "Ab wann läuft die Jahresfrist des § 110 Abs. 3 AO?",
+   "o": [
+    "Ab Kenntnis",
+    "Ab Ende der versäumten Frist",
+    "Ab Wegfall des Hindernisses",
+    "Ab Bekanntgabe"
+   ],
+   "a": 1,
+   "w": "Absolute Grenze, Ausnahme nur höhere Gewalt.",
+   "nrm": "§ 110 Abs. 3 AO",
+   "k": "Nach einem Jahr seit dem Ende der versäumten Frist ist Wiedereinsetzung ausgeschlossen.",
+   "wf": "Bekanntgabe, Hinderniswegfall und Kenntnis sind für die absolute Grenze ohne Bedeutung."
+  },
+  {
+   "b": 3,
+   "n": "FR",
+   "s": 3,
+   "q": "Welches Wort ist in § 126 Abs. 3 S. 1 AO die eigentliche Hürde?",
+   "o": [
+    "Unterblieben",
+    "Rechtzeitige Anfechtung",
+    "Dadurch",
+    "Erforderliche Begründung"
+   ],
+   "a": 2,
+   "w": "Es verlangt Kausalität zwischen Behördenfehler und Fristversäumnis.",
+   "nrm": "§ 126 Abs. 3 S. 1 AO",
+   "k": "Ist die rechtzeitige Anfechtung dadurch versäumt worden, gilt die Versäumung als nicht verschuldet.",
+   "wf": "Die übrigen Merkmale sind unstreitig; entscheidend ist die Ursächlichkeit des Behördenfehlers."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": 2,
+   "q": "Gegen einen Nullbescheid zur Körperschaftsteuer wird Einspruch eingelegt. Ergebnis?",
+   "o": [
+    "Zulässig, aber unbegründet",
+    "Nichtig",
+    "Zulässig",
+    "Unzulässig mangels Beschwer"
+   ],
+   "a": 3,
+   "w": "Null ist die niedrigstmögliche Festsetzung. Angreifen muss man die Verlustfeststellung.",
+   "nrm": "§ 350 AO",
+   "k": "Befugt ist nur, wer geltend macht, durch einen Verwaltungsakt beschwert zu sein.",
+   "wf": "Ohne Beschwer fehlt die Einspruchsbefugnis, auf die Begründetheit kommt es nicht mehr an."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": 2,
+   "q": "Während des Einspruchsverfahrens ergeht ein Änderungsbescheid. Was ist zu tun?",
+   "o": [
+    "Das Verfahren endet",
+    "Nichts, er wird automatisch Gegenstand des Verfahrens",
+    "Klage erheben",
+    "Neuer Einspruch nötig"
+   ],
+   "a": 1,
+   "w": "Ein zusätzlicher Einspruch wäre unzulässig.",
+   "nrm": "§ 365 Abs. 3 AO",
+   "k": "Ein während des Einspruchsverfahrens ergehender Änderungsbescheid wird Gegenstand des Verfahrens.",
+   "wf": "Ein zusätzlicher Einspruch wäre unzulässig, das Verfahren endet gerade nicht."
+  },
+  {
+   "b": 3,
+   "n": "ES",
+   "s": 1,
+   "q": "Hemmt der Einspruch die Vollziehung?",
+   "o": [
+    "Nur bei Steuerbescheiden",
+    "Nein, dafür braucht es die Aussetzung",
+    "Nur auf Antrag des Finanzamts",
+    "Ja"
+   ],
+   "a": 1,
+   "w": "Ohne Aussetzung entstehen Säumniszuschläge von einem Prozent je Monat.",
+   "nrm": "§ 361 Abs. 1 S. 1 AO",
+   "k": "Durch Einlegung des Einspruchs wird die Vollziehung nicht gehemmt.",
+   "wf": "Die Hemmung der Vollziehung tritt nur durch Aussetzung ein, nicht durch den Einspruch selbst."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 1,
+   "q": "Was ist nach Ablauf der Festsetzungsfrist unzulässig?",
+   "o": [
+    "Festsetzung und Änderung",
+    "Nur die erstmalige Festsetzung",
+    "Nur Änderungen zu Lasten",
+    "Festsetzung, Änderung und Aufhebung"
+   ],
+   "a": 3,
+   "w": "Die Frist wirkt in beide Richtungen und schneidet auch eigene Anträge ab.",
+   "nrm": "§ 169 Abs. 1 S. 1 AO",
+   "k": "Eine Steuerfestsetzung sowie ihre Aufhebung oder Änderung sind nach Fristablauf nicht mehr zulässig.",
+   "wf": "Auch die Aufhebung ist gesperrt, und die Sperre gilt in beide Richtungen."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 2,
+   "q": "Das Finanzamt setzt nach Fristablauf fest. Folge?",
+   "o": [
+    "Nichtig",
+    "Schwebend unwirksam",
+    "Rechtswidrig, aber wirksam",
+    "Unwirksam"
+   ],
+   "a": 2,
+   "w": "Wer nichts tut, zahlt eine erloschene Steuer.",
+   "nrm": "AEAO vor §§ 169–171 Tz. 3",
+   "k": "Ein unter Verstoß gegen die Festsetzungsverjährung ergangener Bescheid ist rechtswidrig, aber wirksam.",
+   "wf": "Nichtigkeit oder Unwirksamkeit setzen einen schwerwiegenden offenkundigen Fehler voraus."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 2,
+   "q": "Einkommensteuer 01, Erklärungspflicht, Abgabe erst in 06. Fristbeginn?",
+   "o": [
+    "31.12.01",
+    "Gar nicht",
+    "31.12.06",
+    "31.12.04"
+   ],
+   "a": 3,
+   "w": "Die Anlaufhemmung ist auf drei Jahre gedeckelt, spätere Abgabe verlängert nichts.",
+   "nrm": "§ 170 Abs. 2 S. 1 Nr. 1 AO",
+   "k": "Beginn mit Ablauf des Jahres der Abgabe, spätestens mit Ablauf des dritten Jahres nach Steuerentstehung.",
+   "wf": "Der Beginn im Entstehungsjahr gilt ohne Erklärungspflicht, die späte Abgabe verlängert nichts."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 2,
+   "q": "Maximale Laufzeit bei Erklärungspflicht ab Steuerentstehung?",
+   "o": [
+    "Sieben Jahre",
+    "Vier Jahre",
+    "Zehn Jahre",
+    "Fünf Jahre"
+   ],
+   "a": 0,
+   "w": "Drei Jahre Anlaufhemmung plus vier Jahre Dauer.",
+   "nrm": "§ 170 Abs. 2, § 169 Abs. 2 AO",
+   "k": "Anlaufhemmung maximal drei Jahre, Regeldauer vier Jahre.",
+   "wf": "Vier oder fünf Jahre lassen die Anlaufhemmung außer Betracht, zehn Jahre gelten nur bei Hinterziehung."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 2,
+   "q": "Wie lang ist die Festsetzungsfrist für Zinsen?",
+   "o": [
+    "Vier Jahre",
+    "Zwei Jahre",
+    "Ein Jahr",
+    "Wie die Hauptsteuer"
+   ],
+   "a": 1,
+   "w": "Seit Juli 2022 zwei Jahre, geregelt in Satz 1, nicht in Satz 2.",
+   "nrm": "§ 239 Abs. 1 S. 1 AO",
+   "k": "Auf Zinsen sind die für Steuern geltenden Vorschriften entsprechend anzuwenden, die Festsetzungsfrist beträgt zwei Jahre.",
+   "wf": "Ein Jahr galt bis Juli 2022, vier Jahre gelten für Steuern, nicht für Zinsen."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 3,
+   "q": "Ein Bescheid enthält einen hinterzogenen und einen ehrlichen Teil. Folge des Wortes soweit?",
+   "o": [
+    "Teilverjährung, zwei Fristen nebeneinander",
+    "Alles zehn Jahre",
+    "Alles vier Jahre",
+    "Die Frist beginnt neu"
+   ],
+   "a": 0,
+   "w": "Eine Saldierung über § 177 scheitert insoweit am Fristablauf für den ehrlichen Teil.",
+   "nrm": "§ 169 Abs. 2 S. 2 AO",
+   "k": "Die Frist beträgt zehn Jahre, soweit hinterzogen, und fünf Jahre, soweit leichtfertig verkürzt wurde.",
+   "wf": "Eine einheitliche Frist würde das Wort soweit übergehen; einen Neubeginn kennt § 169 nicht."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 3,
+   "q": "Wie wendet ein unbeteiligter Gesamtschuldner die Zehnjahresfrist ab?",
+   "o": [
+    "Glaubhaftmachung der Unkenntnis",
+    "Gar nicht",
+    "Antrag auf Aufteilung",
+    "Nachweis: kein Vermögensvorteil und keine Sorgfaltspflichtverletzung"
+   ],
+   "a": 3,
+   "w": "Beide Voraussetzungen kumulativ und als Nachweis, nicht als Glaubhaftmachung.",
+   "nrm": "§ 169 Abs. 2 S. 3 AO",
+   "k": "Dies gilt nicht, soweit der Steuerschuldner nachweist, dass er keinen Vermögensvorteil erlangt hat und keine Sorgfaltspflicht verletzte.",
+   "wf": "Glaubhaftmachung genügt nicht, und die Aufteilung nach §§ 268 ff. betrifft nur die Erhebung."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 3,
+   "q": "Wann ist die Frist nach § 169 Abs. 1 S. 3 Nr. 1 AO gewahrt?",
+   "o": [
+    "Bei rechtzeitiger Unterschrift",
+    "Bei Zugang innerhalb der Viertagefiktion",
+    "Bei rechtzeitiger Bekanntgabe",
+    "Verlassen des Finanzamts vor Fristablauf und Zugang des identischen Bescheids"
+   ],
+   "a": 3,
+   "w": "Geht der Bescheid verloren und ergeht später ein neuer, hilft das Verlassen des Amtes nicht.",
+   "nrm": "§ 169 Abs. 1 S. 3 Nr. 1 AO",
+   "k": "Die Frist ist gewahrt, wenn der Bescheid vor Fristablauf den Bereich der zuständigen Finanzbehörde verlassen hat.",
+   "wf": "Unterschrift und Bekanntgabe genügen nicht; der Bescheid muss das Haus verlassen und ankommen."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 2,
+   "q": "Der 31. Dezember, an dem die Festsetzungsfrist endet, ist ein Sonntag. Was gilt?",
+   "o": [
+    "Ende am nächsten Werktag im Januar",
+    "Ende am 30.12.",
+    "§ 108 Abs. 3 gilt hier nicht",
+    "Ende trotzdem am 31.12."
+   ],
+   "a": 0,
+   "w": "In Verjährungsaufgaben wendet man § 108 Abs. 3 oft zweimal an.",
+   "nrm": "§ 108 Abs. 3 AO",
+   "k": "Fällt das Fristende auf Sonntag, Feiertag oder Sonnabend, endet die Frist mit dem nächsten Werktag.",
+   "wf": "§ 108 Abs. 3 gilt auch für Verjährungsfristen, ein Vorziehen auf den 30.12. kennt das Gesetz nicht."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 3,
+   "q": "Wie weit reicht die Ablaufhemmung durch eine Außenprüfung?",
+   "o": [
+    "Alle offenen Veranlagungszeiträume",
+    "Alle Steuerarten und Jahre",
+    "Nur Jahre mit Mehrergebnis",
+    "Nur die in der Prüfungsanordnung genannten"
+   ],
+   "a": 3,
+   "w": "Deshalb ist die Prüfungsanordnung selbständig anfechtbar.",
+   "nrm": "§ 171 Abs. 4, § 196 AO",
+   "k": "Die Frist läuft nicht ab für die Steuern, auf die sich die Prüfung erstreckt.",
+   "wf": "Die Prüfungsanordnung begrenzt die Reichweite; das Mehrergebnis ist dafür ohne Bedeutung."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 3,
+   "q": "Welche zwei Voraussetzungen verlangt § 171 Abs. 8 AO?",
+   "o": [
+    "Beseitigung der Ungewissheit und Kenntnis des Finanzamts",
+    "Kenntnis und Aufhebung der Vorläufigkeit",
+    "Beseitigung der Ungewissheit und Antrag",
+    "Rechtskraft und Mitteilung"
+   ],
+   "a": 0,
+   "w": "Zwischen Beseitigung und Kenntnis kann viel Zeit liegen, genau darauf zielen die Fälle.",
+   "nrm": "§ 171 Abs. 8 AO",
+   "k": "Die Frist endet nicht vor Ablauf eines Jahres, nachdem die Ungewissheit beseitigt ist und die Behörde davon Kenntnis erlangt hat.",
+   "wf": "Antrag, Aufhebung der Vorläufigkeit und Rechtskraft sind nicht die Auslöser der Jahresfrist."
+  },
+  {
+   "b": 4,
+   "n": "VJ",
+   "s": 3,
+   "q": "Worin unterscheiden sich § 171 Abs. 3 und Abs. 3a im Umfang?",
+   "o": [
+    "Abs. 3 gesamter Anspruch, Abs. 3a punktuell",
+    "Kein Unterschied",
+    "Abs. 3 nur im Umfang des Antrags, Abs. 3a gesamter Steueranspruch",
+    "Beide nur punktuell"
+   ],
+   "a": 2,
+   "w": "Der weite Umfang bei Abs. 3a folgt aus der Gesamtaufrollung nach § 367 Abs. 2.",
+   "nrm": "§ 171 Abs. 3 und 3a AO",
+   "k": "Bei Einspruch oder Klage ist der Ablauf hinsichtlich des gesamten Steueranspruchs gehemmt.",
+   "wf": "Abs. 3 wirkt nur punktuell, weil nur über den Antrag entschieden wird."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 1,
+   "q": "Welche Rechtsfolge ordnet § 157 Abs. 2 AO an?",
+   "o": [
+    "Sie sind gesondert festzustellen",
+    "Sie binden den Folgebescheid",
+    "Besteuerungsgrundlagen sind selbständig anfechtbar",
+    "Sie sind nicht selbständig anfechtbarer Teil des Bescheids"
+   ],
+   "a": 3,
+   "w": "Stimmt die Steuer, fehlt für eine falsche Zwischenzeile die Beschwer.",
+   "nrm": "§ 157 Abs. 2 AO, § 350 AO",
+   "k": "Die Feststellung der Besteuerungsgrundlagen bildet einen nicht selbständig anfechtbaren Teil des Steuerbescheids.",
+   "wf": "Selbständig anfechtbar sind sie gerade nicht, und festgestellt werden sie nur bei besonderer Anordnung."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 2,
+   "q": "Wann werden Besteuerungsgrundlagen gesondert festgestellt?",
+   "o": [
+    "Wenn es zweckmäßig ist",
+    "Nur soweit eine Norm es anordnet",
+    "Auf Antrag",
+    "Immer bei mehreren Beteiligten"
+   ],
+   "a": 1,
+   "w": "Enumerationsprinzip. Ohne anordnende Norm bleibt es bei § 157 Abs. 2.",
+   "nrm": "§ 179 Abs. 1 AO",
+   "k": "Besteuerungsgrundlagen werden gesondert festgestellt, soweit dies in diesem Gesetz oder sonst bestimmt ist.",
+   "wf": "Zweckmäßigkeit und Antrag genügen nicht; mehrere Beteiligte allein auch nicht."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 2,
+   "q": "Wo steht die Legaldefinition des Grundlagenbescheids?",
+   "o": [
+    "§ 179 Abs. 1",
+    "§ 171 Abs. 10",
+    "§ 175 Abs. 1 Nr. 1",
+    "§ 182 Abs. 1"
+   ],
+   "a": 1,
+   "w": "Dort werden auch ressortfremde Bescheide erfasst, etwa Bescheinigungen anderer Behörden.",
+   "nrm": "§ 171 Abs. 10 AO",
+   "k": "Grundlagenbescheid ist ein Feststellungsbescheid, ein Messbescheid oder ein anderer bindender Verwaltungsakt.",
+   "wf": "Einnahmen und Ausgaben sind bloße Rechenposten, die Steuer wird dort gar nicht festgesetzt."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 2,
+   "q": "Ab wann bindet der Feststellungsbescheid den Folgebescheid?",
+   "o": [
+    "Erst nach Änderung des Folgebescheids",
+    "Ab wirksamer Bekanntgabe, auch vor Unanfechtbarkeit",
+    "Ab Ablauf der Zweijahresfrist",
+    "Ab Bestandskraft"
+   ],
+   "a": 1,
+   "w": "Die Bindung setzt nur Wirksamkeit voraus, nicht Bestandskraft.",
+   "nrm": "§ 182 Abs. 1 S. 1 AO",
+   "k": "Feststellungsbescheide sind für Folgebescheide bindend, auch wenn sie noch nicht unanfechtbar sind.",
+   "wf": "§ 179 regelt das Ob der Feststellung, § 182 die Bindung, § 175 die Folgeänderung."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 1,
+   "q": "Der Grundlagenbescheid ändert sich. Was muss das Finanzamt tun?",
+   "o": [
+    "Nur zu Lasten ändern",
+    "Neue Tatsachen feststellen",
+    "Zwingend ändern, ohne weitere Voraussetzungen",
+    "Nach Ermessen ändern"
+   ],
+   "a": 2,
+   "w": "Eine der stärksten Korrekturnormen, sie wirkt in beide Richtungen.",
+   "nrm": "§ 175 Abs. 1 S. 1 Nr. 1 AO",
+   "k": "Ein Steuerbescheid ist zu erlassen, aufzuheben oder zu ändern, soweit ein Grundlagenbescheid geändert wird.",
+   "wf": "Bestandskraft ist nicht erforderlich; die Zweijahresfrist betrifft nur die Zeit zur Auswertung."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 2,
+   "q": "Wie lange hat das Finanzamt Zeit für die Folgeänderung?",
+   "o": [
+    "Zwei Jahre ab Bekanntgabe an den Steuerpflichtigen",
+    "Ein Jahr ab Bekanntgabe",
+    "Zwei Jahre ab Eingang beim Folgefinanzamt",
+    "Bis zum Ende der regulären Frist"
+   ],
+   "a": 0,
+   "w": "Gerechnet ab Bekanntgabe an den Steuerpflichtigen, nicht ab Kenntnis der Behörde.",
+   "nrm": "§ 171 Abs. 10 AO",
+   "k": "Die Festsetzungsfrist endet nicht vor Ablauf von zwei Jahren nach Bekanntgabe des Grundlagenbescheids.",
+   "wf": "Ermessen besteht nicht, und neue Tatsachen sind für § 175 Abs. 1 Nr. 1 ohne Bedeutung."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 2,
+   "q": "Einspruch gegen den Einkommensteuerbescheid mit der Begründung, die festgestellten Einkünfte seien zu hoch. Ergebnis?",
+   "o": [
+    "Unzulässig",
+    "Das Wohnsitzfinanzamt muss prüfen",
+    "Zulässig, Einwendung aber unbeachtlich",
+    "Gilt als Einspruch gegen den Grundlagenbescheid"
+   ],
+   "a": 2,
+   "w": "Einwendungen gegen festgestellte Besteuerungsgrundlagen nur beim Grundlagenbescheid.",
+   "nrm": "§ 351 Abs. 2 AO",
+   "k": "Entscheidungen in einem Grundlagenbescheid können nur durch Anfechtung dieses Bescheids angegriffen werden.",
+   "wf": "Ein Jahr gilt bei § 171 Abs. 2, auf den Eingang beim Folgefinanzamt kommt es nicht an."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 3,
+   "q": "Im Feststellungsbescheid ist die Einkunftsart falsch, die Höhe richtig. Beschwer?",
+   "o": [
+    "Ja, die Einkunftsart ist eigenständige Feststellung",
+    "Nur bei Gewerbesteuer",
+    "Nur bei Mitunternehmerschaften",
+    "Nein"
+   ],
+   "a": 0,
+   "w": "Im Einkommensteuerbescheid wäre es umgekehrt, dort ist sie nur Begründung.",
+   "nrm": "§ 350 AO, § 179 Abs. 1 AO",
+   "k": "Festgestellt werden Art, Höhe und Verteilung der Einkünfte sowie Sonderbetriebsausgaben.",
+   "wf": "Der Einspruch ist zulässig, nur die Einwendung greift wegen § 351 Abs. 2 nicht durch."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 3,
+   "q": "Ehegatten vermieten gemeinsam, werden zusammen veranlagt, Aufteilung unstreitig. Feststellungsbescheid?",
+   "o": [
+    "Nur über 10.000 €",
+    "Nein, Fall von geringer Bedeutung",
+    "Nur auf Antrag",
+    "Ja, immer bei mehreren Beteiligten"
+   ],
+   "a": 1,
+   "w": "Höhe und Aufteilung stehen fest, es gibt nichts zu koordinieren.",
+   "nrm": "§ 180 Abs. 3 S. 1 Nr. 2 AO",
+   "k": "Eine gesonderte Feststellung unterbleibt in Fällen von geringer Bedeutung.",
+   "wf": "Die Höhe ist richtig, aber die Einkunftsart ist hier eine eigenständige Regelung."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 2,
+   "q": "Welche Rolle hat der Gewerbesteuermessbescheid?",
+   "o": [
+    "Nur Folgebescheid",
+    "Weder noch",
+    "Nur Grundlagenbescheid",
+    "Beides zugleich"
+   ],
+   "a": 3,
+   "w": "Grundlagenbescheid ist eine Rolle, keine Eigenschaft.",
+   "nrm": "§ 184 AO, § 171 Abs. 10 AO",
+   "k": "Die Vorschriften über die Durchführung der Besteuerung sind auf Messbescheide sinngemäß anzuwenden.",
+   "wf": "Betragsgrenzen kennt die Norm nicht, und auf einen Antrag kommt es nicht an."
+  },
+  {
+   "b": 5,
+   "n": "GB",
+   "s": 3,
+   "q": "Die Feststellungsfrist ist abgelaufen, die Festsetzungsfrist eines Folgebescheids nicht. Was gilt?",
+   "o": [
+    "Nur mit Zustimmung des Steuerpflichtigen",
+    "Er darf ergehen, mit Hinweis auf die eingeschränkte Wirkung",
+    "Kein Feststellungsbescheid mehr",
+    "Er darf uneingeschränkt ergehen"
+   ],
+   "a": 1,
+   "w": "Fehlt der Hinweis, wirkt der Bescheid uneingeschränkt und ist nicht ergänzungsfähig.",
+   "nrm": "§ 181 Abs. 5 AO",
+   "k": "Der Feststellungsbescheid darf ergehen, soweit er für eine noch offene Steuerfestsetzung von Bedeutung ist.",
+   "wf": "Nach oben ist er Folgebescheid, nach unten Grundlagenbescheid; ein reiner Steuerbescheid ist er nicht."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 1,
+   "q": "Für welche Verwaltungsakte gilt § 129 AO?",
+   "o": [
+    "Nur Feststellungsbescheide",
+    "Nur Steuerbescheide",
+    "Nur sonstige Verwaltungsakte",
+    "Für alle Verwaltungsakte"
+   ],
+   "a": 3,
+   "w": "Er ist die einzige Korrekturnorm, die beide Spuren bedient.",
+   "nrm": "§ 129 AO",
+   "k": "Die Finanzbehörde kann Schreibfehler, Rechenfehler und ähnliche offenbare Unrichtigkeiten jederzeit berichtigen.",
+   "wf": "Die Beschränkung auf bestimmte Bescheidarten gilt für §§ 130, 131 und 164 ff., nicht für § 129."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Muss die Unrichtigkeit nach § 129 AO aus dem Bescheid selbst erkennbar sein?",
+   "o": [
+    "Ja, zwingend",
+    "Nein, es genügt die Erkennbarkeit aus Erklärung oder Akte",
+    "Nur bei Steuerbescheiden",
+    "Nur bei Rechenfehlern"
+   ],
+   "a": 1,
+   "w": "Das ist der Unterschied zur Nichtigkeit nach § 125, wo die Offenkundigkeit aus dem Bescheid folgen muss.",
+   "nrm": "§ 129 AO",
+   "k": "Offenbar ist der Fehler, wenn er für einen unbefangenen Dritten eindeutig erkennbar ist, auch aus der Akte.",
+   "wf": "Die Erkennbarkeit aus dem Bescheid verlangt § 125, nicht § 129."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Worin unterscheidet sich § 173a von § 129?",
+   "o": [
+    "§ 173a gilt für alle Verwaltungsakte",
+    "§ 173a erfasst auch Rechtsanwendungsfehler",
+    "§ 173a erfasst Fehler des Steuerpflichtigen und nur Schreib- und Rechenfehler",
+    "Kein Unterschied"
+   ],
+   "a": 2,
+   "w": "Ähnliche offenbare Unrichtigkeiten erfasst § 173a gerade nicht, das ist seine praktische Schwäche.",
+   "nrm": "§ 173a AO",
+   "k": "Steuerbescheide sind zu ändern, soweit dem Steuerpflichtigen bei Erstellung der Erklärung Schreib- oder Rechenfehler unterlaufen sind.",
+   "wf": "§ 173a gilt nur für Steuerbescheide und erfasst gerade keine ähnlichen offenbaren Unrichtigkeiten."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 1,
+   "q": "Für welche Bescheide gilt der Vorbehalt der Nachprüfung?",
+   "o": [
+    "Nur für Haftungsbescheide",
+    "Für alle Verwaltungsakte",
+    "Nur für Vorauszahlungen",
+    "Nur für Steuerbescheide und gleichgestellte"
+   ],
+   "a": 3,
+   "w": "Eine Stundung oder einen Haftungsbescheid unter Vorbehalt gibt es nicht.",
+   "nrm": "§ 164 Abs. 1 AO",
+   "k": "Steuern können, solange der Steuerfall nicht abschließend geprüft ist, unter Vorbehalt festgesetzt werden.",
+   "wf": "Ein Vorbehalt bei Haftungsbescheiden oder Stundungen ist nicht vorgesehen."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Ein Änderungsbescheid enthält keinen Hinweis auf den behördlich angeordneten Vorbehalt. Folge?",
+   "o": [
+    "Der Vorbehalt bleibt bestehen",
+    "Der Bescheid ist nichtig",
+    "Der Vorbehalt entfällt",
+    "Der Bescheid ist rechtswidrig"
+   ],
+   "a": 0,
+   "w": "Nur die ausdrückliche Aufhebung beseitigt ihn. Beim gesetzlichen Vorbehalt nach § 168 ist es umgekehrt.",
+   "nrm": "AEAO zu § 164 Nr. 6",
+   "k": "Fehlt im Änderungsbescheid ein Vermerk, bleibt der behördlich angeordnete Vorbehalt bestehen.",
+   "wf": "Ein stillschweigender Wegfall tritt nur beim gesetzlichen Vorbehalt nach § 168 ein."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Das Finanzamt hebt den Vorbehalt auf. Wie weit kann der Bescheid angegriffen werden?",
+   "o": [
+    "Umfassend, § 351 Abs. 1 gilt nicht",
+    "Nur mit Zustimmung",
+    "Nur im Umfang der Änderung",
+    "Gar nicht"
+   ],
+   "a": 0,
+   "w": "Der Bescheid war nie materiell bestandskräftig, es gibt also keine Bestandskraft zu schützen.",
+   "nrm": "§ 164 Abs. 3, § 351 Abs. 1 AO",
+   "k": "Die Aufhebung des Vorbehalts steht einer Festsetzung ohne Vorbehalt gleich.",
+   "wf": "Eine Beschränkung auf den Änderungsumfang setzt materielle Bestandskraft voraus, die hier fehlte."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Welche Normen sind für den Wegfall des Vorbehalts nach § 164 Abs. 4 ausgeschlossen?",
+   "o": [
+    "§ 170 Abs. 2",
+    "§ 171 Abs. 3a",
+    "§ 169 Abs. 2 S. 2 und § 171 Abs. 7, 8, 10",
+    "§ 171 Abs. 4"
+   ],
+   "a": 2,
+   "w": "Der Vorbehalt kann deshalb früher entfallen, als die Festsetzungsfrist endet.",
+   "nrm": "§ 164 Abs. 4 S. 2 AO",
+   "k": "Für den Wegfall des Vorbehalts bleiben die verlängerte Frist bei Hinterziehung und bestimmte Ablaufhemmungen außer Betracht.",
+   "wf": "§ 171 Abs. 4 ist gerade nicht ausgenommen, deshalb überdauert der Vorbehalt die Außenprüfung."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Worin unterscheidet sich § 165 von § 164 bei der Reichweite?",
+   "o": [
+    "§ 165 öffnet den ganzen Bescheid",
+    "§ 165 öffnet nur den vorläufigen Punkt",
+    "Kein Unterschied",
+    "§ 165 gilt nur für Vorauszahlungen"
+   ],
+   "a": 1,
+   "w": "Deshalb scheitert das Finanzamt in Fall 7, wenn es die Vorläufigkeit für etwas anderes nutzt.",
+   "nrm": "§ 165 Abs. 2 AO",
+   "k": "Soweit die Steuer vorläufig festgesetzt wurde, kann die Festsetzung aufgehoben oder geändert werden.",
+   "wf": "Der Vorbehalt öffnet den ganzen Bescheid, die Vorläufigkeit nur den bezeichneten Punkt."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Wirkt der Vorbehalt der Nachprüfung auf die Festsetzungsfrist?",
+   "o": [
+    "Nur bei Außenprüfung",
+    "Ja, er hemmt den Ablauf",
+    "Nein, keine Auswirkung",
+    "Nur zugunsten des Steuerpflichtigen"
+   ],
+   "a": 2,
+   "w": "Anders als die Vorläufigkeit, für die § 171 Abs. 8 gilt.",
+   "nrm": "AEAO zu § 164 Nr. 1",
+   "k": "Im Gegensatz zur vorläufigen Festsetzung hat der Vorbehalt keine Auswirkung auf den Ablauf der Festsetzungsfrist.",
+   "wf": "Eine Hemmung durch den Vorbehalt gibt es nicht; § 171 Abs. 8 gehört zu § 165."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Welcher Teil des § 172 öffnet den Weg zu den §§ 173 bis 176?",
+   "o": [
+    "Abs. 1 Nr. 2a",
+    "Abs. 1 Nr. 2d",
+    "Abs. 1 Nr. 2c",
+    "Abs. 1 Nr. 1"
+   ],
+   "a": 1,
+   "w": "Ausdrücklich nicht erfasst sind die §§ 130 und 131.",
+   "nrm": "§ 172 Abs. 1 S. 1 Nr. 2d AO",
+   "k": "Ein Steuerbescheid darf geändert werden, soweit dies sonst gesetzlich zugelassen ist.",
+   "wf": "Nr. 1, 2a und 2c regeln eigene Tatbestände und verweisen nicht auf andere Normen."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Bis wann wirkt der schlichte Änderungsantrag zugunsten des Steuerpflichtigen?",
+   "o": [
+    "Bis zur Festsetzungsverjährung",
+    "Nur innerhalb der Einspruchsfrist",
+    "Bis zur Außenprüfung",
+    "Jederzeit"
+   ],
+   "a": 1,
+   "w": "Eine Zustimmung zu einer Änderung zu Lasten ist dagegen auch später möglich.",
+   "nrm": "§ 172 Abs. 1 S. 1 Nr. 2a AO",
+   "k": "Zugunsten des Steuerpflichtigen nur, wenn er vor Ablauf der Einspruchsfrist zugestimmt oder den Antrag gestellt hat.",
+   "wf": "Nach Fristablauf wirkt nur noch die Zustimmung zu einer Änderung zu Lasten."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Worin liegt der einzige echte Vorteil des schlichten Änderungsantrags?",
+   "o": [
+    "Keine Gesamtaufrollung",
+    "Längere Frist",
+    "Vollprüfung zugunsten",
+    "Aussetzung der Vollziehung"
+   ],
+   "a": 0,
+   "w": "§ 177 greift aber trotzdem, sobald das Finanzamt ändert.",
+   "nrm": "§ 367 Abs. 2 S. 1 AO",
+   "k": "Beim Einspruch ist die Sache in vollem Umfang erneut zu prüfen.",
+   "wf": "Aussetzung, längere Frist und Vollprüfung bietet gerade der Einspruch, nicht der Antrag."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 1,
+   "q": "Was ist keine Tatsache im Sinne des § 173 AO?",
+   "o": [
+    "Innere Tatsachen wie die Gewinnerzielungsabsicht",
+    "Beweismittel",
+    "Tatsächliche Zustände",
+    "Eine Änderung der Rechtsprechung"
+   ],
+   "a": 3,
+   "w": "Deshalb braucht es für Rechtsprechungsänderungen den eigenen Schutz des § 176.",
+   "nrm": "§ 173 Abs. 1 AO",
+   "k": "Tatsachen sind Zustände, Beziehungen und Eigenschaften, nicht aber Schlussfolgerungen und Rechtsauffassungen.",
+   "wf": "Innere Tatsachen, Beweismittel und tatsächliche Zustände sind Tatsachen; die Rechtsprechung ist es nicht."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Wessen Kenntnis ist für das nachträgliche Bekanntwerden maßgeblich?",
+   "o": [
+    "Des gesamten Finanzamts",
+    "Des Betriebsprüfers",
+    "Der Rechtsbehelfsstelle",
+    "Der Veranlagungsstelle nach Aktenlage"
+   ],
+   "a": 3,
+   "w": "Was in der Akte liegt, gilt als bekannt, auch wenn es niemand gelesen hat.",
+   "nrm": "AEAO zu § 173 Tz. 2",
+   "k": "Maßgeblich ist die Kenntnis der zuständigen Dienststelle nach Aktenlage.",
+   "wf": "Die Kenntnis von Betriebsprüfung und Lohnsteuerstelle wird der Veranlagungsstelle nicht zugerechnet."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Wann sind neue Tatsachen nicht rechtserheblich?",
+   "o": [
+    "Wenn sie gering sind",
+    "Wenn sie zugunsten wirken",
+    "Wenn der Steuerpflichtige sie kannte",
+    "Wenn das Finanzamt auch bei Kenntnis nicht anders entschieden hätte"
+   ],
+   "a": 3,
+   "w": "Das verhindert, dass eine Rechtsprechungsänderung über eine unbedeutende Tatsache rückwirkt.",
+   "nrm": "AEAO zu § 173 Tz. 3",
+   "k": "Nicht rechtserheblich sind Tatsachen, die bei rechtzeitiger Kenntnis zu keiner anderen Entscheidung geführt hätten.",
+   "wf": "Auf Höhe, Richtung und Kenntnis des Steuerpflichtigen kommt es für die Rechtserheblichkeit nicht an."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Bei welcher Nummer des § 173 Abs. 1 spielt das Verschulden eine Rolle?",
+   "o": [
+    "Bei beiden",
+    "Bei keiner",
+    "Nur bei Nr. 2",
+    "Nur bei Nr. 1"
+   ],
+   "a": 2,
+   "w": "Bei Änderungen zu Lasten fragt niemand nach Verschulden.",
+   "nrm": "§ 173 Abs. 1 Nr. 2 S. 1 AO",
+   "k": "Zugunsten nur, wenn den Steuerpflichtigen kein grobes Verschulden am nachträglichen Bekanntwerden trifft.",
+   "wf": "Bei Änderungen zu Lasten nach Nr. 1 ist das Verschulden ohne Bedeutung."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Wann ist das grobe Verschulden nach § 173 Abs. 1 Nr. 2 S. 2 unbeachtlich?",
+   "o": [
+    "Bei Zusammenhang mit steuererhöhenden Tatsachen",
+    "Bei geringem Betrag",
+    "Bei erstmaliger Veranlagung",
+    "Immer bei Beraterverschulden"
+   ],
+   "a": 0,
+   "w": "Die Minderung darf dabei größer sein als die Erhöhung.",
+   "nrm": "§ 173 Abs. 1 Nr. 2 S. 2 AO",
+   "k": "Das Verschulden ist unbeachtlich bei unmittelbarem oder mittelbarem Zusammenhang mit Tatsachen im Sinne der Nr. 1.",
+   "wf": "Beraterverschulden wird gerade zugerechnet; Betragsgrenzen kennt die Norm nicht."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Der Steuerpflichtige lässt einen erkennbar falschen Bescheid bestandskräftig werden. Folge für § 173 Abs. 1 Nr. 2?",
+   "o": [
+    "Nur bei Beratern",
+    "Grobes Verschulden kann allein darin liegen",
+    "Keine",
+    "Nur bei Vorsatz"
+   ],
+   "a": 1,
+   "w": "Der Verschuldensmaßstab reicht bis zum Eintritt der Bestandskraft. Ein rechtzeitiger Einspruch heilt dagegen auch früheres Verschulden.",
+   "nrm": "BFH VIII R 10/11",
+   "k": "Die unterlassene Mitteilung innerhalb der Einspruchsfrist kann grobes Verschulden begründen.",
+   "wf": "Der Maßstab endet nicht mit der Abgabe der Erklärung, sondern mit der Bestandskraft."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Umsatzsteuer und Vorsteuer sind im Rahmen des § 173 AO …",
+   "o": [
+    "je nach Fall unterschiedlich",
+    "zwei Tatsachen",
+    "keine Tatsachen",
+    "eine Tatsache"
+   ],
+   "a": 1,
+   "w": "Das ist die ausdrückliche Abweichung von der Ertragsteuer.",
+   "nrm": "AEAO zu § 173 Tz. 6",
+   "k": "Bei der Umsatzsteuer sind Umsatzsteuer und Vorsteuer stets getrennt zu betrachten.",
+   "wf": "Die Behandlung als eine Tatsache gilt nur im Ertragsteuerrecht."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Was ist § 177 AO?",
+   "o": [
+    "Eine Korrekturnorm",
+    "Eine Rechenregel ohne eigene Änderungsbefugnis",
+    "Eine Schranke für den Einspruch",
+    "Eine Ablaufhemmung"
+   ],
+   "a": 1,
+   "w": "Ohne eine echte Korrekturnorm läuft § 177 leer.",
+   "nrm": "§ 177 AO",
+   "k": "Materielle Fehler sind zu berichtigen, soweit die Änderung reicht.",
+   "wf": "Als Korrekturnorm taugt § 177 nicht, als Einspruchsschranke wirkt § 351 Abs. 1."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Wie bildet man die Obergrenze des Änderungsrahmens?",
+   "o": [
+    "Saldo aller Änderungen",
+    "Bisherige Steuer plus alle Änderungen zuungunsten",
+    "Die materiell richtige Steuer",
+    "Bisherige Steuer plus materielle Fehler"
+   ],
+   "a": 1,
+   "w": "Gleichgerichtete Änderungen werden addiert, gegenläufige nicht saldiert.",
+   "nrm": "AEAO zu § 177 Nr. 3",
+   "k": "Eine Saldierung der Änderungstatbestände zuungunsten und zugunsten ist nicht zulässig.",
+   "wf": "Eine Saldierung der Änderungstatbestände ist gerade verboten, materielle Fehler bleiben außen vor."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Die materiell richtige Steuer liegt unter der Untergrenze des Rahmens. Was wird festgesetzt?",
+   "o": [
+    "Die bisherige Steuer",
+    "Die materiell richtige Steuer",
+    "Die Obergrenze",
+    "Die Untergrenze"
+   ],
+   "a": 3,
+   "w": "Der Rest bleibt als materieller Fehler stehen, der Bescheid bleibt insoweit fehlerhaft.",
+   "nrm": "AEAO zu § 177 Nr. 5",
+   "k": "Soweit ein Ausgleich materieller Fehler nicht möglich ist, bleibt der Steuerbescheid fehlerhaft.",
+   "wf": "Über den Rahmen hinaus wird nicht festgesetzt, der Rest bleibt als Fehler stehen."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Was unterscheidet § 177 von § 351 Abs. 1?",
+   "o": [
+    "Nichts",
+    "§ 177 begrenzt, § 351 Abs. 1 verpflichtet",
+    "Beide gelten nur für Einsprüche",
+    "§ 177 verpflichtet das Finanzamt, § 351 Abs. 1 begrenzt den Steuerpflichtigen"
+   ],
+   "a": 3,
+   "w": "Beide arbeiten mit demselben Korridor, aber in verschiedene Richtungen.",
+   "nrm": "§ 177, § 351 Abs. 1 AO",
+   "k": "Änderungsbescheide können nur insoweit angegriffen werden, als die Änderung reicht.",
+   "wf": "§ 177 richtet sich an das Finanzamt, § 351 Abs. 1 an den Steuerpflichtigen."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "§ 174 Abs. 2 setzt voraus, dass …",
+   "o": [
+    "die doppelte Berücksichtigung auf Antrag oder Erklärung des Steuerpflichtigen beruht",
+    "eine neue Tatsache vorliegt",
+    "ein Rechtsbehelf erfolgreich war",
+    "ein Dritter beigeladen war"
+   ],
+   "a": 0,
+   "w": "Ohne diese Voraussetzung bleibt es bei der Bestandskraft.",
+   "nrm": "§ 174 Abs. 2 S. 2 AO",
+   "k": "Die Änderung ist nur zulässig, wenn die Berücksichtigung auf einen Antrag oder eine Erklärung zurückzuführen ist.",
+   "wf": "Beiladung gehört zu Abs. 5, neue Tatsachen zu § 173, der Rechtsbehelf zu Abs. 4."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Welcher Absatz des § 174 verlangt gegenüber Dritten eine Beiladung?",
+   "o": [
+    "Abs. 1",
+    "Abs. 3",
+    "Abs. 4 iVm Abs. 5",
+    "Abs. 2"
+   ],
+   "a": 2,
+   "w": "Deshalb führt der Weg in Fall 13 über Abs. 3, der keine Beiladung verlangt.",
+   "nrm": "§ 174 Abs. 5 AO",
+   "k": "Gegenüber Dritten gilt Abs. 4 nur, wenn sie am Verfahren beteiligt waren.",
+   "wf": "Abs. 1 bis 3 verlangen keine Beteiligung des Dritten am Verfahren."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "§ 174 Abs. 3 setzt voraus, dass die Nichtberücksichtigung …",
+   "o": [
+    "erkennbar war",
+    "vom Steuerpflichtigen veranlasst wurde",
+    "ausdrücklich im Bescheid begründet wurde",
+    "auf einer Außenprüfung beruht"
+   ],
+   "a": 0,
+   "w": "Nach BFH und Verwaltung genügt die Erkennbarkeit aus den Gesamtumständen.",
+   "nrm": "§ 174 Abs. 3 AO, AEAO zu § 174 Nr. 6",
+   "k": "Erforderlich ist, dass der Sachverhalt erkennbar in der Annahme nicht berücksichtigt wurde, er sei anderweitig zu erfassen.",
+   "wf": "Eine Begründung im Bescheid ist nicht nötig, und auf eine Veranlassung kommt es nicht an."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Was unterscheidet § 173 von § 175 Abs. 1 Nr. 2?",
+   "o": [
+    "§ 175 gilt nur bei Grundlagenbescheiden",
+    "§ 173: von Anfang an falsch. § 175: wird nachträglich falsch",
+    "§ 173: wird nachträglich falsch",
+    "Nichts"
+   ],
+   "a": 1,
+   "w": "Entscheidend ist, wann der Sachverhalt entstanden ist, nicht wann das Finanzamt davon erfährt.",
+   "nrm": "§ 173, § 175 Abs. 1 S. 1 Nr. 2 AO",
+   "k": "Bei § 173 liegt ein von Anfang an rechtswidriger Bescheid vor, bei § 175 wird ein richtiger Bescheid nachträglich falsch.",
+   "wf": "Entscheidend ist der Zeitpunkt des Sachverhalts, nicht der Zeitpunkt der Kenntnis."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Was ist § 176 AO?",
+   "o": [
+    "Eine Schranke bei ohnehin zulässiger Änderung",
+    "Eine Korrekturnorm",
+    "Eine Zuständigkeitsregel",
+    "Eine Ablaufhemmung"
+   ],
+   "a": 0,
+   "w": "Ohne eine Änderungsnorm läuft § 176 leer, und beim Erstbescheid gilt er nie.",
+   "nrm": "§ 176 AO",
+   "k": "Bei der Aufhebung oder Änderung darf nicht zuungunsten berücksichtigt werden, dass sich die Rechtsprechung geändert hat.",
+   "wf": "Als Korrekturnorm wirkt § 176 nicht, und beim Erstbescheid greift er überhaupt nicht."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Welche Zusatzvoraussetzung hat § 176 Abs. 1 Nr. 3?",
+   "o": [
+    "Ein Rechtsbehelf muss anhängig sein",
+    "Die alte Rechtsprechung muss bei der bisherigen Festsetzung angewandt worden sein",
+    "Keine",
+    "Der Bescheid muss unter Vorbehalt stehen"
+   ],
+   "a": 1,
+   "w": "Hat das Finanzamt damals aus anderen Gründen entschieden, greift der Schutz nicht.",
+   "nrm": "§ 176 Abs. 1 Nr. 3 AO",
+   "k": "Geschützt ist nur die Rechtsprechung, die von der Finanzbehörde bei der bisherigen Festsetzung angewandt worden ist.",
+   "wf": "Vorbehalt und anhängiger Rechtsbehelf sind für den Vertrauensschutz ohne Bedeutung."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Was ist ein positiver Widerstreit im Sinne des § 174?",
+   "o": [
+    "Ein Sachverhalt wurde gar nicht berücksichtigt",
+    "Ein Sachverhalt wurde mehrfach berücksichtigt",
+    "Zwei Finanzämter sind zuständig",
+    "Zwei Rechtsbehelfe laufen parallel"
+   ],
+   "a": 1,
+   "w": "Positiver Widerstreit meint die rechtswidrige Mehrfachberücksichtigung desselben Sachverhalts, geregelt in Abs. 1 und Abs. 2.",
+   "wf": "Die Nichtberücksichtigung ist der negative Widerstreit nach Abs. 3 und 4; Zuständigkeit und Rechtsbehelfe spielen keine Rolle.",
+   "nrm": "§ 174 Abs. 1 und 2 AO",
+   "k": "Ein Sachverhalt ist in mehreren Bescheiden berücksichtigt worden, obwohl er nur einmal zu erfassen war."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Welche Absätze des § 174 regeln den negativen Widerstreit?",
+   "o": [
+    "Abs. 3 und 4",
+    "Abs. 1 und 2",
+    "Abs. 2 und 5",
+    "Nur Abs. 5"
+   ],
+   "a": 0,
+   "w": "Negativer Widerstreit ist die rechtswidrige Nichtberücksichtigung. Abs. 3 betrifft die erkennbare Annahme anderweitiger Erfassung, Abs. 4 die Folgerungen nach einem Rechtsbehelf.",
+   "wf": "Abs. 1 und 2 betreffen die Mehrfachberücksichtigung, Abs. 5 regelt nur die Wirkung gegenüber Dritten.",
+   "nrm": "§ 174 Abs. 3 und 4 AO",
+   "k": "Ein Sachverhalt ist in keinem Bescheid erfasst worden, obwohl er einmal zu erfassen war."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Wer muss die Kollision bei § 174 Abs. 1 und Abs. 2 verursacht haben?",
+   "o": [
+    "Immer das Finanzamt",
+    "Das ist ohne Bedeutung",
+    "Immer ein Dritter",
+    "Bei Abs. 1 genügt ein Antrag des Steuerpflichtigen, bei Abs. 2 muss die Berücksichtigung auf ihn zurückgehen"
+   ],
+   "a": 3,
+   "w": "Abs. 1 wirkt zugunsten und setzt nur einen Antrag voraus. Abs. 2 wirkt zu Lasten und verlangt deshalb, dass der Fehler auf Antrag oder Erklärung des Steuerpflichtigen beruht.",
+   "wf": "Eine Verursachung durch das Finanzamt oder durch Dritte ist in beiden Absätzen nicht Tatbestandsmerkmal.",
+   "nrm": "§ 174 Abs. 1 und Abs. 2 S. 2 AO",
+   "k": "Die Änderung zu Lasten ist nur zulässig, wenn die Berücksichtigung auf einen Antrag oder eine Erklärung zurückzuführen ist."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Das Finanzamt hat einen Grundlagenbescheid bei der Auswertung übersehen. Ist § 175 Abs. 1 Nr. 1 damit verbraucht?",
+   "o": [
+    "Nur bei Verschulden des Finanzamts",
+    "Nur innerhalb eines Jahres",
+    "Ja, einmal ausgewertet ist ausgewertet",
+    "Nein, es gibt keinen Verbrauch bei Übersehen oder Anpassungsfehlern"
+   ],
+   "a": 3,
+   "w": "Die Norm kann erneut herangezogen werden, solange der Grundlagenbescheid nicht zutreffend umgesetzt ist. Grenze ist allein die Festsetzungsfrist.",
+   "wf": "Ein Verbrauch der Norm ist nicht vorgesehen; auf Verschulden kommt es nicht an, und die Jahresfrist gehört zu § 171 Abs. 2.",
+   "nrm": "§ 175 Abs. 1 S. 1 Nr. 1 AO",
+   "k": "Der Folgebescheid ist anzupassen, solange der Grundlagenbescheid nicht zutreffend umgesetzt ist."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Welche fünf Normen bilden das Paket um den Grundlagenbescheid?",
+   "o": [
+    "§§ 171 Abs. 10, 175 Abs. 1 Nr. 1, 181 Abs. 1, 182 Abs. 1, 351 Abs. 2",
+    "§§ 130, 131, 172, 174, 176",
+    "§§ 118, 119, 122, 124, 125",
+    "§§ 164, 165, 172, 173, 177"
+   ],
+   "a": 0,
+   "w": "Diese fünf greifen ineinander: Gleichstellung, Bindung, Folgeänderung, Zeitfenster und Anfechtungsbeschränkung.",
+   "wf": "Die übrigen Gruppen betreffen die Wirksamkeit, die allgemeinen Korrekturnormen oder die sonstigen Verwaltungsakte.",
+   "nrm": "§§ 171 Abs. 10, 175 Abs. 1 Nr. 1, 181 Abs. 1, 182 Abs. 1, 351 Abs. 2 AO",
+   "k": "Bindung, Gleichstellung, Folgeänderung, Zweijahresfrist und Anfechtungsbeschränkung bilden eine Einheit."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Was zählt als Ereignis im Sinne des § 175 Abs. 1 Nr. 2?",
+   "o": [
+    "Nur Vertragsänderungen",
+    "Alle tatsächlichen und rechtlichen Umstände",
+    "Nur Entscheidungen von Gerichten",
+    "Nur tatsächliche Umstände"
+   ],
+   "a": 1,
+   "w": "Der Begriff ist weit. Ausgenommen sind aber Entscheidungen des Bundesverfassungsgerichts zur Verfassungswidrigkeit einer Norm.",
+   "wf": "Eine Beschränkung auf tatsächliche Vorgänge, Urteile oder Verträge enthält das Gesetz nicht.",
+   "nrm": "§ 175 Abs. 1 S. 1 Nr. 2 AO",
+   "k": "Ereignis sind alle tatsächlichen und rechtlichen Umstände, deren Eintritt steuerliche Wirkung für die Vergangenheit hat."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "In welchem Fall liegt KEINE steuerliche Rückwirkung vor?",
+   "o": [
+    "Kaufpreisänderung bei einem privaten Veräußerungsgeschäft nach § 23 EStG",
+    "Anpassung aufgrund des Bilanzenzusammenhangs",
+    "Veräußerung nach § 16 EStG",
+    "Wechsel zur Zusammenveranlagung"
+   ],
+   "a": 0,
+   "w": "Bei § 23 EStG gilt das Zuflussprinzip, deshalb wirkt eine spätere Kaufpreisänderung nicht auf den Veräußerungszeitpunkt zurück.",
+   "wf": "Bilanzenzusammenhang, Betriebsveräußerung und Veranlagungswahlrechte sind die klassischen Rückwirkungsfälle.",
+   "nrm": "AEAO zu § 175 Tz. 2.4",
+   "k": "Rückwirkung bei Bilanzenzusammenhang und §§ 16, 17, 18 Abs. 3 EStG, nicht bei § 23 EStG."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Wirkt eine Änderung der Rechtsprechung als rückwirkendes Ereignis?",
+   "o": [
+    "Nein, weder Gesetzes- noch Rechtsprechungsänderungen",
+    "Nur bei Entscheidungen des Großen Senats",
+    "Nur zugunsten des Steuerpflichtigen",
+    "Ja, immer"
+   ],
+   "a": 0,
+   "w": "Der Sachverhalt bleibt unverändert, nur seine Beurteilung ändert sich. Deshalb greifen weder § 173 noch § 175 Abs. 1 Nr. 2.",
+   "wf": "Eine Unterscheidung nach Richtung oder Spruchkörper kennt die Norm nicht.",
+   "nrm": "§ 175 Abs. 1 S. 1 Nr. 2 AO",
+   "k": "Keine Rückwirkung bei Änderung der Steuergesetze oder der Rechtsprechung."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Was schützt § 176 AO seinem Zweck nach?",
+   "o": [
+    "Das Vertrauen in die Bestandskraft bei günstiger Rechtslage",
+    "Das Vertrauen in die Fristberechnung",
+    "Das Vertrauen in die Zustellung",
+    "Das Vertrauen in die Zuständigkeit"
+   ],
+   "a": 0,
+   "w": "Geschützt wird, wer auf eine Rechtslage vertraut hat, die bei der bisherigen Festsetzung angewandt wurde.",
+   "wf": "Zuständigkeit, Fristen und Zustellung sind in anderen Vorschriften geregelt.",
+   "nrm": "§ 176 AO",
+   "k": "Bei Änderung darf eine nachträglich geänderte Rechtslage nicht zuungunsten berücksichtigt werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Welche zwei Voraussetzungen hat die Verwirkung des Steueranspruchs?",
+   "o": [
+    "Kenntnis und Frist",
+    "Zeitmoment und Umstandsmoment",
+    "Verschulden und Kausalität",
+    "Antrag und Zustimmung"
+   ],
+   "a": 1,
+   "w": "Allein der Zeitablauf genügt nicht. Es muss ein Verhalten der Behörde hinzukommen, auf das der Steuerpflichtige vertrauen durfte.",
+   "wf": "Antrag, Verschulden und Fristen gehören zu anderen Instituten; die Verwirkung folgt aus Treu und Glauben.",
+   "nrm": "Treu und Glauben, AEAO vor §§ 130, 131",
+   "k": "Verwirkung setzt Zeitablauf und ein vertrauensbegründendes Verhalten voraus."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 1,
+   "q": "Welche Norm regelt die Rücknahme eines rechtswidrigen nicht begünstigenden sonstigen Verwaltungsakts?",
+   "o": [
+    "§ 130 Abs. 1",
+    "§ 131 Abs. 1",
+    "§ 130 Abs. 2",
+    "§ 131 Abs. 2"
+   ],
+   "a": 0,
+   "w": "Die Matrix lautet: Rücknahme bei rechtswidrig, Widerruf bei rechtmäßig, jeweils Abs. 1 für belastende und Abs. 2 für begünstigende Verwaltungsakte.",
+   "wf": "§ 130 Abs. 2 betrifft begünstigende, § 131 insgesamt rechtmäßige Verwaltungsakte.",
+   "nrm": "§ 130 Abs. 1 AO",
+   "k": "Ein rechtswidriger nicht begünstigender Verwaltungsakt kann ganz oder teilweise zurückgenommen werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Wann ist ein Verwaltungsakt begünstigend im Sinne des § 130?",
+   "o": [
+    "Nur bei Steuerbescheiden",
+    "Nur bei Geldleistungen",
+    "Nur bei Ermessensentscheidungen",
+    "Bei jeder Rechtswirkung, an deren Aufrechterhaltung ein Interesse besteht"
+   ],
+   "a": 3,
+   "w": "Der Begriff ist weit. Soll ein belastender Verwaltungsakt durch einen noch belastenderen ersetzt werden, ist der ursprüngliche insoweit begünstigend.",
+   "wf": "Eine Beschränkung auf Geldleistungen, Ermessen oder Steuerbescheide enthält die Norm nicht.",
+   "nrm": "AEAO zu § 130 Tz. 4",
+   "k": "Begünstigend ist jede Rechtswirkung, an deren Aufrechterhaltung der Betroffene ein Interesse hat."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Auf welchen Zeitpunkt kommt es für die Rechtswidrigkeit bei § 130 an?",
+   "o": [
+    "Auf den Zeitpunkt der Bekanntgabe",
+    "Auf den Zeitpunkt der Rücknahme",
+    "Auf den Zeitpunkt des Erlasses",
+    "Auf den Zeitpunkt der Kenntnis"
+   ],
+   "a": 2,
+   "w": "Ändert sich die Sach- oder Rechtslage erst später, wird der Verwaltungsakt nicht rechtswidrig. Dann kommt nur der Widerruf nach § 131 in Betracht.",
+   "wf": "Rücknahmezeitpunkt und Kenntnis betreffen die Jahresfrist, nicht die Rechtswidrigkeit.",
+   "nrm": "§ 130 Abs. 1 AO",
+   "k": "Maßgeblich ist die Rechtswidrigkeit im Zeitpunkt des Erlasses."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Wie ist die Jahresfrist des § 130 Abs. 3 AO einzuordnen?",
+   "o": [
+    "Als Festsetzungsfrist",
+    "Als Ausschlussfrist ab Bekanntgabe",
+    "Als Entscheidungsfrist ab Kenntnis der Rechtswidrigkeit",
+    "Als Prüfungsfrist ab Erlass"
+   ],
+   "a": 2,
+   "w": "Sie beginnt erst, wenn die Behörde die Rechtswidrigkeit erkannt hat. Bis dahin läuft sie nicht, auch wenn der Verwaltungsakt lange zurückliegt.",
+   "wf": "Ein Beginn mit Erlass oder Bekanntgabe würde die Norm faktisch leerlaufen lassen.",
+   "nrm": "§ 130 Abs. 3 AO, AEAO zu § 130 Tz. 5",
+   "k": "Die Jahresfrist beginnt mit dem Zeitpunkt, in dem die Behörde von der Rechtswidrigkeit Kenntnis erlangt."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 2,
+   "q": "Ab wann wirkt der Widerruf nach § 131 AO?",
+   "o": [
+    "Nur für die Zukunft",
+    "Rückwirkend ab Erlass",
+    "Wahlweise",
+    "Ab Bekanntgabe des Ausgangsbescheids"
+   ],
+   "a": 0,
+   "w": "Das gilt für Abs. 1 und Abs. 2 gleichermaßen. Für die Vergangenheit kommt nur die Rücknahme nach § 130 in Betracht.",
+   "wf": "Eine rückwirkende Aufhebung sieht § 131 gerade nicht vor, ein Wahlrecht besteht nicht.",
+   "nrm": "§ 131 Abs. 1 und 2 AO",
+   "k": "Ein rechtmäßiger Verwaltungsakt kann nur mit Wirkung für die Zukunft widerrufen werden."
+  },
+  {
+   "b": 6,
+   "n": "KN",
+   "s": 3,
+   "q": "Kann die Rücknahme nach § 130 Abs. 1 einen versäumten Einspruch ersetzen?",
+   "o": [
+    "Nur innerhalb eines Jahres",
+    "Ja, sie ist jederzeit möglich",
+    "Nein, sie ist kein Ersatz für ein nicht durchgeführtes Einspruchsverfahren",
+    "Nur bei Ermessensfehlern"
+   ],
+   "a": 2,
+   "w": "Die Rücknahme steht im Ermessen der Behörde, und dieses Ermessen ist regelmäßig nicht auf Null reduziert, wenn der Steuerpflichtige die Frist hat verstreichen lassen.",
+   "wf": "Dass sie zeitlich möglich wäre, bedeutet nicht, dass sie beansprucht werden kann.",
+   "nrm": "§ 130 Abs. 1 AO, § 5 AO",
+   "k": "Die Rücknahme ist eine Ermessensentscheidung und kein Ersatz für den versäumten Rechtsbehelf."
+  }
+ ],
+ "faelle": [
+  {
+   "nr": 1,
+   "titel": "Die merkwürdigen Steuerbescheide",
+   "n": "BG",
+   "sv": "Die Bescheide für 03 gehen am Mittwoch, dem 19.09.05, zur Post und gehen am Samstag, dem 22.09.05, zu. Die Bescheide für 04 gehen am Montag, dem 24.09.05, zur Post und gehen am Dienstag, dem 25.09.05, zu. Am Dienstag, dem 25.09.05, um 15 Uhr ruft das Finanzamt an und erklärt, die Bescheide sollten nicht wirksam sein.",
+   "schritte": [
     {
-      "nr": 1, "titel": "Die merkwürdigen Steuerbescheide", "n": "BG",
-      "sv": "Die Bescheide für 03 gehen am Mittwoch, dem 19.09.05, zur Post und gehen am Samstag, dem 22.09.05, zu. Die Bescheide für 04 gehen am Montag, dem 24.09.05, zur Post und gehen am Dienstag, dem 25.09.05, zu. Am Dienstag, dem 25.09.05, um 15 Uhr ruft das Finanzamt an und erklärt, die Bescheide sollten nicht wirksam sein.",
-      "schritte": [
-        { "q":"Welche Weiche stellst du zuerst?","o":["Korrekturvorschrift suchen","Wirksamkeit der Bekanntgabe prüfen","Festsetzungsfrist berechnen","Einspruchsfrist berechnen"],"a":1,
-          "w":"Ohne wirksame Bekanntgabe existiert kein Verwaltungsakt. Alles andere kommt danach.","nrm":"§ 124 Abs. 1 S. 1 AO" },
-        { "q":"Der Anruf erfolgt nach Aufgabe zur Post. Worum geht es rechtlich?","o":["Aufgabe des Bekanntgabewillens","Widerruf des Bekanntgabewillens","Rücknahme nach § 130","Berichtigung nach § 129"],"a":1,
-          "w":"Die Aufgabe ist nur möglich, solange der Bescheid das Finanzamt nicht verlassen hat.","nrm":"AEAO zu § 124 Tz. 5 und 6" },
-        { "q":"Bis wann ist der Widerruf möglich?","o":["Bis zum tatsächlichen Zugang","Bis zum Ablauf der Viertagefiktion","Bis zum Ablauf der Einspruchsfrist","Jederzeit"],"a":1,
-          "w":"Maßgeblich ist der Eintritt der Bekanntgabe, und die richtet sich nach der Fiktion, nicht nach dem früheren tatsächlichen Zugang.","nrm":"§ 122 Abs. 2 Nr. 1 AO" },
-        { "q":"Welches Datum musst du für beide Pakete getrennt berechnen?","o":["Den Tag des Zugangs","Den Tag der Aufgabe zur Post","Den Bekanntgabetag nach der Fiktion","Das Ende der Einspruchsfrist"],"a":2,
-          "w":"Erst der Vergleich des Bekanntgabetages mit dem Zeitpunkt des Anrufs entscheidet, ob der Widerruf rechtzeitig war.","nrm":"§ 122 Abs. 2 Nr. 1 iVm § 108 Abs. 3 AO" }
-      ]
+     "q": "Welche Weiche stellst du zuerst?",
+     "o": [
+      "Einspruchsfrist berechnen",
+      "Wirksamkeit der Bekanntgabe prüfen",
+      "Korrekturvorschrift suchen",
+      "Festsetzungsfrist berechnen"
+     ],
+     "a": 1,
+     "w": "Ohne wirksame Bekanntgabe existiert kein Verwaltungsakt. Alles andere kommt danach.",
+     "nrm": "§ 124 Abs. 1 S. 1 AO"
     },
     {
-      "nr": 8, "titel": "Der späte Grundlagenbescheid", "n": "GB",
-      "sv": "Die Erklärung ging in 02 ein, der Feststellungsbescheid geht erst am Mittwoch, dem 27.12.06, zur Post und wird am Mittwoch, dem 03.01.07, zugestellt. Die Feststellungsfrist endet regulär am 31.12.06, einem Sonntag.",
-      "schritte": [
-        { "q":"Wann endet die Feststellungsfrist tatsächlich?","o":["31.12.06","01.01.07","02.01.07","03.01.07"],"a":2,
-          "w":"Der 31.12. ist ein Sonntag, der 01.01. ein Feiertag. Die Frist endet mit Ablauf des nächsten Werktags.","nrm":"§ 108 Abs. 3 AO" },
-        { "q":"Welcher Tag ist Bekanntgabetag?","o":["31.12.06","02.01.07","03.01.07","27.12.06"],"a":2,
-          "w":"Die Viertagefiktion greift nicht, weil der Bescheid nachweislich später zugegangen ist.","nrm":"§ 122 Abs. 2 letzter Halbsatz AO" },
-        { "q":"Die Bekanntgabe liegt einen Tag nach Fristende. Was rettet die Frist?","o":["§ 171 Abs. 10","§ 169 Abs. 1 S. 3 Nr. 1","§ 181 Abs. 5","Nichts"],"a":1,
-          "w":"Es genügt, dass der Bescheid den Bereich des Finanzamts rechtzeitig verlassen hat und zugeht.","nrm":"§ 169 Abs. 1 S. 3 Nr. 1 AO" },
-        { "q":"Wie lange kann der Folgebescheid geändert werden?","o":["Bis 31.12.06","Ein Jahr ab Bekanntgabe","Zwei Jahre ab Bekanntgabe des Grundlagenbescheids","Unbegrenzt"],"a":2,
-          "w":"§ 175 Abs. 1 Nr. 1 liefert die Norm, § 171 Abs. 10 die Zeit.","nrm":"§ 171 Abs. 10 AO" }
-      ]
+     "q": "Der Anruf erfolgt nach Aufgabe zur Post. Worum geht es rechtlich?",
+     "o": [
+      "Widerruf des Bekanntgabewillens",
+      "Rücknahme nach § 130",
+      "Berichtigung nach § 129",
+      "Aufgabe des Bekanntgabewillens"
+     ],
+     "a": 0,
+     "w": "Die Aufgabe ist nur möglich, solange der Bescheid das Finanzamt nicht verlassen hat.",
+     "nrm": "AEAO zu § 124 Tz. 5 und 6"
     },
     {
-      "nr": 12, "titel": "Die Sache mit der doppelten Kirchensteuer", "n": "VJ",
-      "sv": "Die Kirchensteuer wird am 20.03.09 für 08 gezahlt und sowohl in der Erklärung 08 als auch in der Erklärung 09 als Sonderausgabe geltend gemacht. Der Bescheid 08 datiert vom 10.08.09, der Bescheid 09 vom 06.02.13. Im April 14 fällt dem Finanzamt der Sachverhalt auf.",
-      "schritte": [
-        { "q":"In welchem Jahr ist die Kirchensteuer abziehbar?","o":["08","09","anteilig in beiden","im Jahr der Festsetzung"],"a":1,
-          "w":"Abflussprinzip. Gezahlt wurde am 20.03.09.","nrm":"§ 11 Abs. 2 S. 1 EStG" },
-        { "q":"Welcher Bescheid ist damit falsch?","o":["Der Bescheid 08","Der Bescheid 09","Beide","Keiner"],"a":0,
-          "w":"Im Bescheid 09 ist der Abzug zutreffend, im Bescheid 08 nicht.","nrm":"§ 11 Abs. 2 EStG" },
-        { "q":"Welche Korrekturnorm trägt die Änderung des Bescheids 08?","o":["§ 129","§ 164 Abs. 2","§ 174 Abs. 2 oder § 173 Abs. 1 Nr. 1","§ 175 Abs. 1 Nr. 1"],"a":2,
-          "w":"Derselbe Sachverhalt wurde zweimal zugunsten berücksichtigt, veranlasst durch die eigenen Erklärungen.","nrm":"§ 174 Abs. 2, § 173 Abs. 1 Nr. 1 AO" },
-        { "q":"Wann endete die Festsetzungsfrist für 08?","o":["31.12.12","31.12.13","31.12.14","Sie läuft noch"],"a":1,
-          "w":"Beginn mit Ablauf 31.12.09, vier Jahre. Im April 14 ist eine Änderung ausgeschlossen.","nrm":"§ 170 Abs. 2, § 169 Abs. 2 S. 1 Nr. 2 AO" }
-      ]
+     "q": "Bis wann ist der Widerruf möglich?",
+     "o": [
+      "Bis zum Ablauf der Viertagefiktion",
+      "Bis zum tatsächlichen Zugang",
+      "Jederzeit",
+      "Bis zum Ablauf der Einspruchsfrist"
+     ],
+     "a": 0,
+     "w": "Maßgeblich ist der Eintritt der Bekanntgabe, und die richtet sich nach der Fiktion, nicht nach dem früheren tatsächlichen Zugang.",
+     "nrm": "§ 122 Abs. 2 Nr. 1 AO"
     },
     {
-      "nr": 13, "titel": "Frau K betreibt Kfz-Handel", "n": "KN",
-      "sv": "Beide Ehegatten erklären 06 getrennt und legen den Sachverhalt exakt dar. Das Finanzamt setzt die gesamte Umsatzsteuer gegen Herrn K fest, bei Frau K fehlen die Umsätze ohne Begründung. Das Finanzgericht gibt Herrn K recht. Nun soll Frau K herangezogen werden.",
-      "schritte": [
-        { "q":"Welcher Bescheid soll geändert werden?","o":["Der Bescheid gegen Herrn K","Der Freistellungsbescheid gegen Frau K","Beide","Keiner"],"a":1,
-          "w":"Der Freistellungsbescheid ist nach § 155 Abs. 1 S. 3 ein Steuerbescheid.","nrm":"§ 155 Abs. 1 S. 3 AO" },
-        { "q":"Warum scheidet § 173 Abs. 1 Nr. 1 aus?","o":["Wegen Verschuldens","Es fehlt an einer neuen Tatsache","Wegen Festsetzungsverjährung","Wegen § 173 Abs. 2"],"a":1,
-          "w":"Der Sachverhalt war exakt dargelegt, das Finanzamt hat ihn nur falsch gewürdigt.","nrm":"§ 173 Abs. 1 Nr. 1 AO" },
-        { "q":"Warum scheitert § 174 Abs. 4?","o":["Keine irrige Beurteilung","Frau K war als Dritte nicht beigeladen","Festsetzungsverjährung","Kein Rechtsbehelf"],"a":1,
-          "w":"Die Beiladung wäre bis zur Unanfechtbarkeit des Urteils möglich gewesen.","nrm":"§ 174 Abs. 5 AO" },
-        { "q":"Welche Norm trägt die Heranziehung doch?","o":["§ 174 Abs. 1","§ 174 Abs. 2","§ 174 Abs. 3","§ 129"],"a":2,
-          "w":"Abs. 3 verlangt keine Beiladung. Streitig ist allein die Erkennbarkeit, die hier zu bejahen ist.","nrm":"§ 174 Abs. 3 AO" }
-      ]
-    },
-    {
-      "nr": 15, "titel": "Der übersehene Grundlagenbescheid", "n": "GB",
-      "sv": "Der Feststellungsbescheid und die interne Mitteilung lagen dem Veranlagungsbezirk bereits vor, als der Einkommensteuerbescheid vom 20.03.04 unter Vorbehalt erging. Am 15.05.07 wird wegen verdeckter Gewinnausschüttungen geändert und der Vorbehalt aufgehoben, die Beteiligungseinkünfte fehlen weiter. Die reguläre Festsetzungsverjährung tritt am 31.12.07 ein.",
-      "schritte": [
-        { "q":"Welche Norm wäre bis zum 15.05.07 der einfachste Weg gewesen?","o":["§ 173 Abs. 1 Nr. 1","§ 164 Abs. 2","§ 129","§ 174 Abs. 3"],"a":1,
-          "w":"Der Vorbehalt öffnete den Bescheid uneingeschränkt. Mit seiner Aufhebung ist dieser Weg verbaut.","nrm":"§ 164 Abs. 2 AO" },
-        { "q":"Warum scheidet § 173 Abs. 1 Nr. 1 aus?","o":["Wegen Verschuldens","Die Unterlagen lagen vor, also keine neue Tatsache","Wegen § 173 Abs. 2","Wegen der Frist"],"a":1,
-          "w":"Maßgeblich ist die Aktenlage, nicht die tatsächliche Kenntnis des Sachbearbeiters.","nrm":"AEAO zu § 173 Tz. 2" },
-        { "q":"Welche beiden Normen tragen die Änderung dem Grunde nach?","o":["§ 164 Abs. 2 und § 129","§ 175 Abs. 1 Nr. 1 und § 129","§ 173 und § 174","§ 176 und § 177"],"a":1,
-          "w":"Das Übersehen eines vorliegenden Grundlagenbescheids ist nach dem BFH eine offenbare Unrichtigkeit.","nrm":"§ 175 Abs. 1 S. 1 Nr. 1, § 129 AO" },
-        { "q":"Warum hilft § 171 Abs. 10 hier nicht?","o":["Er gilt nicht für Feststellungsbescheide","Die Zweijahresfrist endete schon innerhalb der regulären Frist","Er wurde nicht beantragt","Er gilt nur zugunsten"],"a":1,
-          "w":"Eine Ablaufhemmung nützt nur, wenn sie über das reguläre Fristende hinausreicht.","nrm":"§ 171 Abs. 10 AO" }
-      ]
+     "q": "Welches Datum musst du für beide Pakete getrennt berechnen?",
+     "o": [
+      "Das Ende der Einspruchsfrist",
+      "Den Bekanntgabetag nach der Fiktion",
+      "Den Tag des Zugangs",
+      "Den Tag der Aufgabe zur Post"
+     ],
+     "a": 1,
+     "w": "Erst der Vergleich des Bekanntgabetages mit dem Zeitpunkt des Anrufs entscheidet, ob der Widerruf rechtzeitig war.",
+     "nrm": "§ 122 Abs. 2 Nr. 1 iVm § 108 Abs. 3 AO"
     }
-  ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Der Doppelpack",
+   "n": "GB",
+   "sv": "Josefine Reich ist Kommanditistin der Müller KG. Sie legt eine Kopie des Gewinnfeststellungsbescheids vom 26.09.02 vor. Von August 02 bis zum 31.01.03 lag sie nach einem Unfall im Krankenhaus und war monatelang nicht ansprechbar. Am 03.03.03 erscheint sie in der Kanzlei.",
+   "schritte": [
+    {
+     "q": "Welchen Bescheid muss sie angreifen, wenn sie die festgestellten Einkünfte für zu hoch hält?",
+     "o": [
+      "Beide",
+      "Den Einkommensteuerbescheid",
+      "Den Feststellungsbescheid der KG",
+      "Keinen, das erledigt das Finanzamt"
+     ],
+     "a": 2,
+     "w": "Einwendungen gegen festgestellte Besteuerungsgrundlagen sind nur beim Grundlagenbescheid möglich. Ein Einspruch gegen den Folgebescheid wäre zulässig, aber insoweit unbegründet.",
+     "nrm": "§ 351 Abs. 2, § 182 Abs. 1 AO"
+    },
+    {
+     "q": "Ist Frau Reich als Kommanditistin überhaupt einspruchsbefugt?",
+     "o": [
+      "Nur mit Zustimmung der KG",
+      "Nur bei Sonderbetriebsausgaben",
+      "Ja, jeder Beteiligte",
+      "Grundsätzlich nein, befugt ist die Gesellschaft"
+     ],
+     "a": 3,
+     "w": "§ 352 verlagert die Einspruchsbefugnis grundsätzlich auf die Gesellschaft. Einzelne Beteiligte sind nur in den dort genannten Ausnahmefällen befugt, etwa bei Fragen, die sie persönlich angehen.",
+     "nrm": "§ 352 Abs. 1 AO"
+    },
+    {
+     "q": "Die Einspruchsfrist ist abgelaufen. Welche Norm kommt wegen des Krankenhausaufenthalts in Betracht?",
+     "o": [
+      "§ 110 Wiedereinsetzung",
+      "§ 125 Nichtigkeit",
+      "§ 129 Berichtigung",
+      "§ 109 Fristverlängerung"
+     ],
+     "a": 0,
+     "w": "Die Einspruchsfrist ist gesetzlich, also nicht nach § 109 verlängerbar. Berichtigung und Nichtigkeit betreffen Fehler des Bescheids, nicht die Fristversäumnis.",
+     "nrm": "§ 110 Abs. 1, § 109 Abs. 1 AO"
+    },
+    {
+     "q": "Welche Hürde bei § 110 ist hier die kritische?",
+     "o": [
+      "Die Form des Antrags",
+      "Das Verschulden",
+      "Die Jahresfrist",
+      "Die Monatsfrist nach Wegfall des Hindernisses"
+     ],
+     "a": 3,
+     "w": "Unverschuldet war die Versäumnis klar. Das Hindernis entfiel mit der Entlassung am 31.01.03, die Monatsfrist lief damit Ende Februar ab. Die Jahresfrist wäre noch offen gewesen.",
+     "nrm": "§ 110 Abs. 2 AO"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Der Vorbehalt in Serie",
+   "n": "KN",
+   "sv": "Bescheid 07.02.04 unter Vorbehalt, Steuer 6.000 €. Änderungsbescheid 11.06.04 weiterhin unter Vorbehalt, 9.000 €. Weiterer Änderungsbescheid 09.08.04 ohne jeden Hinweis auf § 164, 7.500 €. Einspruch mit dem Antrag, auf 4.000 € herabzusetzen.",
+   "schritte": [
+    {
+     "q": "Steht der Bescheid vom 09.08.04 noch unter Vorbehalt der Nachprüfung?",
+     "o": [
+      "Ja, nur die ausdrückliche Aufhebung beseitigt ihn",
+      "Nur für den geänderten Teil",
+      "Nein, der fehlende Hinweis hebt ihn auf",
+      "Das ist ohne Bedeutung"
+     ],
+     "a": 0,
+     "w": "Ein behördlich angeordneter Vorbehalt wandert in den Änderungsbescheid mit. Das stillschweigende Entfallen gibt es nur beim gesetzlichen Vorbehalt nach § 168.",
+     "nrm": "AEAO zu § 164 Nr. 6"
+    },
+    {
+     "q": "Begrenzt § 351 Abs. 1 den Angriff auf den Änderungsumfang?",
+     "o": [
+      "Nein, die Korrekturvorschriften ergeben etwas anderes",
+      "Die Norm gilt für Steuerbescheide nicht",
+      "Ja, aber nur bei Änderungen zu Lasten",
+      "Ja, nur 1.500 € sind angreifbar"
+     ],
+     "a": 0,
+     "w": "Der zweite Halbsatz des § 351 Abs. 1 nimmt die Fälle aus, in denen eine Korrekturvorschrift weiter öffnet. Der Vorbehalt verhindert, dass überhaupt materielle Bestandskraft entsteht.",
+     "nrm": "§ 351 Abs. 1 AO"
+    },
+    {
+     "q": "Welche Norm trägt die begehrte Herabsetzung auf 4.000 €?",
+     "o": [
+      "§ 172 Abs. 1 Nr. 2a",
+      "§ 173 Abs. 1 Nr. 2",
+      "§ 164 Abs. 2",
+      "§ 129"
+     ],
+     "a": 2,
+     "w": "Solange der Vorbehalt besteht, braucht es weder neue Tatsachen noch eine Verschuldensprüfung. § 173 wäre erst zu prüfen, wenn der Vorbehalt fehlte.",
+     "nrm": "§ 164 Abs. 2 AO"
+    },
+    {
+     "q": "Was wäre anders, wenn das Finanzamt den Vorbehalt am 09.08.04 ausdrücklich aufgehoben hätte?",
+     "o": [
+      "Die Einspruchsfrist liefe neu",
+      "Der Angriff bliebe auf den Änderungsumfang beschränkt",
+      "Der Bescheid wäre nichtig",
+      "Nichts"
+     ],
+     "a": 1,
+     "w": "Ohne Vorbehalt entsteht materielle Bestandskraft, und dann greift die Beschränkung des § 351 Abs. 1. Das Begehren müsste dann auf eine Korrekturnorm gestützt werden.",
+     "nrm": "§ 164 Abs. 3, § 351 Abs. 1 AO"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "Paul und Emma Mauke legen sich mit dem Finanzamt an",
+   "n": "BG",
+   "sv": "Erklärung am 10.09.05 gemeinsam erstellt und elektronisch versandt. Der Bescheid vom 27.10.05, zugleich Tag der Aufgabe zur Post, geht den Eheleuten am Donnerstag, dem 29.10.05, in einer Ausfertigung zu. Er enthält ein Leistungsgebot über 17.500 €.",
+   "schritte": [
+    {
+     "q": "Genügt eine Ausfertigung an beide Eheleute?",
+     "o": [
+      "Nur wenn beide unterschrieben haben",
+      "Nur bei Zustimmung",
+      "Nein, jeder braucht eine eigene",
+      "Ja, bei gemeinsamer Anschrift"
+     ],
+     "a": 3,
+     "w": "Getragen wird das von der gegenseitigen Empfangsvollmacht aus der gemeinsam erstellten Erklärung. Einzelbekanntgabe wäre erst bei Antrag oder erkennbarem Streit nötig.",
+     "nrm": "§ 122 Abs. 7 S. 1 AO"
+    },
+    {
+     "q": "Welcher Tag ist Bekanntgabetag?",
+     "o": [
+      "Der 29.10.05",
+      "Der Tag der Fälligkeit",
+      "Der 27.10.05",
+      "Der vierte Tag nach Aufgabe zur Post"
+     ],
+     "a": 3,
+     "w": "Der frühere tatsächliche Zugang am 29.10. ist unbeachtlich, die Fiktion wirkt zugunsten des Steuerpflichtigen. Nur ein späterer Zugang würde sie verdrängen.",
+     "nrm": "§ 122 Abs. 2 Nr. 1 AO"
+    },
+    {
+     "q": "Was ist bei der Berechnung des Fristendes zusätzlich zu prüfen?",
+     "o": [
+      "Ob Bekanntgabetag oder Fristende auf ein Wochenende fallen",
+      "Die Zustellungsart",
+      "Die Höhe der Steuer",
+      "Nur der Ereignistag"
+     ],
+     "a": 0,
+     "w": "§ 108 Abs. 3 wird in solchen Aufgaben regelmäßig zweimal gebraucht, einmal beim Bekanntgabetag und einmal beim Fristende.",
+     "nrm": "§ 108 Abs. 3 AO"
+    },
+    {
+     "q": "Wie ist das Leistungsgebot im Bescheid einzuordnen?",
+     "o": [
+      "Unselbständiger Teil der Festsetzung",
+      "Selbständig anfechtbarer Verwaltungsakt",
+      "Kein Verwaltungsakt",
+      "Grundlagenbescheid"
+     ],
+     "a": 1,
+     "w": "Im Steuerbescheid stecken mehrere Verwaltungsakte. Das Leistungsgebot gehört zum Vollstreckungsrecht und ist eigenständig angreifbar.",
+     "nrm": "§ 254 Abs. 1 AO"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Der verhängnisvolle Schreibfehler",
+   "n": "KN",
+   "sv": "Daffke trägt in der Anlage V versehentlich 51.000 € statt 15.000 € ein. Die zugehörige Bescheinigung lag dem Finanzamt vor. Der Bescheid ergeht erklärungsgemäß und wird bestandskräftig. Der Berater schlägt Nichtigkeit und § 130 vor.",
+   "schritte": [
+    {
+     "q": "Ist der Bescheid nichtig?",
+     "o": [
+      "Ja, der Fehler ist offenkundig",
+      "Er ist unwirksam",
+      "Nein, er ist rechtswidrig und wirksam",
+      "Ja, wegen Unbestimmtheit"
+     ],
+     "a": 2,
+     "w": "Ein überhöhter Ansatz ist kein besonders schwerwiegender Fehler im Sinne des § 125. Unbestimmt ist der Bescheid nicht, bekanntgegeben wurde er ordnungsgemäß.",
+     "nrm": "§ 125 Abs. 1, § 124 Abs. 1 AO"
+    },
+    {
+     "q": "Hilft § 130 AO weiter?",
+     "o": [
+      "Nur innerhalb eines Jahres",
+      "Ja, Rücknahme eines rechtswidrigen VA",
+      "Nein, er gilt nicht für Steuerbescheide",
+      "Nur mit Zustimmung"
+     ],
+     "a": 2,
+     "w": "§§ 130 und 131 gelten für sonstige Verwaltungsakte. Für Steuerbescheide führt der Weg über §§ 129, 164 ff. und 172 ff.",
+     "nrm": "§ 172 Abs. 1 S. 1 Nr. 2d AO"
+    },
+    {
+     "q": "Warum kann § 129 greifen, obwohl der Fehler vom Steuerpflichtigen stammt?",
+     "o": [
+      "Weil die Frist noch läuft",
+      "Weil § 129 alle Fehler erfasst",
+      "Weil der Bescheid erklärungsgemäß erging",
+      "Weil der Fehler aus den Unterlagen klar erkennbar war"
+     ],
+     "a": 3,
+     "w": "Ein Fehler des Steuerpflichtigen wird zum eigenen Fehler des Finanzamts, wenn es ihn aus den vorliegenden Unterlagen ohne Weiteres hätte erkennen können und ungeprüft übernimmt.",
+     "nrm": "§ 129 AO"
+    },
+    {
+     "q": "Welche Norm kommt daneben in Betracht?",
+     "o": [
+      "§ 175 Abs. 1 Nr. 2",
+      "§ 173a",
+      "§ 176",
+      "§ 174 Abs. 2"
+     ],
+     "a": 1,
+     "w": "Es handelt sich zugleich um einen Schreibfehler des Steuerpflichtigen bei Erstellung der Erklärung. Achte auf den Rechtsstand, die Norm gilt erst ab 2017.",
+     "nrm": "§ 173a AO"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "Das lange Brüten",
+   "n": "VJ",
+   "sv": "Erklärung 01 im Februar 02 abgegeben. Bescheid vom 05.03.03 unter Vorbehalt der Nachprüfung und zusätzlich vorläufig hinsichtlich der Einkünfte aus Vermietung. Am 10.06.07 ergeht ein auf § 164 Abs. 2 gestützter Änderungsbescheid wegen versagter Sonderausgaben.",
+   "schritte": [
+    {
+     "q": "Dürfen Vorbehalt und Vorläufigkeit nebeneinander stehen?",
+     "o": [
+      "Nein, sie schließen sich aus",
+      "Nur bei Außenprüfung",
+      "Ja, die Regelungsbereiche sind verschieden",
+      "Nur auf Antrag"
+     ],
+     "a": 2,
+     "w": "Der Vorbehalt öffnet den ganzen Bescheid, die Vorläufigkeit nur einen Punkt. Die Kombination ist ausdrücklich zugelassen.",
+     "nrm": "§ 165 Abs. 3 AO"
+    },
+    {
+     "q": "Wann endete die reguläre Festsetzungsfrist?",
+     "o": [
+      "Mit Ablauf 31.12.06",
+      "Mit Ablauf 31.12.05",
+      "Sie lief noch",
+      "Mit Ablauf 31.12.07"
+     ],
+     "a": 0,
+     "w": "Abgabe im Februar 02, also Beginn mit Ablauf des 31.12.02 und vier Jahre Dauer. Die Anlaufhemmung geht nicht über das Abgabejahr hinaus.",
+     "nrm": "§ 170 Abs. 2 S. 1 Nr. 1, § 169 Abs. 2 S. 1 Nr. 2 AO"
+    },
+    {
+     "q": "Trägt § 164 Abs. 2 den Änderungsbescheid vom 10.06.07 noch?",
+     "o": [
+      "Nur für die Vermietungseinkünfte",
+      "Nein, der Vorbehalt ist mit der Festsetzungsfrist entfallen",
+      "Ja, wegen § 171 Abs. 8",
+      "Ja, der Vorbehalt gilt unbegrenzt"
+     ],
+     "a": 1,
+     "w": "Der Vorbehalt entfällt kraft Gesetzes mit Ablauf der Festsetzungsfrist. § 171 Abs. 8 ist für den Wegfall des Vorbehalts ausdrücklich ausgenommen.",
+     "nrm": "§ 164 Abs. 4 AO"
+    },
+    {
+     "q": "Was bleibt dem Finanzamt dann noch offen?",
+     "o": [
+      "Der ganze Bescheid über § 173",
+      "Gar nichts",
+      "Die Berichtigung nach § 129",
+      "Nur der vorläufige Punkt über § 165 Abs. 2 und § 171 Abs. 8"
+     ],
+     "a": 3,
+     "w": "Die Vorläufigkeit wirkt weiter, aber nur im erklärten Umfang, also bei den Vermietungseinkünften. Die Sonderausgaben gehören nicht dazu.",
+     "nrm": "§ 165 Abs. 2, § 171 Abs. 8 AO"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "Die vorläufige Bewirtung",
+   "n": "KN",
+   "sv": "Die Bescheide 01 bis 03 sind vorläufig hinsichtlich der Einkünfte aus Gewerbebetrieb, weil die Gewinnerzielungsabsicht beim Reiterhof offen war. In 06 bejaht das Finanzamt die Gewinnerzielungsabsicht, kürzt aber zugleich die Verluste um je 2.000 € wegen nicht ordnungsgemäß aufgezeichneter Bewirtungsaufwendungen.",
+   "schritte": [
+    {
+     "q": "Wie weit reicht die Änderungsbefugnis nach § 165 Abs. 2?",
+     "o": [
+      "Über alle gewerblichen Einkünfte",
+      "Über den gesamten Bescheid",
+      "Nur soweit die Vorläufigkeit reicht",
+      "Über alle offenen Punkte"
+     ],
+     "a": 2,
+     "w": "Die Vorläufigkeit öffnet nur ein Fenster. Anders als der Vorbehalt erlaubt sie keine Gesamtüberprüfung.",
+     "nrm": "§ 165 Abs. 2 AO"
+    },
+    {
+     "q": "Was war der erklärte Grund der Vorläufigkeit?",
+     "o": [
+      "Die Aufzeichnungspflichten",
+      "Die Gewinnerzielungsabsicht",
+      "Die Einkunftsart",
+      "Die Höhe der Betriebsausgaben"
+     ],
+     "a": 1,
+     "w": "Maßgeblich ist der im Bescheid genannte Grund. Er begrenzt die spätere Änderung, alles andere bleibt bestandskräftig.",
+     "nrm": "§ 165 Abs. 1 S. 1 AO"
+    },
+    {
+     "q": "Darf das Finanzamt bei dieser Gelegenheit die Bewirtungsaufwendungen kürzen?",
+     "o": [
+      "Ja, es ändert ohnehin",
+      "Nein, das liegt außerhalb der Vorläufigkeit",
+      "Nur mit Zustimmung",
+      "Ja, über § 177"
+     ],
+     "a": 1,
+     "w": "Die Kürzung hat mit der Gewinnerzielungsabsicht nichts zu tun. § 177 hilft nicht, weil er eine zulässige Änderung voraussetzt und hier gerade keine trägt.",
+     "nrm": "§ 165 Abs. 2, § 177 Abs. 1 AO"
+    },
+    {
+     "q": "Welche Norm bräuchte das Finanzamt stattdessen?",
+     "o": [
+      "§ 129",
+      "§ 173 Abs. 1 Nr. 1",
+      "§ 174 Abs. 3",
+      "§ 176"
+     ],
+     "a": 1,
+     "w": "Es müsste sich um eine nachträglich bekannt gewordene Tatsache handeln. Lagen die Belege schon vor, scheitert auch das.",
+     "nrm": "§ 173 Abs. 1 Nr. 1 AO"
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "Der späte Grundlagenbescheid",
+   "n": "GB",
+   "sv": "Die Erklärung ging in 02 ein, der Feststellungsbescheid geht erst am Mittwoch, dem 27.12.06, zur Post und wird am Mittwoch, dem 03.01.07, zugestellt. Die Feststellungsfrist endet regulär am 31.12.06, einem Sonntag.",
+   "schritte": [
+    {
+     "q": "Wann endet die Feststellungsfrist tatsächlich?",
+     "o": [
+      "02.01.07",
+      "01.01.07",
+      "03.01.07",
+      "31.12.06"
+     ],
+     "a": 0,
+     "w": "Der 31.12. ist ein Sonntag, der 01.01. ein Feiertag. Die Frist endet mit Ablauf des nächsten Werktags.",
+     "nrm": "§ 108 Abs. 3 AO"
+    },
+    {
+     "q": "Welcher Tag ist Bekanntgabetag?",
+     "o": [
+      "02.01.07",
+      "31.12.06",
+      "03.01.07",
+      "27.12.06"
+     ],
+     "a": 2,
+     "w": "Die Viertagefiktion greift nicht, weil der Bescheid nachweislich später zugegangen ist.",
+     "nrm": "§ 122 Abs. 2 letzter Halbsatz AO"
+    },
+    {
+     "q": "Die Bekanntgabe liegt einen Tag nach Fristende. Was rettet die Frist?",
+     "o": [
+      "Nichts",
+      "§ 169 Abs. 1 S. 3 Nr. 1",
+      "§ 181 Abs. 5",
+      "§ 171 Abs. 10"
+     ],
+     "a": 1,
+     "w": "Es genügt, dass der Bescheid den Bereich des Finanzamts rechtzeitig verlassen hat und zugeht.",
+     "nrm": "§ 169 Abs. 1 S. 3 Nr. 1 AO"
+    },
+    {
+     "q": "Wie lange kann der Folgebescheid geändert werden?",
+     "o": [
+      "Bis 31.12.06",
+      "Zwei Jahre ab Bekanntgabe des Grundlagenbescheids",
+      "Ein Jahr ab Bekanntgabe",
+      "Unbegrenzt"
+     ],
+     "a": 1,
+     "w": "§ 175 Abs. 1 Nr. 1 liefert die Norm, § 171 Abs. 10 die Zeit.",
+     "nrm": "§ 171 Abs. 10 AO"
+    }
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "Valentin und Josepha werden zusammen veranlagt",
+   "n": "VJ",
+   "sv": "Die Eheleute Berg haben die Erklärung 08 gemeinsam erstellt, ein Steuerberater hat mitgewirkt und sie am 25.09.09 übermittelt. Die Festsetzung erfolgte im Januar 10 unter Vorbehalt der Nachprüfung. Der Bescheid war an Herrn und Frau Berg unter der gemeinsamen Anschrift gerichtet.",
+   "schritte": [
+    {
+     "q": "Ist der Bescheid beiden Eheleuten wirksam bekanntgegeben worden?",
+     "o": [
+      "Nur mit förmlicher Zustellung",
+      "Ja, eine Ausfertigung unter gemeinsamer Anschrift genügt",
+      "Nein, es fehlt je eine Ausfertigung",
+      "Nur dem zuerst Genannten"
+     ],
+     "a": 1,
+     "w": "Bei Zusammenveranlagung und gemeinsamer Anschrift genügt eine Ausfertigung. Anders wäre es nur bei Antrag oder bekanntem Streit.",
+     "nrm": "§ 122 Abs. 7 S. 1, § 155 Abs. 3 AO"
+    },
+    {
+     "q": "Wie wirkt sich die Mitwirkung des Steuerberaters aus?",
+     "o": [
+      "Sein Verschulden wird den Eheleuten zugerechnet",
+      "Nur gegenüber dem Erklärenden",
+      "Gar nicht",
+      "Nur bei Vorsatz"
+     ],
+     "a": 0,
+     "w": "Bevollmächtigte und Hilfspersonen bei der Erstellung der Erklärung werden zugerechnet. Das gilt auch zwischen zusammenveranlagten Eheleuten.",
+     "nrm": "AEAO zu § 173 Nr. 5.3 und 5.4"
+    },
+    {
+     "q": "Welche Festsetzungsfrist gilt bei leichtfertiger Steuerverkürzung?",
+     "o": [
+      "Fünf Jahre",
+      "Zehn Jahre",
+      "Vier Jahre",
+      "Zwei Jahre"
+     ],
+     "a": 0,
+     "w": "Zehn Jahre gelten nur bei Hinterziehung. Beide Fristen wirken außerdem nur, soweit die Tat reicht.",
+     "nrm": "§ 169 Abs. 2 S. 2 AO"
+    },
+    {
+     "q": "Wie kann sich der unbeteiligte Ehegatte der verlängerten Frist entziehen?",
+     "o": [
+      "Durch Nachweis fehlenden Vermögensvorteils und gewahrter Sorgfalt",
+      "Durch getrennte Veranlagung",
+      "Gar nicht",
+      "Durch Glaubhaftmachung"
+     ],
+     "a": 0,
+     "w": "Beide Voraussetzungen müssen zusammen nachgewiesen werden. Bei Zusammenveranlagung scheitert es oft schon am Vermögensvorteil.",
+     "nrm": "§ 169 Abs. 2 S. 3 AO"
+    }
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "Was heißt schon unbeachtlich?",
+   "n": "KN",
+   "sv": "Franz Xaver erklärt für 02 nur Arbeitslohn und Vermietung, der Bescheid vom 30.09.03 ergeht endgültig. Im Mai 02 hatte er eine Handelsvertretung übernommen und dabei bestätigt, seine steuerlichen Pflichten eigenverantwortlich zu erledigen. Erst im Mai 04 reicht er eine Gewinnermittlung für diese Tätigkeit nach.",
+   "schritte": [
+    {
+     "q": "Wie viele neue Tatsachen liegen bei der nacherklärten Handelsvertretung vor?",
+     "o": [
+      "Zwei, Einnahmen und Ausgaben getrennt",
+      "Drei",
+      "Eine, die nacherklärte Einkunftsquelle",
+      "Keine"
+     ],
+     "a": 2,
+     "w": "Bei der Nacherklärung einer bisher nicht erklärten Einkunftsquelle liegt im Ertragsteuerrecht eine Tatsache vor. In zwei Tatsachen zerfällt es nur bei einer bereits erklärten Quelle.",
+     "nrm": "AEAO zu § 173 Nr. 6"
+    },
+    {
+     "q": "Welche Nummer des § 173 Abs. 1 ist einschlägig, wenn sich per Saldo ein Verlust ergibt?",
+     "o": [
+      "Beide",
+      "Nr. 2",
+      "Keine",
+      "Nr. 1"
+     ],
+     "a": 1,
+     "w": "Bei einer einzigen Tatsache entscheidet der Saldo über die Richtung. Führt er zu einer niedrigeren Steuer, ist Nr. 2 die Norm, und damit stellt sich die Verschuldensfrage.",
+     "nrm": "§ 173 Abs. 1 Nr. 2 AO"
+    },
+    {
+     "q": "Welche Bedeutung hat die Bestätigung im Vertretervertrag?",
+     "o": [
+      "Keine",
+      "Sie spricht für grobes Verschulden",
+      "Sie entlastet ihn",
+      "Sie betrifft nur die Gewerbesteuer"
+     ],
+     "a": 1,
+     "w": "Wer ausdrücklich zusagt, seine steuerlichen Pflichten eigenverantwortlich zu erledigen, kann sich später nicht auf Unkenntnis berufen.",
+     "nrm": "AEAO zu § 173 Nr. 5.1"
+    },
+    {
+     "q": "Was bleibt, wenn § 173 Abs. 1 Nr. 2 am Verschulden scheitert?",
+     "o": [
+      "Nichts",
+      "Wiedereinsetzung",
+      "Nichtigkeit",
+      "Berücksichtigung als materieller Fehler im Rahmen"
+     ],
+     "a": 3,
+     "w": "Eine an § 173 gescheiterte Tatsache wird zum materiellen Fehler. Sie wirkt sich aber nur aus, soweit der Änderungsrahmen reicht.",
+     "nrm": "§ 177 Abs. 1 AO, AEAO zu § 177 Nr. 1"
+    }
+   ]
+  },
+  {
+   "nr": 11,
+   "titel": "Familie Klose",
+   "n": "KN",
+   "sv": "Die Bescheide 01 und 02 ergingen erklärungsgemäß unter Vorbehalt der Nachprüfung. Anfang 05 fand eine Außenprüfung für beide Jahre statt, der Bericht ging im April 05 zu. Für 02 wurde der Vorbehalt aufgehoben, für 01 nicht. Anfang Oktober 07 ergehen Änderungsbescheide für beide Jahre.",
+   "schritte": [
+    {
+     "q": "Welche Norm sperrt nach einer Außenprüfung die Änderung?",
+     "o": [
+      "§ 173 Abs. 1",
+      "§ 176",
+      "§ 173 Abs. 2",
+      "§ 351 Abs. 1"
+     ],
+     "a": 2,
+     "w": "Die Änderungssperre betrifft gerade die auf neue Tatsachen gestützte Änderung. Sie greift nur, soweit die Prüfung reichte.",
+     "nrm": "§ 173 Abs. 2 AO"
+    },
+    {
+     "q": "Wann gilt die Änderungssperre ausnahmsweise nicht?",
+     "o": [
+      "Bei Fehlern des Prüfers",
+      "Bei Zustimmung des Steuerpflichtigen",
+      "Bei jedem neuen Beweismittel",
+      "Bei Steuerhinterziehung oder leichtfertiger Steuerverkürzung"
+     ],
+     "a": 3,
+     "w": "Nur diese beiden Ausnahmen nennt das Gesetz. Andere Korrekturnormen wie § 164 Abs. 2 oder § 129 bleiben davon unberührt.",
+     "nrm": "§ 173 Abs. 2 AO"
+    },
+    {
+     "q": "Welche Folge hat es, dass der Vorbehalt für 01 nicht aufgehoben wurde?",
+     "o": [
+      "Die Sperre des § 173 Abs. 2 entfällt dadurch",
+      "Der Bescheid wird nichtig",
+      "Keine, die Pflicht ist verletzt",
+      "Der Vorbehalt besteht fort und § 164 Abs. 2 trägt weiter"
+     ],
+     "a": 3,
+     "w": "Die verletzte Aufhebungspflicht beseitigt den Vorbehalt nicht. Deshalb bleibt für 01 der volle Änderungsweg offen, für 02 nicht.",
+     "nrm": "§ 164 Abs. 3 S. 3, § 164 Abs. 2 AO"
+    },
+    {
+     "q": "Wie lange konnte der Vorbehalt für 01 überhaupt bestehen?",
+     "o": [
+      "Bis zum Prüfungsbericht",
+      "Bis zur nächsten Veranlagung",
+      "Unbegrenzt",
+      "Bis zum Ablauf der Festsetzungsfrist"
+     ],
+     "a": 3,
+     "w": "Er entfällt kraft Gesetzes mit der Festsetzungsfrist. Dabei wirkt die Ablaufhemmung durch die Außenprüfung mit, weil § 171 Abs. 4 nicht ausgenommen ist.",
+     "nrm": "§ 164 Abs. 4, § 171 Abs. 4 AO"
+    }
+   ]
+  },
+  {
+   "nr": 12,
+   "titel": "Die Sache mit der doppelten Kirchensteuer",
+   "n": "VJ",
+   "sv": "Die Kirchensteuer wird am 20.03.09 für 08 gezahlt und sowohl in der Erklärung 08 als auch in der Erklärung 09 als Sonderausgabe geltend gemacht. Der Bescheid 08 datiert vom 10.08.09, der Bescheid 09 vom 06.02.13. Im April 14 fällt dem Finanzamt der Sachverhalt auf.",
+   "schritte": [
+    {
+     "q": "In welchem Jahr ist die Kirchensteuer abziehbar?",
+     "o": [
+      "08",
+      "anteilig in beiden",
+      "im Jahr der Festsetzung",
+      "09"
+     ],
+     "a": 3,
+     "w": "Abflussprinzip. Gezahlt wurde am 20.03.09.",
+     "nrm": "§ 11 Abs. 2 S. 1 EStG"
+    },
+    {
+     "q": "Welcher Bescheid ist damit falsch?",
+     "o": [
+      "Beide",
+      "Der Bescheid 09",
+      "Keiner",
+      "Der Bescheid 08"
+     ],
+     "a": 3,
+     "w": "Im Bescheid 09 ist der Abzug zutreffend, im Bescheid 08 nicht.",
+     "nrm": "§ 11 Abs. 2 EStG"
+    },
+    {
+     "q": "Welche Korrekturnorm trägt die Änderung des Bescheids 08?",
+     "o": [
+      "§ 129",
+      "§ 164 Abs. 2",
+      "§ 175 Abs. 1 Nr. 1",
+      "§ 174 Abs. 2 oder § 173 Abs. 1 Nr. 1"
+     ],
+     "a": 3,
+     "w": "Derselbe Sachverhalt wurde zweimal zugunsten berücksichtigt, veranlasst durch die eigenen Erklärungen.",
+     "nrm": "§ 174 Abs. 2, § 173 Abs. 1 Nr. 1 AO"
+    },
+    {
+     "q": "Wann endete die Festsetzungsfrist für 08?",
+     "o": [
+      "Sie läuft noch",
+      "31.12.12",
+      "31.12.14",
+      "31.12.13"
+     ],
+     "a": 3,
+     "w": "Beginn mit Ablauf 31.12.09, vier Jahre. Im April 14 ist eine Änderung ausgeschlossen.",
+     "nrm": "§ 170 Abs. 2, § 169 Abs. 2 S. 1 Nr. 2 AO"
+    }
+   ]
+  },
+  {
+   "nr": 13,
+   "titel": "Frau K betreibt Kfz-Handel",
+   "n": "KN",
+   "sv": "Beide Ehegatten erklären 06 getrennt und legen den Sachverhalt exakt dar. Das Finanzamt setzt die gesamte Umsatzsteuer gegen Herrn K fest, bei Frau K fehlen die Umsätze ohne Begründung. Das Finanzgericht gibt Herrn K recht. Nun soll Frau K herangezogen werden.",
+   "schritte": [
+    {
+     "q": "Welcher Bescheid soll geändert werden?",
+     "o": [
+      "Der Bescheid gegen Herrn K",
+      "Der Freistellungsbescheid gegen Frau K",
+      "Beide",
+      "Keiner"
+     ],
+     "a": 1,
+     "w": "Der Freistellungsbescheid ist nach § 155 Abs. 1 S. 3 ein Steuerbescheid.",
+     "nrm": "§ 155 Abs. 1 S. 3 AO"
+    },
+    {
+     "q": "Warum scheidet § 173 Abs. 1 Nr. 1 aus?",
+     "o": [
+      "Wegen Verschuldens",
+      "Wegen Festsetzungsverjährung",
+      "Es fehlt an einer neuen Tatsache",
+      "Wegen § 173 Abs. 2"
+     ],
+     "a": 2,
+     "w": "Der Sachverhalt war exakt dargelegt, das Finanzamt hat ihn nur falsch gewürdigt.",
+     "nrm": "§ 173 Abs. 1 Nr. 1 AO"
+    },
+    {
+     "q": "Warum scheitert § 174 Abs. 4?",
+     "o": [
+      "Kein Rechtsbehelf",
+      "Festsetzungsverjährung",
+      "Frau K war als Dritte nicht beigeladen",
+      "Keine irrige Beurteilung"
+     ],
+     "a": 2,
+     "w": "Die Beiladung wäre bis zur Unanfechtbarkeit des Urteils möglich gewesen.",
+     "nrm": "§ 174 Abs. 5 AO"
+    },
+    {
+     "q": "Welche Norm trägt die Heranziehung doch?",
+     "o": [
+      "§ 174 Abs. 2",
+      "§ 174 Abs. 3",
+      "§ 129",
+      "§ 174 Abs. 1"
+     ],
+     "a": 1,
+     "w": "Abs. 3 verlangt keine Beiladung. Streitig ist allein die Erkennbarkeit, die hier zu bejahen ist.",
+     "nrm": "§ 174 Abs. 3 AO"
+    }
+   ]
+  },
+  {
+   "nr": 14,
+   "titel": "Hin und Her beim Finanzamt",
+   "n": "KN",
+   "sv": "Bescheid 11 im April 13 unter Vorbehalt, Steuer 15.000 €. Bescheid 12 endgültig, 27.000 €. Im Januar 14 ergehen Grundlagenbescheide, die für sich je 3.000 € Minderung ergeben. Das Finanzamt setzt 11 auf 18.000 € und 12 auf 30.000 € herauf, weil es Provisionszahlungen an nicht Benannte zu Unrecht abgezogen hatte.",
+   "schritte": [
+    {
+     "q": "Welche Norm trägt die Herabsetzung aus den Grundlagenbescheiden?",
+     "o": [
+      "§ 173 Abs. 1 Nr. 2",
+      "§ 164 Abs. 2",
+      "§ 177",
+      "§ 175 Abs. 1 S. 1 Nr. 1"
+     ],
+     "a": 3,
+     "w": "Die Folgeänderung ist gebunden und braucht keine weiteren Voraussetzungen. § 177 ist keine Korrekturnorm.",
+     "nrm": "§ 175 Abs. 1 S. 1 Nr. 1 AO"
+    },
+    {
+     "q": "Wie kann das Finanzamt die Provisionszahlungen im Jahr 11 korrigieren?",
+     "o": [
+      "Über § 173 Abs. 1 Nr. 1",
+      "Gar nicht",
+      "Über § 164 Abs. 2",
+      "Über § 177"
+     ],
+     "a": 2,
+     "w": "Der Bescheid 11 steht unter Vorbehalt, damit ist jeder Fehler ohne Weiteres korrigierbar. Der Rückgriff auf § 177 wäre hier systematisch falsch.",
+     "nrm": "§ 164 Abs. 2 AO"
+    },
+    {
+     "q": "Und im Jahr 12, das endgültig festgesetzt war?",
+     "o": [
+      "Als materieller Fehler im Rahmen des § 177",
+      "Über § 129",
+      "Gar nicht",
+      "Über § 164 Abs. 2"
+     ],
+     "a": 0,
+     "w": "Eine neue Tatsache ist es nicht, denn die Zahlungen waren bekannt und wurden nur falsch gewürdigt. Es bleibt die Mitberichtigung im Änderungsrahmen.",
+     "nrm": "§ 177 Abs. 1 und 3 AO"
+    },
+    {
+     "q": "Wie weit reicht der Änderungsrahmen für 12?",
+     "o": [
+      "Unbegrenzt nach oben",
+      "Er ist auf 27.000 € fixiert",
+      "Nach unten bis 24.000 €, nach oben nicht über 27.000 €",
+      "Von 24.000 bis 30.000 €"
+     ],
+     "a": 2,
+     "w": "Es gibt nur eine Änderung zugunsten, also wandert allein die Untergrenze. Ohne eine Änderung zuungunsten bleibt die Obergrenze die bisherige Steuer.",
+     "nrm": "§ 177 Abs. 2 AO, AEAO zu § 177 Nr. 3"
+    }
+   ]
+  },
+  {
+   "nr": 15,
+   "titel": "Der übersehene Grundlagenbescheid",
+   "n": "GB",
+   "sv": "Der Feststellungsbescheid und die interne Mitteilung lagen dem Veranlagungsbezirk bereits vor, als der Einkommensteuerbescheid vom 20.03.04 unter Vorbehalt erging. Am 15.05.07 wird wegen verdeckter Gewinnausschüttungen geändert und der Vorbehalt aufgehoben, die Beteiligungseinkünfte fehlen weiter. Die reguläre Festsetzungsverjährung tritt am 31.12.07 ein.",
+   "schritte": [
+    {
+     "q": "Welche Norm wäre bis zum 15.05.07 der einfachste Weg gewesen?",
+     "o": [
+      "§ 129",
+      "§ 164 Abs. 2",
+      "§ 174 Abs. 3",
+      "§ 173 Abs. 1 Nr. 1"
+     ],
+     "a": 1,
+     "w": "Der Vorbehalt öffnete den Bescheid uneingeschränkt. Mit seiner Aufhebung ist dieser Weg verbaut.",
+     "nrm": "§ 164 Abs. 2 AO"
+    },
+    {
+     "q": "Warum scheidet § 173 Abs. 1 Nr. 1 aus?",
+     "o": [
+      "Wegen Verschuldens",
+      "Wegen der Frist",
+      "Wegen § 173 Abs. 2",
+      "Die Unterlagen lagen vor, also keine neue Tatsache"
+     ],
+     "a": 3,
+     "w": "Maßgeblich ist die Aktenlage, nicht die tatsächliche Kenntnis des Sachbearbeiters.",
+     "nrm": "AEAO zu § 173 Tz. 2"
+    },
+    {
+     "q": "Welche beiden Normen tragen die Änderung dem Grunde nach?",
+     "o": [
+      "§ 164 Abs. 2 und § 129",
+      "§ 175 Abs. 1 Nr. 1 und § 129",
+      "§ 176 und § 177",
+      "§ 173 und § 174"
+     ],
+     "a": 1,
+     "w": "Das Übersehen eines vorliegenden Grundlagenbescheids ist nach dem BFH eine offenbare Unrichtigkeit.",
+     "nrm": "§ 175 Abs. 1 S. 1 Nr. 1, § 129 AO"
+    },
+    {
+     "q": "Warum hilft § 171 Abs. 10 hier nicht?",
+     "o": [
+      "Die Zweijahresfrist endete schon innerhalb der regulären Frist",
+      "Er wurde nicht beantragt",
+      "Er gilt nicht für Feststellungsbescheide",
+      "Er gilt nur zugunsten"
+     ],
+     "a": 0,
+     "w": "Eine Ablaufhemmung nützt nur, wenn sie über das reguläre Fristende hinausreicht.",
+     "nrm": "§ 171 Abs. 10 AO"
+    }
+   ]
+  },
+  {
+   "nr": 16,
+   "titel": "Wenn man das geahnt hätte…",
+   "n": "KN",
+   "sv": "Veronika Pott veräußerte ihren Gewerbebetrieb zum 30.06.01. Der Veräußerungsgewinn wurde im Feststellungsbescheid vom 10.10.02 festgestellt, der Einkommensteuerbescheid 01 vom 15.11.02 folgte. Der Kaufpreis war unverzinslich gestundet und in Jahresraten bis 08 zu zahlen. Die letzte Rate fällt aus.",
+   "schritte": [
+    {
+     "q": "Ist der Ausfall der letzten Rate eine neue Tatsache im Sinne des § 173?",
+     "o": [
+      "Ja, sie wird nachträglich bekannt",
+      "Ja, aber mit Verschulden",
+      "Nein, sie ist erst später entstanden",
+      "Nur bei Insolvenz"
+     ],
+     "a": 2,
+     "w": "Eine Tatsache im Sinne des § 173 muss bei Erlass des Bescheids schon existiert haben. Was erst danach eintritt, ist nie neu, sondern allenfalls ein Ereignis.",
+     "nrm": "§ 173 Abs. 1 AO"
+    },
+    {
+     "q": "Welche Norm greift stattdessen?",
+     "o": [
+      "§ 174 Abs. 3",
+      "§ 175 Abs. 1 S. 1 Nr. 1",
+      "§ 175 Abs. 1 S. 1 Nr. 2",
+      "§ 129"
+     ],
+     "a": 2,
+     "w": "Weil der Veräußerungsgewinn stichtagsbezogen ermittelt wird, wirkt der spätere Ausfall auf den Veräußerungszeitpunkt zurück.",
+     "nrm": "§ 175 Abs. 1 S. 1 Nr. 2 AO"
+    },
+    {
+     "q": "Welcher Bescheid muss zuerst geändert werden?",
+     "o": [
+      "Beide gleichzeitig",
+      "Das ist beliebig",
+      "Der Einkommensteuerbescheid",
+      "Der Feststellungsbescheid"
+     ],
+     "a": 3,
+     "w": "Der Veräußerungsgewinn ist gesondert festgestellt. Einwendungen und Änderungen setzen beim Grundlagenbescheid an, der Folgebescheid wird danach angepasst.",
+     "nrm": "§ 180 Abs. 1 Nr. 2b, § 351 Abs. 2 AO"
+    },
+    {
+     "q": "Welche Fristbesonderheit gilt beim rückwirkenden Ereignis?",
+     "o": [
+      "Die Frist entfällt",
+      "Keine",
+      "Die Festsetzungsfrist beginnt erst mit Ablauf des Jahres des Ereignisses",
+      "Die Frist verdoppelt sich"
+     ],
+     "a": 2,
+     "w": "§ 175 Abs. 1 S. 2 enthält eine eigene Anlaufhemmung. Für den Folgebescheid kommt zusätzlich die Zweijahresfrist des § 171 Abs. 10 hinzu.",
+     "nrm": "§ 175 Abs. 1 S. 2, § 171 Abs. 10 AO"
+    }
+   ]
+  }
+ ]
 }
