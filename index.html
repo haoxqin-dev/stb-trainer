@@ -5,21 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>StB-Trainer</title>
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#F2F3EE" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#191A17" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FFFFFF">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="StB-Trainer">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <style>
 :root{
-  --paper:#F2F3EE; --ink:#22262B; --soft:#5C6168; --rule:#D2D5CB; --card:#FAFBF7;
+  --paper:#FFFFFF; --ink:#22262B; --soft:#5C6168; --rule:#D2D5CB; --card:#F7F8F4;
   --marker:#FFE94D; --ok:#2E6B4F; --no:#9B3024; --shadow:0 1px 0 rgba(34,38,43,.06);
   color-scheme:light;
-}
-@media (prefers-color-scheme:dark){
-  :root{--paper:#191A17;--ink:#E9E7DF;--soft:#9A9A92;--rule:#33352F;--card:#20211D;
-        --ok:#7FC5A0;--no:#E58A7C;--shadow:none;color-scheme:dark}
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
@@ -112,12 +107,10 @@ footer button{font:inherit;font-size:13px;background:none;border:0;color:var(--s
 <footer>
   <span id="lvlbox"></span>
   <button id="errs">Fehlerprotokoll</button>
-  <button id="exp">Fortschritt sichern</button>
-  <button id="imp">Fortschritt laden</button>
+  <button id="sync">Auf anderes Gerät übertragen</button>
   <button id="upd">Aktualisieren</button>
   <button id="reset">Zurücksetzen</button>
   <span id="net" style="margin-left:auto"></span>
-  <input type="file" id="file" accept="application/json" hidden>
 </footer>
 </div>
 
@@ -249,7 +242,7 @@ function buildNorm(item){
   const alt = others.length<3 ? shuffle(D.normen.filter(n=>n.norm!==item.norm)).slice(0,3) : others;
   const opts = shuffle([item.norm, ...alt.map(o=>o.norm)]);
   return { n:item.n, q:'Welche Norm regelt das?<br><span style="color:var(--soft)">'+item.s+'</span>',
-           o:opts, a:opts.indexOf(item.norm), w:'Stichwort: '+item.s, nrm:item.norm, k:'', b:item.b };
+           o:opts, a:opts.indexOf(item.norm), w:'Stichwort: '+item.s, nrm:item.norm, k:item.k||'', b:item.b, wf:'' };
 }
 
 /* ---------- Rendern ---------- */
@@ -281,6 +274,7 @@ function onPick(e){
   document.getElementById('fb').innerHTML = `<div class="fb">
     <p class="verdict ${ok?'r':'w'}">${ok?'Richtig.':'Nicht richtig.'}</p>
     <p class="why">${cur.w}</p>
+    ${(!ok && cur.wf)?`<p class="why"><b>Warum die anderen nicht passen.</b> ${cur.wf}</p>`:''}
     <span class="norm">${cur.nrm}</span>
     ${cur.k?`<p class="gtext"><b>Kern der Norm.</b> ${cur.k}</p>`:''}
     <div class="row"><button class="btn" id="nx">Weiter</button></div></div>`;
@@ -382,15 +376,34 @@ document.getElementById('errs').onclick=()=>{
     <div class="row"><button class="btn" id="back">Weiter üben</button></div></div>`;
   document.getElementById('back').onclick=()=>setMode(mode);
 };
-document.getElementById('exp').onclick=()=>{
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:'application/json'}));
-  a.download='stb-trainer-fortschritt.json'; a.click();
-};
-document.getElementById('imp').onclick=()=>document.getElementById('file').click();
-document.getElementById('file').onchange=e=>{
-  const f=e.target.files[0]; if(!f) return;
-  f.text().then(t=>{ try{ S=Object.assign(S,JSON.parse(t)); save(); paintStats(); setMode(mode); }catch(err){} });
+function toCode(o){ return btoa(unescape(encodeURIComponent(JSON.stringify(o)))); }
+function fromCode(c){ return JSON.parse(decodeURIComponent(escape(atob(c.trim())))); }
+document.getElementById('sync').onclick=()=>{
+  paintLoc(null);
+  view.innerHTML=`<div class="card">
+    <p class="q">Fortschritt übertragen</p>
+    <p class="why">Kopiere den Code und schick ihn dir selbst, etwa per Nachricht oder E-Mail.
+    Auf dem anderen Gerät fügst du ihn unten ein. Keine Datei nötig.</p>
+    <textarea id="code" readonly rows="4" style="width:100%;font:inherit;font-size:13px;
+      border:1px solid var(--rule);border-radius:5px;padding:8px;background:var(--paper);color:var(--ink)"></textarea>
+    <div class="row"><button class="btn" id="cp">Code kopieren</button><span id="cpok" style="color:var(--soft);font-size:14px"></span></div>
+    <p class="q" style="font-size:17px;margin-top:22px">Code vom anderen Gerät einfügen</p>
+    <textarea id="inc" rows="4" placeholder="Code hier einfügen" style="width:100%;font:inherit;font-size:13px;
+      border:1px solid var(--rule);border-radius:5px;padding:8px;background:var(--paper);color:var(--ink)"></textarea>
+    <div class="row"><button class="btn ghost" id="ld">Übernehmen</button><span id="ldok" style="color:var(--soft);font-size:14px"></span>
+    <button class="btn ghost" id="back2">Weiter üben</button></div></div>`;
+  document.getElementById('code').value = toCode(S);
+  document.getElementById('cp').onclick=async()=>{
+    const t=document.getElementById('code'); t.select();
+    try{ await navigator.clipboard.writeText(t.value); }catch(e){ document.execCommand('copy'); }
+    document.getElementById('cpok').textContent='kopiert';
+  };
+  document.getElementById('ld').onclick=()=>{
+    try{ S=Object.assign(S, fromCode(document.getElementById('inc').value)); save(); paintStats();
+         document.getElementById('ldok').textContent='übernommen'; }
+    catch(e){ document.getElementById('ldok').textContent='Code nicht lesbar'; }
+  };
+  document.getElementById('back2').onclick=()=>setMode(mode);
 };
 document.getElementById('upd').onclick=async()=>{
   try{

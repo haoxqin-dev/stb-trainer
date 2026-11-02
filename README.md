@@ -1,6 +1,6 @@
 # StB-Trainer
 
-Lern-App zur Steuerberaterprüfung. Erste Ausbaustufe: Abgabenordnung, Folien 2 bis 119.
+Lern-App zur Steuerberaterprüfung. Erste Ausbaustufe: Abgabenordnung, Folien 2 bis 119 vollständig, 110 Inhaltsfragen, 92 Normen, alle 16 Fälle der Blöcke 1 bis 6.
 
 ## Dateien
 
@@ -69,7 +69,7 @@ Tagesziel von fünfzehn Fragen und Seriezähler.
 
 Fehlerprotokoll der letzten vierzig Fehlversuche mit Norm.
 
-Fortschritt sichern und laden als JSON-Datei, damit Laptop und Handy denselben Stand haben.
+Fortschritt per Code übertragen: Code kopieren, sich selbst schicken, auf dem anderen Gerät einfügen. Keine Datei nötig.
 
 ## Hinweise zum Offlinebetrieb
 
